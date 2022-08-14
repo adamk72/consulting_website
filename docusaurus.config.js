@@ -84,46 +84,45 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: 'Light Reading',
             items: [
+              // {
+              //   label: 'Getting Started',
+              //   to: 'docs/',
+              // },
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: 'Tech & PM Blog',
+                to: 'blog',
               },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
               // {
-              //   label: "Stack Overflow",
-              //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              // },
-              // {
-              //   label: "Discord",
-              //   href: "https://discordapp.com/invite/docusaurus",
-              // },
-              // {
-              //   label: "Twitter",
-              //   href: "https://twitter.com/docusaurus",
+              //   label: 'Speaking Blog',
+              //   to: 'speaking-blog',
               // },
             ],
           },
           {
-            title: "More",
+            title: 'Community',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: 'LinkedIn',
+                href: 'https://linkedin.com/in/adamkecskes/',
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: 'GitHub',
+                href: 'https://github.com/adamk72',
+              },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/users/13907148/adam-kecskes',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/akecskes',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Adam Kecskes Consulting`,
       },
       prism: {
         theme: lightCodeTheme,
