@@ -1,0 +1,9 @@
+.twoColumnWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+  grid-row-gap: 5rem;
+  grid-column-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 4em;
+}
