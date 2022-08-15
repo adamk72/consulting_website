@@ -43,10 +43,6 @@ p.hero__subtitle {
 }
 h1.hero__title {
   font-size: 4rem;
-  background: linear-gradient(to bottom, #ffffff, #373b44 85%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 p.hero__subtitle {
