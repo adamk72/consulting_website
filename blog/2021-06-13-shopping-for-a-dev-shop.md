@@ -8,6 +8,8 @@ Hiring software developers is notoriously hard to do, even for those of us who a
 
 If you have a project that is more than just a single-page website, you'll need to hire a development shop (or go through the effort of hiring your own staff, which is a very different topic) to do the heavy lifting. Your project may be starting from scratch, or maybe your existing application is buggy or not very scalable and you need to refresh it. For whatever reason, you recognize that hiring a person off of Fiverr, Upwork, or Freelancer just isn't going to hack it. You're already on the right track.
 
+<!--truncate-->
+
 ## Cost
 
 Let's just get this out of the way. No matter how you look at it, good software development is _expensive_. There's simply no way around it. The tale of the single coder pumping out a full-fledged application in a single day is a farce.

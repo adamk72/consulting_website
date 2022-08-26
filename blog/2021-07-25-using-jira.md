@@ -20,6 +20,8 @@ Jira is a powerful and highly customizable software project management tool. Bec
 6. Add comments, screenshots, and document and web links like crazy.
 7. Use @mentions vigorously.
 
+<!--truncate-->
+
 ## ⚠️ What _doesn't_ need to go in Jira
 
 If you're developer, pretty much everything you do needs to be recorded in Jira. If you're working, you're working on a Jira issue, not some abstracted thought.

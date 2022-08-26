@@ -14,6 +14,8 @@ A lot of my sense of guilt has come from the sorts of experiences like these I�
 
 How wrong I’d been on that.
 
+<!--truncate-->
+
 I’ve been blamed for a lot of things, mostly things that I had no control over. As a nine year old boy at school, I saw some other kids run away from the window of our second story classroom. Curious, I glanced out the window only to see a teacher down below suddenly accusing me of who-knows-what. My first detention ever.
 
 Decades later, in a full time job, I highlighted a potential problem in the computer system and proposed a solution. “No, we’re not going to implement that change. We have better things to do.” Mind you, they hired me for exactly this sort of troubleshooting.
