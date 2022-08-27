@@ -18,4 +18,3 @@ category: [Speaking]
 </ol>
 <p>We haven't even touched on the structure of sentences. Just keeping word choice in mind will often drive the use of grammar. So keep words in mind at all time.</p>
 <p>Words. They make a difference.</p>
-<p><img src="images/article_images/thanks-1804597_1920.jpg" width="473" height="317" /></p>
