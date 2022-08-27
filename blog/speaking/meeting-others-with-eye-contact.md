@@ -11,7 +11,7 @@ category: [Speaking]
 <p>What I've noticed over the years in networking and business meetings is almost an inverse problem that I had — people are <em>too</em> focused on eye contact. Not in a creepy way, but in an exclusitory way. </p>
 
 <p>When your engaged in a circle of folks at a networking event or around a table in a meeting room, make sure that you engage with <em>everyone. </em>If you're speaking, look not only at the main target of your comments, but also glance around at the other folks, giving them at least a micro-second of empathic connection with your eyes. What I often observe is that the speaker of the moment cannot take their eyes off one person, almost forgetting other people are around them.</p>
-<p>This is what I mean by eye contact being used in a exclusitory way. Instead, by at least scanning the other observers you become inclusitory. The benefits are:</p>
+<p>This is what I mean by eye contact being used in a exclusionary way. Instead, by at least scanning the other observers you become inclusionary. The benefits are:</p>
 <ol>
 <li>You can see the state of your listeners; are you boring them? Exciting them? Their micro-expressions will tell you legions.</li>
 <li>You give yourself a bit of break from staring at the same person; likewise, you give the person your staring at a break and an reason for them too to look at the other folks.</li>
@@ -22,5 +22,6 @@ category: [Speaking]
 <p>Links:</p>
 <ul>
 <li>[NSFW] Mark Mason is a self-development guru who focuses on the dating scene. Even though his comments here are geared toward men attracting women, I think they readily apply even to stage and business speaking. Plus, he's pretty damn funny. <a href="https://markmanson.net/the-levels-of-eye-contact">https://markmanson.net/the-levels-of-eye-contact</a></li>
-<li>Exclusitory defined: https://www.thefreedictionary.com/exclusionary</li>
+<li>Exclusionary defined: <a href="https://www.thefreedictionary.com/exclusionary">https://www.thefreedictionary.com/exclusionary</a></li>
+<li>Legion defined: <a href="https://www.thefreedictionary.com/legion">https://www.thefreedictionary.com/legion</a></li>
 </ul>
