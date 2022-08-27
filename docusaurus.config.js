@@ -66,12 +66,6 @@ const config = {
           src: "img/flipped_imbr_icon.svg",
         },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "intro",
-          //   position: "left",
-          //   label: "Tutorial",
-          // },
           { to: "/resume", label: "Resume", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
         ],
@@ -126,7 +120,7 @@ const config = {
       },
     }),
     plugins: [
-      'docusaurus-plugin-sass',
+      'docusaurus-plugin-sass', require.resolve("@cmfcmf/docusaurus-search-local")
     ]
 };
 
