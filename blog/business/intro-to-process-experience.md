@@ -18,8 +18,6 @@ There's a sort of "meta-experience" that gets lost in the shuffle of doing work 
 
 I've been mulling over this concept recently, having joined a new company recently that is still going through some growing pains. There are many departments, each with its own needs but not necessarily skilled in the art of Experience Design. As with any company, there are plenty of creative people, but not everyone is a Design Thinker.:w
 
-
-
 <!--
 
 Each time I start with a new company, I quickly take note of what systems, tools, and processes they have in place. Inevitably, regardless of the size of the company, there's room for improvement.
