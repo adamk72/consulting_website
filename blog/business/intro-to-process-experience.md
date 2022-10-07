@@ -16,7 +16,7 @@ These \*Xs cover a lot of ground &emdash; but one thing I've noticed that is tha
 
 There's a sort of "meta-experience" that gets lost in the shuffle of doing work for a company.
 
-I've been mulling over this concept recently, having joined a new company recently that is still going through some growing pains. There are many departments, each with its own needs but not necessarily skilled in the art of Experience Design. As with any company, there are plenty of creative people, but not everyone is a Design Thinker. 
+I've been mulling over this concept recently, having joined a new company recently that is still going through some growing pains. There are many departments, each with its own needs but not necessarily skilled in the art of Experience Design. As with any company, there are plenty of creative people, but not everyone is a Design Thinker.:w
 
 
 
