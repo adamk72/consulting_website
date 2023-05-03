@@ -19,7 +19,7 @@ category: [Speaking]
 - Write some more.
 - Do more research and more writing. Continually go deeper.
 - Trim. Parse. Pick favorites. Pick a theme. Pick a flavor.
-- Do a 1st draft -- the writing before was not a draft. It was just thinking on paper anyway.
+- Do a 1st draft &mdash; the writing before was not a draft. It was just thinking on paper anyway.
 - Daydream.
 - Either keep going, <em>or</em> throw it all out and start over. If you keep going, it's time to get serious.
 - Read your 1st draft out loud, standing up.

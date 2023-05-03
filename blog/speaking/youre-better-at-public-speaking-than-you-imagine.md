@@ -8,7 +8,7 @@ category: [Speaking]
 
 <p>Today, an acquaintance of mine gave a statement of thanks and gratitude at the end of a networking event we were both attending. I spoke with him after, and he said he was "nervous" and "shaking" and this his voice was "warbling," and made many other comments about how poorly he did.</p>
 <p>He did fine. Excellent, even, considering the applause that came from the group (and my own opinion!). Yet, he was still mildly dismissive of my "good job!" congratulations.</p>
-<p>I see this all the time -- and often did it myself -- and it hits me that maybe (for some people) the problem with getting on stage is less the fear of embarrassing ourselves in front of each other than it is embarrassing ourselves -- in front of <em>ourselves.</em></p>
+<p>I see this all the time &mdash; and often did it myself &mdash; and it hits me that maybe (for some people) the problem with getting on stage is less the fear of embarrassing ourselves in front of each other than it is embarrassing ourselves &mdash; in front of <em>ourselves.</em></p>
 
 <!--truncate-->
 

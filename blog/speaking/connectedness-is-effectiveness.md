@@ -6,7 +6,7 @@ tags: [speaking, business]
 category: [Speaking]
 ---
 
-<p>Less about about public speaking, more about being connected with your fellow human being -- which, really you should be shooting for when you're giving a presentation or speech anyway. But more specifically, when it comes to the work environment:</p>
+<p>Less about about public speaking, more about being connected with your fellow human being &mdash; which, really you should be shooting for when you're giving a presentation or speech anyway. But more specifically, when it comes to the work environment:</p>
 <blockquote class="inlinequote">
 <p>Connectedness is Effectiveness</p>
 </blockquote>

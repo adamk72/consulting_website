@@ -36,5 +36,5 @@ category: [Quotes]
 <dd>Moving from one idea to another without necessarily providing adequate or logical context. </dd>
 </dl>
 <p>Within each of the Cogs, there are more refined considerations a speaker should keep in mind: Are you over-generalizing? Speaking about a complicated topic to a lay audience? Has the audience reached a point of exhaustion? (Prevalent in extended multi-day conferences, for example.) The number of factors that impact how an audience receives your message are as innumerable as there are neurons in our heads. Luckily, us humans do have some level of predictability; the Greeks saw this over two thousand years ago with they codified the modes of rhetoric, giving speakers a common point of view to consider their topic, their audience, and their own personal motivations.</p>
-<p>The best thing to remember is simply this: Your audience are not cogs -- they're humans and as fallible as you are. So keep your audience's cognitive load in mind (as well as the other cogs) as you step up onto stage!</p>
+<p>The best thing to remember is simply this: Your audience are not cogs &mdash; they're humans and as fallible as you are. So keep your audience's cognitive load in mind (as well as the other cogs) as you step up onto stage!</p>
 <p> </p>

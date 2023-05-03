@@ -118,7 +118,7 @@ What you should see in a statement of work are enough details to satisfy you tha
 
 The shop should be fairly specific in what they will and _won't_ do. What they won't do is just as important and usually means two things: You're protected from developers doing miscellaneous work that isn't really needed and the shop can push back on you if you try to insist on adding new features or functions that weren't anticipated the beginning of the project.
 
-The statement of work will also clearly state the deliverables to be handed over at the end of the project. This should include at the very least the code base, documentation, and if applicable items like configuration and security files. Again, the specifics should be enough, but not overly detailed -- no company can tell you everything up front; if they could, they should charge you a flat rate for cost.
+The statement of work will also clearly state the deliverables to be handed over at the end of the project. This should include at the very least the code base, documentation, and if applicable items like configuration and security files. Again, the specifics should be enough, but not overly detailed &mdash; no company can tell you everything up front; if they could, they should charge you a flat rate for cost.
 
 ### Notes on Complexity
 

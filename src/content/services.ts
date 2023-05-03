@@ -11,7 +11,7 @@ const services = [
                 {/* <ul>
                     <li>I once worked for a multi-million dollar manufacturing company that didn't know they didn't have a product lifecycle.</li>
                     <li>I once worked for company that saw room for improvement, but were concerned it would take too much money and time to change.</li>
-                    <li>I once worked for a software company that spent two extra hours on each daily build cycle because of manual steps which could have been replaced by -- you guessed it -- software.</li>
+                    <li>I once worked for a software company that spent two extra hours on each daily build cycle because of manual steps which could have been replaced by &mdash; you guessed it &mdash; software.</li>
                 </ul> */}
 
             </>
@@ -22,7 +22,7 @@ const services = [
         imageUrl: 'img/software_data.png',
         description: (
             <>
-                Even for technical founders, it's hard to see if your best laid plans are actually being implemented. Whether you've hired an internal team or outsourcing to a dev shop, you need to be confident that the software systems -- both in-house and for release to the general public -- are sound, secure, and scalable.
+                Even for technical founders, it's hard to see if your best laid plans are actually being implemented. Whether you've hired an internal team or outsourcing to a dev shop, you need to be confident that the software systems &mdash; both in-house and for release to the general public &mdash; are sound, secure, and scalable.
             </>
         ),
     },

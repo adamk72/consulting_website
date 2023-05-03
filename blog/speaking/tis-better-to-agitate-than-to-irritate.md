@@ -12,6 +12,6 @@ category: [Speaking]
 <p><strong><em>verb: </em>to campaign to arouse public concern about an issue in the hope of prompting action.</strong></p>
 <p>and <em><strong>irritate</strong> </em>is defined as:</p>
 <p><strong><em>verb: </em>to make (someone) annoyed, impatient, or angry.</strong></p>
-<p>We often conflate the two words; indeed one possible definition of agitation is "to make nervous" -- but being nervous is far different from being made angry.</p>
+<p>We often conflate the two words; indeed one possible definition of agitation is "to make nervous" &mdash; but being nervous is far different from being made angry.</p>
 <p>So when you prepare your next passionate, inspiring, speech make your intentions are clear. Do you want to agitate your audience to action? Or irritate them to annoyance?</p>
 <p>The results can be quite different.</p>

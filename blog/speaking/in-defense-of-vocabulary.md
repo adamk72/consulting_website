@@ -42,5 +42,5 @@ category: [Speaking]
 <p>Everything should be made as simple as possible, but no simpler.</p>
 </blockquote>
 <p><cite>Roger Sessions</cite></p>
-<p>(I think he said it better -- and more simple -- than Einstein.)</p>
+<p>(I think he said it better &mdash; and more simple &mdash; than Einstein.)</p>
 <p>Like a hammer or a surgical blade, vocabulary is a tool. Make use of the right tools for the right situation and grow not only your own skills, but also enhance in enlighten the world of those around you. Go out and speak your truth!</p>
