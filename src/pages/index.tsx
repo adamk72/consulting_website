@@ -8,12 +8,17 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className='flex flex-row gap-x-16 justify-center items-center'>
+          <div>
+            <h1 className="hero__title">{siteConfig.title}</h1>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
+          </div>
+          <img src="img/adam_headshot.jpg" width="300px" alt='Headshot of Adam' />
+        </div>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg button--outline"
@@ -27,7 +32,7 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title}`}
