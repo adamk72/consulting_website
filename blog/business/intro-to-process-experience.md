@@ -12,7 +12,7 @@ Developer Experience: Creating tools and systems that make developing software a
 
 All of these \*Xs are efforts to improve how humans engage with our modern world. The benefits are real, and the joy of using a system without fretting, stressing, or hitting speed bumps is a worthwhile endeavor in its own right.
 
-These \*Xs cover a lot of ground &emdash; but one thing I've noticed that is that ironically enough, are often not applied to the very people that are designing and implementing these experiences. That is, it is quite often to see that a UX team may not apply their own UX principles to themselves! CX folks may be their own worst customers and DevX people will often have the worst tooling for themselves compared to what they are offering.
+These \*Xs cover a lot of ground &mdash; but one thing I've noticed that is that ironically enough, are often not applied to the very people that are designing and implementing these experiences. That is, it is quite often to see that a UX team may not apply their own UX principles to themselves! CX folks may be their own worst customers and DevX people will often have the worst tooling for themselves compared to what they are offering.
 
 There's a sort of "meta-experience" that gets lost in the shuffle of doing work for a company.
 
