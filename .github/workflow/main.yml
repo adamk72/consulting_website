@@ -1,0 +1,13 @@
+uses: ilCollez/ssh-scp-deploy@v1.2.0
+with:
+    host: ${{ secrets.SSH_HOST }} 
+    port: ${{ secrets.SSH_PORT }} 
+    username: ${{ secrets.SSH_USER }} 
+    password: ${{ secrets.SSH_PASSWORD }}
+    files: |
+        *.json
+        public
+        dist
+        lib/**/*.js
+    remote-path: "/var/www/html"
+    clean: true
