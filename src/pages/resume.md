@@ -4,8 +4,11 @@ slug: /resume
 ---
 
 # Adam Kecskes
-It's a messy world out there and a lot gets lost in the effort to "make things better." Regardless of what role I've ever been hired for, I've had a predilection towards organizing, optimizing, and seeking precision. Am I always on target? No. But the effort I put in for a company distinctly gives them huge advantage in terms of getting things done correctly and consistently. Fewer misspellings. Fewer bugs. Clearer processes and documentation. Better defined and useful products. Smarter, more sophisticated, and more self-aware employees. I amplify and magnify the positive aspects of a company, bringing awareness to their full potential.
+It's a messy world out there and a lot gets lost in the effort to "make things better." Regardless of what role I've ever been hired for, I always had a predilection towards organizing, optimizing, and seeking precision.
 
+The effort I put in for a company distinctly gives them huge advantage in terms of getting work done correctly and consistently. This can range from the mundane things like fewer misspellings and more clear processes and documentation, fewer bugs, higher quality output, and actionable metrics all the way to more well defined and useful products and overall smarter, more sophisticated, and more self-aware employees.
+
+I amplify and magnify the positive aspects of a company, bringing awareness and helping them grow into their full potential.
 
 _For most companies, the title noted is the last title I held with that company._
 
@@ -17,10 +20,11 @@ _For most companies, the title noted is the last title I held with that company.
 Apr 2018 - Present @ _Austin, TX_
 
 - Managerial training and coaching, helping C-suite and VP teams better communicate with their org.
-- Operational excellence, such as demonstrating opsec practices and doing high-level fiscal analysis.
-- Project management services, including setting up and educating teams on best practices.
-- Implementing knowledge management services that support greater discovery and usability.
+- Provide operational services, such as improving communication skills, demonstrating better opsec practices, and doing high-level fiscal analysis.
+- Project management services, including doing early-term project time and cost analysis and educating teams on best practices.
+- Implement knowledge management services that support greater discovery and usability.
 - Provide interviewing services for technical roles, especially software development.
+- Get sense of how I work through my PDF, <a target="_blank" href="Truly Professional Instant Messaging (with Slack!).pdf">Truly Professional Instant Messaging (with Slack!)</a>&nbsp;🔗.
 
 ### Phi Labs Global ~ Product Operations Manager
 
@@ -41,9 +45,8 @@ Apr 2021 - Present @ _Austin, TX_
 
 - Developed accurate time and cost estimates for potential clients, ensuring a successful bidding process.
 - Cultivated strong relationships with active clients to ensure their project goals were met and exceeded expectations.
-- Led a team of 4-5 developers in the implementation of Ethereum and Cosmos based blockchain technologies.
-- Authored core UI code using TypeScript, React, and Tailwind CSS frameworks to deliver exceptional project outcomes.
-
+- Led a team of 4-5 developers in the implementation of projects focused on Ethereum and Cosmos based blockchain technologies.
+- Authored core UI code using TypeScript, React, and Tailwind CSS frameworks to deliver rapid project solutions.
 
 ### CESCO Magnetics ~ ERP Solutions Consultant
 
@@ -79,8 +82,8 @@ Oct 2014 – Mar 2015 @ _Austin, TX_
 Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 - Successfully implemented Agile/DevOps system and project management methodology for 100+ developers, resulting in the completion of three projects and saving millions of dollars by discontinuing unnecessary projects based on data analysis.
+- Provided competitive analysis services for camera user experience.
 - Improved metrics tracking, leading to better decision-making and resource allocation, ultimately increasing efficiency and productivity.
-
 
 ### Viva! Vision, Inc. ~ Director of Software Development & IT Operations
 
@@ -98,7 +101,7 @@ Dec 2005 - Sep 2010 @ _San Diego, CA_
 
 Feb 2003 - Dec 2005 @ _San Diego, CA_
 
-- Developed C/C++ Feature Phone UI and provided buildmaster backup support using Perforce.
+- Developed C/C++ Feature Phone UI and provided build master backup support using Perforce.
 - Improved overall output by establishing coding standards in liaison with the UI/UX design group.
 - Analyzed build times to increase productivity, reducing raw build time from 4 hours to 30 minutes through code refactoring and dependency fixes.
 - Managed joint quality and user experience testing committee tasked with finding and implementing upfront testing strategies.
@@ -140,12 +143,12 @@ Mar 1996 - Feb 1997 @ _San Diego, CA_
 
 ---
 
-## Developer Proficiencies
+## Software Developer Proficiencies
 
 ### Present
 
-- **Frontend**: TypeScript, plus React, Vue, and Next.js, using Tailwind and Sass for CSS. 
-- **Backend**: Node.js (with Express), PostgreSQL (with TypeORM), StrapiCMS, and Rust (for blockchains) with working knowledge of AWS (mainly S3) and GCP (Cloud Storage, Google App Engine, and Google SQL).
+- **Frontend**: TypeScript plus React, Vue, and Next.js, using Tailwind and Sass for CSS. 
+- **Backend**: Node.js (with Express), PostgreSQL (with TypeORM), StrapiCMS, and Rust with working knowledge of AWS (mainly S3) and GCP (Cloud Storage, Google App Engine, and Google SQL).
 - _Supplementary_: VBA, Google App Scripts, git, GitHub Actions.
 ### Past
 - C, C++, Objective-C, C#, Java, PHP,  MySQL, Joomla.

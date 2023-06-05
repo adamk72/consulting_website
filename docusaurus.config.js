@@ -63,7 +63,7 @@ const config = {
           src: "img/flipped_imbr_icon.svg",
         },
         items: [
-          { to: "/resume", label: "CV", position: "left" },
+          { to: "/resume", label: "Resume", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
         ],
       },
