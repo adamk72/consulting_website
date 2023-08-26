@@ -7,6 +7,17 @@
   gap: 4rem;
 }
 
+.documents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  gap: 4rem; 
+}
+
+
+
 hr { 
   width: 85%;
 }
