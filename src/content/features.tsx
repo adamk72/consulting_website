@@ -1,6 +1,7 @@
 import React from 'react'
+import { FeatureItem } from '../components/HomepageFeatures/features';
 
-const features = [
+export const features: FeatureItem[] = [
     {
         title: 'Focus on What Matters',
         imageUrl: 'img/flow.png',
