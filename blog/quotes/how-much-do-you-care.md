@@ -1,5 +1,5 @@
 ---
-title: How much do you care?
+title: How Much do You Care?
 author: Adam Kecskes
 author_title: Speaking & Leadership Advisor
 author_url: https://kecskes.net

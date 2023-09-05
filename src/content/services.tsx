@@ -8,12 +8,6 @@ const services = [
             <>
                 Despite the myriad of best practices that are purported to provide the best results for a given lifecycle, the reality is that what works for one company doesn't always suffice for another.
                 An organization's unique culture, history, and future plans can make a world of difference in how its product or project or manufacturing life cycles perform.
-                {/* <ul>
-                    <li>I once worked for a multi-million dollar manufacturing company that didn't know they didn't have a product lifecycle.</li>
-                    <li>I once worked for company that saw room for improvement, but were concerned it would take too much money and time to change.</li>
-                    <li>I once worked for a software company that spent two extra hours on each daily build cycle because of manual steps which could have been replaced by &mdash; you guessed it &mdash; software.</li>
-                </ul> */}
-
             </>
         ),
     },

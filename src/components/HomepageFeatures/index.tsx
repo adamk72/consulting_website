@@ -20,7 +20,6 @@ export default function HomepageFeatures(): JSX.Element {
             ))}
           </div>
         </div>
-
       </section>
       <section>
         <div className="container">

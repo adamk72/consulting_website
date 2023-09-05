@@ -11,6 +11,8 @@ _(and yes, I know, this has very little to do with sprints directly)_
 Easily the biggest hindrance to a successful project is in-fighting and finger-pointing. This isn't a game, nor is it life-or-death. It's a project. We're very smart people trying to solve some very complex problems.
 Mistakes will be made. No one will die. Money, on the other hand, may be lost. Let's not let it get to that. Paychecks are nice.
 
+<!--truncate-->
+
 Our job is to mitigate the potential for mistakes to happen. Ever accidentally delete an in-production database? I have (and I'll tell the story some other time). Two things could have mitigated that (aside from my making a powerfully wrong assumption): 1) Limiting permissions or installing a 'safety catch' (i.e.: forcing function) in the UI and 2) Backups.
 We need to think of criteria such as those that we can put in place today so that tomorrow will be less painful for us.
 

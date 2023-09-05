@@ -2,7 +2,6 @@ import React from 'react'
 import clsx from 'clsx';
 import { Tooltip } from 'react-tooltip'
 
-
 export type DocumentItem = {
   title: string | JSX.Element;
   subtitle: string | JSX.Element;
