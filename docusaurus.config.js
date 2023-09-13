@@ -46,7 +46,6 @@ const config = {
           customCss: [
             require.resolve('./src/css/decorators.scss'),
             require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/grids.css'),
           ],
         },
       }),
