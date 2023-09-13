@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Adam Kecskes Consulting",
+  title: "High-Performance Engineering Management",
   tagline: "Less Effort, Better Results",
   url: "https://kecskes.net",
   baseUrl: "/",

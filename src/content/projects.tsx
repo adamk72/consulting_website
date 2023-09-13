@@ -2,7 +2,7 @@ import React from 'react'
 export const projects: { title: string, content: string | JSX.Element; }[] = [
   {
     title: 'Defense Contractor Logistics Planning Application',
-    content: <>A last minute five week engagement, I managed a small, high-preforming team to develop a prototype website and backend running on GCP that served a complex mathematical modeling system for managing logistics for the US military. 
+    content: <>A last minute five week engagement, I led a small, high-preforming team to develop a prototype website and backend running on GCP that served a complex mathematical modeling system for managing logistics for the US military. Stepped in as TypeScript developer as needed.
     <br/>
     <br/>
     Technologies included:

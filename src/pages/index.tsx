@@ -19,13 +19,6 @@ function HomepageHeader() {
           </div>
           <img src="img/adam_headshot.jpg" width="300px" alt='Headshot of Adam' />
         </div>
-        {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg button--outline"
-            to="services/">
-            See My Services
-          </Link>
-        </div> */}
       </div>
     </header>
   );
