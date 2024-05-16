@@ -3,7 +3,7 @@ title: Working with Adam as PM
 authors: akecskes
 tags: [project management, communication, work style]
 ---
-This document highlights how I work and manage teams and projects. I wrote this originally for a couple of teams that whose members were new to each other; these suggestions were guides and by making myself the locus of attention, they could debate with me rather than each other on any changes they wanted.
+This document highlights how I work and manage teams and projects. I wrote this originally a few years ago for teams whose members were new to each other; these suggestions acted as a guide to understanding my perspectives. I know that everyone has different points of view on how to run a project. By making myself the locus of attention, they could debate with me about the details and we could come to a consensus that worked for everyone.
 
 &mdash; Adam Kecskes
 
