@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconsulting_website=self.webpackChunkconsulting_website||[]).push([[4099],{2755:s=>{s.exports=JSON.parse('{"label":"work style","permalink":"/blog/tags/work-style","allTagsPath":"/blog/tags","count":2}')}}]);

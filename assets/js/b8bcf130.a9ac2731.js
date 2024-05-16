@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconsulting_website=self.webpackChunkconsulting_website||[]).push([[4499],{2583:e=>{e.exports=JSON.parse('{"label":"figure of speech","permalink":"/blog/tags/figure-of-speech","allTagsPath":"/blog/tags","count":1}')}}]);

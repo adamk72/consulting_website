@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconsulting_website=self.webpackChunkconsulting_website||[]).push([[7073],{5042:s=>{s.exports=JSON.parse('{"label":"symposium","permalink":"/blog/tags/symposium","allTagsPath":"/blog/tags","count":1}')}}]);

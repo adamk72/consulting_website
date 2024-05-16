@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconsulting_website=self.webpackChunkconsulting_website||[]).push([[4524],{1461:s=>{s.exports=JSON.parse('{"label":"sdlc","permalink":"/blog/tags/sdlc","allTagsPath":"/blog/tags","count":1}')}}]);

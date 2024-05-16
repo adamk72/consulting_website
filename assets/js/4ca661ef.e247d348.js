@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconsulting_website=self.webpackChunkconsulting_website||[]).push([[9913],{1482:e=>{e.exports=JSON.parse('{"label":"culture","permalink":"/blog/tags/culture","allTagsPath":"/blog/tags","count":2}')}}]);
