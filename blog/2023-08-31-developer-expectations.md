@@ -53,7 +53,7 @@ Okay, with that out of the way, let’s start with the easy thing, getting commu
 - No warnings or errors for lint, the browser, interpreter, or compiler before committing/merging (without explanation).
 - Use a code spelling check extension. You’ll avoid a ton of basic mistakes and improve your debugging because you won’t miss that one misspelled variable. 
 - No hard coded, “magic” values.
-  - Pull client/customer text out of the code and add it as a part of an I18N file, even if it’s only for a single language.
+  - Pull client/customer text out of the code and add it as a part of an I18N file, even if it’s only for a single language _[ed: this is particularly useful for doing spelling and grammar checks by someone who isn't on the development team]_
   - Create config files for things like maximums, minimums, colors, and other things that the client might change their mind on.
   - Don’t make these (or any) files monolithic.
 - Files less than 200 lines (without a good reason for going higher).
@@ -85,9 +85,9 @@ Okay, with that out of the way, let’s start with the easy thing, getting commu
 - Avoid setting things to `null`. Study Rust for the how, and look up the “billion dollar mistake” for why.
 - Learn to use `git` for more than just committing, pulling, and pushing. It’s super-useful as a development tool in its own right. But for `git` usage in general:
 - Be conscientious of your commit messages; other people read them.
-- Commit small, commit often.
-- Set your CI/CD systems up so that issues are auto-closed when the merge happens so you don’t have to remember to do it manually. It saves everyone a lot of time not asking, “Hey, did you really get to this?” 
-- 
+  - Commit small, commit often.
+  - Set your CI/CD systems up so that issues are auto-closed when the merge happens so you don’t have to remember to do it manually. It saves everyone a lot of time not asking, “Hey, did you really get to this?” 
+
 There’s way more I could write on this topic; but other, better, developers have already done so. Go out and read books and Internet articles on coding best practices and then implement those practices. Teach others while you’re at it. Experiment — Even feel free to experiment with new ideas in an ongoing project. As long as it’s vetted by the team or the wider development community, it’s probably better than the overly rudimentary copy-and-post code you’ve been doing.
 ## Final Expectations
 Ultimately, regardless of your programming skill level, what I expect from developers is professionalism. No coder does development in true isolation; if you’re on a paid project, you need to step up and make coding a profession, not a hobby. 
