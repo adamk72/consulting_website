@@ -3,14 +3,18 @@ title: Curriculum Vitae
 slug: /resume
 ---
 
-# Adam Kecskes
-It's a messy world out there and a lot gets lost in the effort to "make things better." Regardless of what role I've ever been hired for, I always had a predilection towards organizing, optimizing, and seeking precision.
+# Adam Kecskes &mdash; Engineering and Operations Management
+I see myself as a force multiplier, excelling in bringing the best in teams and hiring the best as needed. Over the past 25 years, I have developed a series of life-tested heuristics for leading technical projects of any complexity.
 
-The effort I put in for a company distinctly gives them huge advantage in terms of getting work done correctly and consistently. This can range from the mundane things like fewer misspellings and more clear processes and documentation, fewer bugs, higher quality output, and actionable metrics all the way to more well defined and useful products and overall smarter, more sophisticated, and more self-aware employees.
+My approach to development and management is about professionalizing the fun and challenging parts of software engineering while anticipating and avoiding or removing the dark patterns and obstacles that hinder the success of my teams, our customers, and the organization.
 
-I amplify and magnify the positive aspects of a company, bringing awareness and helping them grow into their full potential.
+I’m focused on recognizing and dignifying the needs of clients and contributors alike while sparking a sense of curiosity through holistic and lateral thinking. I favor well-proven patterns and practices and the creation of code and systems that are robust, adaptable, and configurable for both internal and client/customer needs.
 
-_For most companies, the title noted is the last title I held with that company._
+I have three creeds that drive my vision of a successful team, project, or company:
+
+1. We don't blame, we solve _(and when we solve, we do it at the root level)_.
+2. The customer will always change their mind at the last minute, so plan for it.
+3. Communication and collaboration are ongoing — _and very much human_ — activities.
 
 ---
 ## Leadership and Technical Roles
@@ -19,11 +23,9 @@ _For most companies, the title noted is the last title I held with that company.
 
 Apr 2018 - Present @ _Austin, TX_
 
-- Managerial training and coaching, helping C-suite and VP teams better communicate with their org.
-- Provide operational services, such as improving communication skills, demonstrating better opsec practices, and doing high-level fiscal analysis.
-- Project management services, including doing early-term project time and cost analysis and educating teams on best practices.
-- Implement knowledge management services that support greater discovery and usability.
-- Provide interviewing services for technical roles, especially software development.
+- _Defcon AI/Zaelot Consulting_: Led a small, high-performing team to develop a prototype website using Vue and a Python/Django backend running on GCP that served a complex mathematical modeling system for managing logistics for the US military. Stepped in as TypeScript developer as needed.
+- _Axon Consulting_: Provided hiring and project management services for a modernization project, moving a trust verification service originally using decade-old PHP code over to Vue and Python on GCP to improve maintainability, performance, and customer usability.
+- _Various_: Provided interviewing services for technical roles, especially in software development; offered leadership consulting and coaching; trained teams to improve agile and continuous delivery practices.
 - Get sense of how I work through my PDF, <a target="_blank" href="Truly Professional Instant Messaging (with Slack!).pdf">Truly Professional Instant Messaging (with Slack!)</a>&nbsp;🔗.
 
 ### Phi Labs Global ~ Product Operations Manager
@@ -32,10 +34,9 @@ Apr 2018 - Present @ _Austin, TX_
 
 Sep 2022 - Apr 2023 @ _Austin, TX_
 
-- Established technical product management office and streamlined processes to improve interdepartmental collaboration and task execution.
-- Developed a cross-functional work management system that facilitated effective communication and workflow across departments.
-- Streamlined processes and improved alignment of all departments, resulting in increased productivity and efficiency.
-- Wrote the basis for the [Area-52.io](https://area-52.io/) Cosmwasm training website, including the first course.
+- This US-European company had been struggling with a “spreadsheets and emails” model of doing business; brought it up to become a more professionally run organization using Monday.com for business development and sales management and Jira for software development, streamlining processes to improve interdepartmental communication and task execution.
+- In doing so, provided the company with its first real look at a viable and collaborative forecast for the release of its main product. 
+- Wrote the initial React code base for [Area-52.io](https://area-52.io/), a Rust training website, including its first course.
 
 ### AktaryTech ~ Director of Service Delivery
 
@@ -43,10 +44,9 @@ Sep 2022 - Apr 2023 @ _Austin, TX_
 
 Apr 2021 - Present @ _Austin, TX_
 
-- Developed accurate time and cost estimates for potential clients, ensuring a successful bidding process.
-- Cultivated strong relationships with active clients to ensure their project goals were met and exceeded expectations.
-- Led a team of 4-5 developers in the implementation of projects focused on Ethereum and Cosmos based blockchain technologies.
-- Authored core UI code using TypeScript, React, and Tailwind CSS frameworks to deliver rapid project solutions.
+- As part of this small company, provided multi-hat services including frontend software development using TypeScript, React, and Tailwind CSS frameworks and writing the primary UI for several client projects.
+- Managed and mentored a team of 4-5 developers of various skill levels in development best practices, including creating CD pipelines to provide constant and live progress updates for our clients.
+- Developed time and cost estimates for potential clients based on their respective budgets and needs. Worked to discover if there was a good client-consultant fit to ensure project success.
 
 ### CESCO Magnetics ~ ERP Solutions Consultant
 
@@ -70,20 +70,17 @@ Dec 2016 - Mar 2020 @ _Austin, TX_
 
 Oct 2014 – Mar 2015 @ _Austin, TX_
 
-- Led the creation and management of a new software team to deliver strategic company initiatives.
-- Provided technical expertise to identify and address process weaknesses, minimizing risks in cloud and client services.
+- Provided technical expertise to identify and address process weaknesses, minimizing risks in cloud and client services and improving product management processes in the US, Australia, and Israel.
 - Successfully transitioned the company's primary product from IPv4 to support IPv6 on Amazon AWS EC2 & ELB instances.
 - Facilitated smooth product releases by collaborating with business account teams at major wireless service companies, including Verizon, Sprint, and US Cellular.
 
-
 ### Intel Corporation ~ Operations Program Manager
+
 #### Semiconductor Manufacturing
 
 Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
-- Successfully implemented Agile/DevOps system and project management methodology for 100+ developers, resulting in the completion of three projects and saving millions of dollars by discontinuing unnecessary projects based on data analysis.
-- Provided competitive analysis services for camera user experience.
-- Improved metrics tracking, leading to better decision-making and resource allocation, ultimately increasing efficiency and productivity.
+- Managed the implementation of the PMO office and Agile/DevOps systems for a newly formed IoT-focused division creating a unified workflow using Jira, Jenkins CI/CD, and other tools for over one hundred developers and a half dozen project managers located in the US, France, and Germany.
 
 ### Viva! Vision, Inc. ~ Director of Software Development & IT Operations
 
@@ -91,9 +88,11 @@ Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 Dec 2005 - Sep 2010 @ _San Diego, CA_
 
-- Developed mobile phone apps as the primary UI architect and developer using C++, Java, and Objective-C.
-- Reduced new product release times from 2+ weeks to under one week while doubling DB and client query performance in a six-month project focused on code refactoring, automation, and improving user experience.
-- Saved tens of thousands of dollars per project and streamlined the software team by reducing paid intern content creation staff from 8 to 3, resulting in a leaner and more agile team.
+- Initially hired on as senior software developer, acted as prototype-to-production developer, translating barely working C++ and Java code hacks into consistent and releasable products, incrementally improving the release process as needed, especially eliminating many manual steps.
+- As team lead, managed a team of 6-10 software developers, mentoring extant and hiring new talent.
+- As director, initiated a long-term project resulting in the reduction of new product release times from more than two weeks to under one week while doubling the client application performance. This happened through cross-department collaboration, database enhancements, comprehensive code refactoring and automation, and improving the user experience of the backend administrative services.
+- The last part alone saved several thousands of dollars per project by streamlining the product life cycle and allowing the paid intern content creation staff to be gradually reduced from ten down to three people.
+
 
 
 ### Kyocera Wireless Corp. ~ Sr. Software Engineer Lead
@@ -101,11 +100,9 @@ Dec 2005 - Sep 2010 @ _San Diego, CA_
 
 Feb 2003 - Dec 2005 @ _San Diego, CA_
 
-- Developed C/C++ Feature Phone UI and provided build master backup support using Perforce.
-- Improved overall output by establishing coding standards in liaison with the UI/UX design group.
-- Analyzed build times to increase productivity, reducing raw build time from 4 hours to 30 minutes through code refactoring and dependency fixes.
-- Managed joint quality and user experience testing committee tasked with finding and implementing upfront testing strategies.
-- Part of the hiring committee tasked with ramping up the software team to support a large scale growth product development.
+- Tired of moving targets, established a coding and design standard in liaison with PM, UX, and UI design groups, allowing us to create brand-consistent and well-vetted UIs and reduce the time to market.
+- Meanwhile, reduced raw build times on our C/C++ code base from four hours to under half an hour through code refactoring and dependency corrections, saving tens of thousands of dollars every quarter and almost eliminating the [XKC  D 303](https://xkcd.com/303/) effect between developers.
+- Evolved personal practices for finding and hiring excellent talent while part of the committee to hire over one hundred new developers in only a few months.
 
 ### Qualcomm, Inc. ~ Software Engineer & Project Manager
 
@@ -113,18 +110,30 @@ Feb 2003 - Dec 2005 @ _San Diego, CA_
 
 Feb 1997 - Feb 2003 @ _San Diego, CA_
 
-- Developed a robust product life cycle system that decreased customer care calls, reduced manufacturing and repair waste, and improved the quality of future products.
-- Lead C UI developer for Qualcomm's original smartphone lineup on PalmOS.
-- Provided technical support for the Eudora email client and server applications.
-
+- Prompted by a single support call, started a cascade of project and program improvements encompassing sales, manufacturing, software, hardware, design, testing, repair, and user experience to revamp and improve the product lifecycle to the point where the company was attractive enough to be purchased by Kyocera Wireless.
+- Also, was the lead C UI developer for the original smartphone lineup on PalmOS, working to create a pixel-consistent and user-friendly experience.
+- Learned way too much about email and support call centers while providing technical support for the Eudora email client and server applications.
 
 ### CTS Network Services ~ Customer Support Supervisor
 #### Internet Service Provider
 
 Mar 1996 - Feb 1997 @ _San Diego, CA_
 
-- Managed the technical support team and engaged with the network team to solve outages.
+- Managed the technical support team and engaged with the network team to solve outages and calm down customers when those outages were self-inflicted _(there's a lesson here!)_.
 - Created training courses for new customer support employees.
+
+---
+
+## Software Developer Proficiencies
+
+### Present
+
+- **Frontend**: TypeScript plus React, Vue, and Next.js, using Tailwind and Sass for CSS. 
+- **Backend**: Node.js (with Express), PostgreSQL (with TypeORM), StrapiCMS, and Rust with working knowledge of AWS (mainly S3) and GCP (Cloud Storage, Google App Engine, and Google SQL).
+- **Supplementary**: VBA, Google App Scripts, git.
+- **Dabbled**: Go, Rust, GitHub Actions.
+### Past
+- C, C++, Objective-C, C#, Java, PHP,  MySQL, Joomla.
 
 ---
 
@@ -135,23 +144,15 @@ Mar 1996 - Feb 1997 @ _San Diego, CA_
 - B.A. in Mathematics @ University of California | _San Diego, CA 1996_
 - B.S. in Computer Science @ Coleman University | _La Mesa, CA 1998_
 
+### Language
+
+- CEF B1 in Spanish @ Camino Barcelona | _Barcelona, Spain 2024_
+
 ### Professional Development
 
 - Professional Scrum Master @ Scrum.org | _Austin, TX, 2020_
 - Advanced Communicator & Leadership Awards @ Toastmasters International | _TX & OR_ | 2013-Present
 - Certified Usability Analyst @ Human Factors International | _Hillsboro, OR 2012_
-
----
-
-## Software Developer Proficiencies
-
-### Present
-
-- **Frontend**: TypeScript plus React, Vue, and Next.js, using Tailwind and Sass for CSS. 
-- **Backend**: Node.js (with Express), PostgreSQL (with TypeORM), StrapiCMS, and Rust with working knowledge of AWS (mainly S3) and GCP (Cloud Storage, Google App Engine, and Google SQL).
-- _Supplementary_: VBA, Google App Scripts, git, GitHub Actions.
-### Past
-- C, C++, Objective-C, C#, Java, PHP,  MySQL, Joomla.
 
 ---
 
