@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/flipped_imbr_icon.png",
+  favicon: "/img/flipped_imbr_icon.svg",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "adamk72", // Usually your GitHub org/user name.
