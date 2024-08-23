@@ -2,7 +2,7 @@ import React from 'react'
 export const projects: { title: string, content: string | JSX.Element; }[] = [
   {
     title: 'Defense Contractor Logistics Planning Application',
-    content: <>A last minute five week engagement, I led a small, high-preforming team to develop a prototype website and backend running on GCP that served a complex mathematical modeling system for managing logistics for the US military. Stepped in as TypeScript developer as needed.
+    content: <>A last minute five week engagement, I led a small, high-performing team to develop a prototype website and backend running on GCP that served a complex mathematical modeling system for managing logistics for the US military. Stepped in as TypeScript developer as needed.
     <br/>
     <br/>
     Technologies included:
@@ -32,7 +32,7 @@ export const projects: { title: string, content: string | JSX.Element; }[] = [
   },
   {
     title: 'Refactor of Trust Verification Services Site',
-    content: <>Client sought to modernize a nearly decade-old codebase from PHP to TypeScript and Python wit the desire to improve both performance and usability. I managed a small consulting team in collaboration with the client's product team. Done in phases, the project included a significant code evaluation and review of user expectations, followed by an update of the backend before UI changes started to occur. The infrastructure update alone greatly improved the performance of the site with a nominal amount of effort and impact. Six month engagement.
+    content: <>Client sought to modernize a nearly decade-old codebase from PHP to TypeScript and Python with the desire to improve both performance and usability. I managed a small consulting team in collaboration with the client's product team. Done in phases, the project included a significant code evaluation and review of user expectations, followed by an update of the backend before UI changes started to occur. The infrastructure update alone greatly improved the performance of the site with a nominal amount of effort and impact. Six month engagement.
     <br/>
     <br/>
     Technologies included:
