@@ -100,7 +100,7 @@ Dec 2005 - Sep 2010 @ _San Diego, CA_
 Feb 2003 - Dec 2005 @ _San Diego, CA_
 
 - Tired of moving targets, established a coding and design standard in liaison with PM, UX, and UI design groups, allowing us to create brand-consistent and well-vetted UIs and reduce the time to market.
-- Meanwhile, reduced raw build times on our C/C++ code base from four hours to under half an hour through code refactoring and dependency corrections, saving tens of thousands of dollars every quarter and almost eliminating the [XKC  D 303](https://xkcd.com/303/) effect between developers.
+- Meanwhile, reduced raw build times on our C/C++ code base from four hours to under half an hour through code refactoring and dependency corrections, saving tens of thousands of dollars every quarter and almost eliminating the [XKCD 303](https://xkcd.com/303/) effect between developers.
 - Evolved personal practices for finding and hiring excellent talent while part of the committee to hire over one hundred new developers in only a few months.
 
 ### Software Engineer & Project Manager
@@ -125,13 +125,13 @@ Mar 1996 - Feb 1997 @ _San Diego, CA_
 
 ## Software Developer Proficiencies
 
-### Present
+#### Present
 
 - **Frontend**: TypeScript plus React, Vue, and Next.js, using Tailwind and Sass for CSS. 
 - **Backend**: Node.js (with Express), PostgreSQL (with TypeORM), StrapiCMS, and Rust with working knowledge of AWS (mainly S3) and GCP (Cloud Storage, Google App Engine, and Google SQL).
 - **Supplementary**: VBA, Google App Scripts, git.
 - **Dabbled**: Go, Rust, GitHub Actions.
-### Past
+#### Past
 - C, C++, Objective-C, C#, Java, PHP,  MySQL, Joomla.
 
 ---
