@@ -1,6 +1,6 @@
 ---
 title: Arc of the Universe
-authors: akecskes
+authors: adkSpeaker
 date: 2019-01-21 0:20:15
 tags: [speaking]
 category: [Speaking]

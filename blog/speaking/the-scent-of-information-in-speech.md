@@ -1,6 +1,6 @@
 ---
 title: The "Scent" of Information in Speech
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-30 10:44:07
 tags: [speaking]
 category: [Speaking]

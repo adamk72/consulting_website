@@ -1,6 +1,6 @@
 ---
 title: Acknowledgement in Speech and in Meetings
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-06 8:23:25
 tags: [speaking]
 category: [Speaking]

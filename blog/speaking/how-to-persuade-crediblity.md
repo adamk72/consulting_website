@@ -1,9 +1,6 @@
 ---
 title: 'How to Persuade: Credibility'
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [attitude, credibility, ethos, speaking]
 date: 2018-11-28 21:54:39
 category: [Speaking]

@@ -1,6 +1,6 @@
 ---
 title: Partner Pitches
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-05 13:22:10
 tags: [speaking, business]
 category: [Speaking]

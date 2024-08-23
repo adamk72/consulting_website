@@ -1,9 +1,6 @@
 ---
 title: How to Write a Speech
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [speech-writing, speaking]
 date: 2019-01-06 21:21:08
 category: [Speaking]

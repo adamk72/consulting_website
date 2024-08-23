@@ -1,9 +1,6 @@
 ---
 title: 'Cognitive Cogs - the Mechanisms of Attention'
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [quotes, speaking]
 date: 2018-12-23 8:32:21
 category: [Quotes]

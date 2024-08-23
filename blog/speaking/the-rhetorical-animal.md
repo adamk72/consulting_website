@@ -1,6 +1,6 @@
 ---
 title: The Rhetorical Animal
-authors: akecskes
+authors: adkSpeaker
 date: 2018-12-15 7:41:16
 tags: [speaking]
 category: [Speaking]

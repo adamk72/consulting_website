@@ -1,6 +1,6 @@
 ---
 title: How to Ruin a Conference
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-19 0:05:24
 tags: [speaking]
 category: [Speaking]

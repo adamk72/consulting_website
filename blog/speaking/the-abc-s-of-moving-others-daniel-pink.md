@@ -1,6 +1,6 @@
 ---
 title: The ABC's of Moving
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-18 20:44:43
 tags: [speaking]
 category: [Speaking]

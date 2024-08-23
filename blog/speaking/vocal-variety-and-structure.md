@@ -1,9 +1,6 @@
 ---
 title: How Vocal Variety Can Influence Structure
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [vocal-variety, structure, symposium, speaking]
 date: 2018-12-03 0:23:51
 category: [Speaking]

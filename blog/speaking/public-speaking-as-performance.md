@@ -1,6 +1,6 @@
 ---
 title: Public Speaking as Performance
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-22 18:00:25
 tags: [speaking, quotes]
 category: [Speaking]

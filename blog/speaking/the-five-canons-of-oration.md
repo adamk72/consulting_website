@@ -1,9 +1,6 @@
 ---
 title: The Five Canons of Oration
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [structure, body-language, vocal-variety, delivery, writing, speaking]
 date: 2018-12-09 20:01:32
 category: [Speaking]

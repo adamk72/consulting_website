@@ -7,6 +7,8 @@ draft: true
 
 There are three major problems with the world. More, actually, but as far as I'm concerned at a personal level, these are the ones that bother me the most:
 
+<!-- truncate -->
+
 1. Population
 
 Simply put, we long ago hit a point in our population growth that there are simply too many of us to properly educate in the ways of the world. When populations used to be more isolated (not even as far back as the 20th century) there were opportunities to use a combination of both the culture and higher education (not necessarily colleges) to teach people to actually think for themselves and more importantly, the number of "poor" outliers was as far smaller percentage of the population.

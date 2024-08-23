@@ -1,6 +1,6 @@
 ---
 title: Meeting Others with Eye Contact
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-31 9:41:23
 tags: [speaking, words]
 category: [Speaking]

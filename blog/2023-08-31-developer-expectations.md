@@ -1,25 +1,26 @@
 ---
-title: What I Expect of Developers 
+title: What I Expect of Developers
 authors: akecskes
 tags: [software development, project management, communication, work style]
 ---
-# What I Expect of Developers
 I’ve written this document because, over the past few years, I have encountered one too many situations with developers not living up to their own expectations.
 
 As a developer myself with a couple of decades of experience under my belt, I’ve seen a lot of examples of how code can go wrong and how painful it can be to fix them when the PM comes along with a new feature request or important bug fix. As a project manager I’ve had to deal with the consequences of those poor coding decisions, spending an inordinate amount of time and social and political capital trying to smooth things over when a client gets upset because we went over time and budget.
 
-<!-- truncate -->
+
 You can read this as a Google Doc [here](https://docs.google.com/document/d/1Zk_1ZYAQmJP4XaTYYlvV8LS4hwGvyv2C96C_Vs7wD7c/edit?usp=sharing).
 
-### Too much lost time
+<!-- truncate -->
+
+## Too much lost time
 And why do a lot of projects go over time and budget? Because, inevitably, as I have found, the software was written at a junior level, despite claims by those same developers as being “senior” or “strong intermediate” or whatever title gives them a boost to their ego or salary.
 
 Can you tell I’ve done all that? Point is, you’re probably not as senior (or even intermediate) as you think and the way you write code and interact with the project is a risk factor I’d like to greatly reduce.
 
-### To the real seniors
+## To the real seniors
 If you truly are “senior” (which is a term I don’t like to use, since it’s bloated and ill-defined… let’s say high-performing contributors instead), then you’ll understand these problems. Hopefully, your team doesn’t have these sorts of issues because they can rely on you to be their local mentor, improving their output under your careful watch.
 
-### Keeping it simple
+## Keeping it simple
 I’m not going over the nitty-gritty here. This document is about raising awareness of how I like to interact with developers. I would like to start with one definition that I expect everyone I work with to follow:
 
 

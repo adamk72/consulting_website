@@ -1,6 +1,6 @@
 ---
 title: Connectedness is Effectiveness
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-29 9:29:51
 tags: [speaking, business]
 category: [Speaking]

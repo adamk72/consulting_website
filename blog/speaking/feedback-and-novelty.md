@@ -1,6 +1,6 @@
 ---
 title: Feedback and Novelty
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-01 5:15:56
 tags: [speaking]
 category: [Speaking]

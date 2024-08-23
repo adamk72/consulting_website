@@ -1,6 +1,6 @@
 ---
 title: Be Egoless
-authors: akecskes
+authors: adkSpeaker
 date: 2019-02-09 17:35:15
 tags: [speaking]
 category: [Speaking]

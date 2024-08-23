@@ -1,6 +1,6 @@
 ---
 title: How Meetings Can Ruin Your Credibility 
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-26 9:23:19
 tags: [speaking, business]
 category: [Speaking]

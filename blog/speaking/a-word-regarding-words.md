@@ -1,6 +1,6 @@
 ---
 title: A Word Regarding Words
-authors: akecskes
+authors: adkSpeaker
 date: 2019-01-06 20:49:43
 tags: [speaking]
 category: [Speaking]

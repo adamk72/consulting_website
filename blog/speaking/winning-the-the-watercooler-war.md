@@ -1,6 +1,6 @@
 ---
 title: Winning the the Watercooler War
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-03 8:11:35
 tags: [speaking]
 category: [Speaking]

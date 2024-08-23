@@ -1,6 +1,6 @@
 ---
 title: Chekhov's Gun
-authors: akecskes
+authors: adkSpeaker
 date: 2019-01-01 21:19:14
 tags: [speaking]
 category: [Speaking]

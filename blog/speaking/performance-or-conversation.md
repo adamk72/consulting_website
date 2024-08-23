@@ -1,6 +1,6 @@
 ---
 title: Performance, or Conversation?
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-15 17:24:26
 tags: [speaking]
 category: [Speaking]

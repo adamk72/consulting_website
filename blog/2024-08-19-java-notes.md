@@ -2,15 +2,19 @@
 title: Line by Line Java 
 authors: akecskes
 tags: [java, coding]
-draft: true
 ---
+I'm writing the code out of [Crafting Interpreters](https://craftinginterpreters.com/) and since it's been such a long time since I wrote Java, I'm creating this living document to help me remember some of the more specific details and quirks of the language. Depending on when you read this, it may be less complete than I'd like, but I post it here in any case to help those who might run across it.
 
-# Remembering the Cons
+_Last updated: Aug 22, 2024_
+
+<!-- truncate -->
+
+## Remembering the Cons
 I'm reminded that:
 - You have to nest packages deep in folders like "com/mylastname/myfirstname".
 - The whole `private final` shebang is annoying to keep typing out.
 
-# Line by Line Java
+## Line by Line Java
 ```java
 public class Lox { /* [...] */ }
 //⬆️ class can be accessed by other classes
@@ -132,17 +136,17 @@ import java.util.List;
 import java.util.Map;
 ```
 
-# Java Parts
+## Java Parts
 
-## Misc
+### Misc
 
 It appears if you explicitly add an import for a class in a file that is in the same package, that will dominate any calls in the body of the class with the import. I had this problem when there was an inner "static class Return (val1, val2)" that was imported explicitly, but with a new "class Return (val1)" (only one argument and in a separate file), Intellisense was stuck on trying to call (and fail to match) the static version of the class.
 
-## Classes
+### Classes
 
 Classes are made up of members which are variables and methods, qualified by the private/final/static keywords to determine visibility. A constructor of the same name as the class is used to instantiate to a specific instance using the "new" function.
 
-### Constructors
+#### Constructors
 
 There can be multiple constructors, each with a different call signature. If a constructor has a parameter list, any parameters that have the same name as a class variable need to be prepended with the "this" keyword.
 

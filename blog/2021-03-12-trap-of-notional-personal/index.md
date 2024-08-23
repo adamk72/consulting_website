@@ -1,10 +1,7 @@
 ---
 slug: trap-of-notional-personal
 title: The Trap of Notion Personal if You're a Business 
-author: Adam Kecskes
-author_title: Organizational and Operational Optimizer 
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: akecskes
 tags: [pm-tools]
 ---
 

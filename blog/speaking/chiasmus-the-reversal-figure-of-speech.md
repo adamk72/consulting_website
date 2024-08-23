@@ -1,6 +1,6 @@
 ---
 title: Chiasmus, the Reversal Figure of Speech
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-19 19:22:45
 tags: [speaking, figure of speech]
 category: [Speaking]

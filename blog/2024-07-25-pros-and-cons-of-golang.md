@@ -5,7 +5,11 @@ tags: [golang, go, coding]
 draft: true
 ---
 
+This living document is prompted by my reading and writing to the code out of the _[Writing An Interpreter in Go](https://interpreterbook.com/)_ book. _Last Updated: July 25th, 2024_
+
 First, let's start with a "how to" sort of thing... basically so I can reinforce the Go patterns in my head:
+
+<!-- truncate -->
 
 # Line by Line Go:
 

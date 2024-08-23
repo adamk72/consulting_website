@@ -1,6 +1,6 @@
 ---
 title: In Defense of Vocabulary
-authors: akecskes
+authors: adkSpeaker
 date: 2019-01-06 23:17:01
 tags: [speaking, quotes]
 category: [Speaking]

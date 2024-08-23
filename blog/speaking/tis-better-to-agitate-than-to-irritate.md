@@ -1,6 +1,6 @@
 ---
 title: Tis Far Better to Agitate Than to Irritate
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-17 20:00:40
 tags: [speaking]
 category: [Speaking]

@@ -1,13 +1,13 @@
 ---
-title: Working with Adam as PM
+title: Working with Adam as a PM
 authors: akecskes
 tags: [project management, communication, work style]
 ---
-This document highlights how I work and manage teams and projects. I wrote this originally a few years ago for teams whose members were new to each other; these suggestions acted as a guide to understanding my perspectives. I know that everyone has different points of view on how to run a project. By making myself the locus of attention, they could debate with me about the details and we could come to a consensus that worked for everyone.
+I wrote this originally a few years ago for teams whose members were new to each other; these suggestions acted as a guide to understanding my perspectives. I know that everyone has different points of view on how to run a project. By making myself the locus of attention, the idea was that the team could debate with me about the details and we could come to a consensus that worked for everyone. 
 
 &mdash; Adam Kecskes
 
-# The TL;DR
+## The TL;DR
 
 - My style: "Continuous and automatic communication."
 - My style addendum: "We don't blame, we solve."
@@ -20,7 +20,7 @@ This document highlights how I work and manage teams and projects. I wrote this 
 
 <!--truncate-->
 
-# The Quick
+## The Quick
 
 I have a particular way of managing projects that has served me well with past clients, both small and large. This is an attempt to summarize. For more details, go to the section below titled "The Long."
 
@@ -34,7 +34,7 @@ How I do this is usually through so-called "work-management" tools like Jira, Mo
 
 These aspects assume that the team is responsible and willing to follow up promptly. It does not mean "instantaneous" communication. This system is **inherently asynchronous**.
 
-## "@"-ing people
+### "@"-ing people
 Have a question that pertains to a specific task? Don't Slack/Discord/Email — rather, @ the person that needs to be queried. Were you the target? Answer inside of the related task or thread. In doing so, both of you maintain context for other people who touch that task in the future.
 
 > Corollary: If needed, re-assign the task to the appropriate person. If it's not your job, it's not your job; that's okay. But don't abandon the task. Make sure someone takes care of it.
@@ -46,7 +46,7 @@ Slack and Discord (or phone and video calls) are useful for airing out your thou
 
 Email is just right out. We will only be using it for formal communications, and not for day-to-day efforts. I've shared my thoughts on email on LinkedIn, so I'm not going to share them here: https://www.linkedin.com/pulse/e-mail-killing-your-business-adam-kecskes/.
 
-## Smart tasks
+### Smart tasks
 Tasks are not simply to-do list items. They are objects that have context and details. It is critical that developers and stakeholders alike add details that are appropriate and meaningful. Not perfect, but sufficient.
 
 Add attachments, make comments, create checklists, and link, link, link. Do not be afraid to create another task if necessary. The whole purpose is to get details out of our heads and into the system for everyone to see.
@@ -61,7 +61,7 @@ And always follow the Git axiom of:
 
 The same philosophy applies here as well.
 
-## Links
+### Links
 
 Links create context. Links improve findability. Links boost connectivity. Links help others help you.
 
@@ -69,7 +69,7 @@ You may have noticed I talk a lot about context. What will make our work easier 
 
 Link so other people can learn your thought process and the events that led to the situation you are in where you may need aid — and this helps doubly so in the case where you need to pass the task onto someone else. Either way, you're either making your job easier for yourself or someone else's job easier. Both are better states than working too hard, falling behind, and being (overly-)stressed. Link away!
 
-## Bonus: Transparency
+### Bonus: Transparency
 
 While I keep security top of mind, transparency is as important and is not a conflicting ideology. In fact, I look at transparency as being complementary to security.
 
@@ -79,13 +79,13 @@ How do we share? How do we keep informed? We share by @-ing people, or by adding
 
 Nothing should be hidden, except for particularly sensitive IP (of which you should know about in advance if you have access at all).
 
-### Continuous and Automatic
+#### Continuous and Automatic
 
 To summarize, the system is continuous because as a team, we will be reacting as needed to task-level communications, informed by our use of smart tasks, @-ing people and Slack. It's automatic because the tool keeps our context for us in one place and calls out to interested parties (from the individual to the whole team).
 
 (Honestly, "habitual" is probably a better word than automatic. You tell me.)
 
-# The Long
+## The Long
 
 Made you look. 😆 There is a LOT more to be said about project management best practices. However, we have a project to run and you only have so much time to read.
 One major point to make: This does not work if people don't participate and work as a team. Sounds almost cliche, but it's true:

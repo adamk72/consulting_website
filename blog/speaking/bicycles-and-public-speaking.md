@@ -1,6 +1,6 @@
 ---
 title: Bicycles and Public Speaking
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-02 8:01:03
 tags: [speaking]
 category: [Speaking]

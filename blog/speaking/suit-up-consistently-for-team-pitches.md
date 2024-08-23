@@ -1,6 +1,6 @@
 ---
 title: Suit Up (Consistently) for Team Pitches
-authors: akecskes
+authors: adkSpeaker
 date: 2019-04-03 19:36:10
 tags: [speaking, business]
 category: [Speaking]

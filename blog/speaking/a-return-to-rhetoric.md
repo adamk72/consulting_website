@@ -1,6 +1,6 @@
 ---
 title: A Return to Rhetoric
-authors: akecskes
+authors: adkSpeaker
 date: 2019-03-24 18:20:56
 tags: [speaking]
 category: [Speaking]

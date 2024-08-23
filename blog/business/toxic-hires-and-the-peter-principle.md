@@ -1,6 +1,6 @@
 ---
 title: Toxic Hires and the Peter Principle
-authors: akecskes
+authors: adkSpeaker
 date: 2018-12-15 7:41:16
 tags: [speaking, business, hiring]
 category: [Business]

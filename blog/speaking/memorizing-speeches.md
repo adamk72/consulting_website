@@ -1,9 +1,6 @@
 ---
 title: Memorizing Speeches
-author: Adam Kecskes
-author_title: Speaking & Leadership Advisor
-author_url: https://kecskes.net
-author_image_url: https://www.gravatar.com/avatar/a4eec2622d18594aea04310ae3ec577c
+authors: adkSpeaker
 tags: [memory, speaking]
 date: 2018-12-09 19:52:15
 category: [Speaking]
