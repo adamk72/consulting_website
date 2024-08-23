@@ -10,6 +10,8 @@ Jira is a powerful and highly customizable software project management tool. Bec
 
 <h3>Make it easy for your co-workers NOT to have to ask you questions.</h3>
 
+<!--truncate-->
+
 ## 👍 General Practices
 
 1. You should never be talking about work without also being able to refer to a Jira issue number.
@@ -20,7 +22,6 @@ Jira is a powerful and highly customizable software project management tool. Bec
 6. Add comments, screenshots, and document and web links like crazy.
 7. Use @mentions vigorously.
 
-<!--truncate-->
 
 ## ⚠️ What _doesn't_ need to go in Jira
 

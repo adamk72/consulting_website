@@ -7,11 +7,11 @@ category: [Speaking]
 ---
 
 <p>In my almost twenty years in the mobile and semi-conductor industry, I've never stood around and chatted with co-workers around the watercooler. Either the business I was in simply didn't have water coolers to stand around, or there the water cooler was just located in the most inconvenient of places, like next to the boss's office. So no standing around for me.</p>
+<!--truncate-->
 <p>Metaphorically, speaking I did indeed spend a lot of time standing around the water cooler chatting with my co-workers. Odd as it may sound, I learned a lot about how conversational styles, both good and bad, in such water cooler scenarios &mdash; hallways, kitchenettes, cubicals, empty meeting rooms and the odd actual water-cooler.</p>
 <p>Water cooler chit-chat can be fun. It's part personal, part business, and generally speaking, a relaxing break from the doldrums of daily deliberations. But what happens when water cooler talk goes wrong?</p>
 
 
-<!--truncate-->
 
 
 <p>Sometimes, as much as you like your co-workers, certain topics are either off limits because of politics, religion, or other types of content; boring, because you have don't relate to what they say; or the timing is just bad &mdash; you have to get back to your desk or off the next meetings.</p>
