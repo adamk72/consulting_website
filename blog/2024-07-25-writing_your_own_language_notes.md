@@ -7,6 +7,10 @@ draft: true
 
 As I write the code for an interpreter (from _Writing an Interpreter in Go_), it's got me thinking how I might make my own language. I have lots of opinions on various languages, so what would I do differently?
 
+
+<!-- truncate -->
+
+
 # What I like in languages
 ## Not sure where it first came from, but like it:
 - Assume immutability first. 

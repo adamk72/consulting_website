@@ -8,6 +8,9 @@ category: [Speaking]
 
 <p>Keep this mind when giving a presentation or speech: <em><strong>tis far better to agitate than to irritate</strong>.</em></p>
 
+<!-- truncate -->
+
+
 <p>Per Google, <em><strong>agitate</strong> </em>is defined as:</p>
 <p><strong><em>verb: </em>to campaign to arouse public concern about an issue in the hope of prompting action.</strong></p>
 <p>and <em><strong>irritate</strong> </em>is defined as:</p>

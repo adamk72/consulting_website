@@ -14,11 +14,11 @@ _<h3>Or, When and Why You Should Pay for Notion Team</h3>_
 If you haven't heard of Notion, likely you've been under a rock somewhere. And good for you, keeping safe during this time of Covid-19! 😷
 
 Notion touts itself as an all-in-one workspace, useful to create wikis, track notes, make tables of who-knows-what and a whole host of other features. Think Evernote meets Airtable smashed up with Microsoft OneNote, and MediaWiki, with a pinch of Asana and Trello, plus a lot more. And Notion is hyper-configurable, to boot.
+<!--truncate-->
 
 It's a handy and versatile software suite. But like those other tools just mentioned, there is so much that you can do with Notion that sometimes it can be so overwhelming that you collapse under an avalanche of unorganized notes, links, folders and files.
 If you want to know more, visit https://www.notion.so/. Chances are, you can ramp up pretty quickly. However... this article isn't about the details of what Notion can do. It's about saving yourself a lot of time and effort if you are thinking that Notion might be perfect for your team or business. It might be, but...
 
-<!--truncate-->
 
 ## The Trap that is Notion Personal
 Once you see how much you can do with Notion — and just in the free Personal version — it's tempting to upgrade to the Personal Pro (only $4 a month, after all!) and get all the goodies that come with it, mainly unlimited uploads and unlimited guests.

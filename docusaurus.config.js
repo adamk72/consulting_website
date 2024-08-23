@@ -42,6 +42,7 @@ const config = {
         blog: {
           blogSidebarTitle: "Most recent posts",
           blogSidebarCount: 20,
+          onUntruncatedBlogPosts: "ignore",
         },
         theme: {
           customCss: [

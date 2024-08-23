@@ -9,6 +9,9 @@ category: [Speaking]
 <p>It's not uncommon for a presenter, be it someone in a meeting, or a toastmaster, or a master of ceremonies to use the phrase, "So without further ado..." to transition between sections of an event.<br /><br />It's a bit an overused trope, don't you think? It's also a bit lazy, but I get it. It a clause that sounds just sophisticated enough that we, as speakers, hope that the audience will value us a little bit more. Or, probably more often, we do it because we're uncomfortable making transitions between slides or portions of a meeting and the commonplace nature of the idiom is, well, comfortable.</p>
 <p>So what can you do to replace it with something more original and without feeling too awkward?</p>
 
+<!-- truncate -->
+
+
 
 <p>I suspect most people use the clause for the simple reason of it being a socially acceptable shortcut. Our brains require little brain power to pull it up, get it out, and convey a lot of meaning to our audience. That's what we do as humans.</p>
 <p>Consider instead starting with a Pause (with a capital P!). Let the drama build just for a moment, then say, "Moving on...," or "In the next portion of our meeting," or "I'm excited to get going/move on...." The Pause is a key element to making this work. It establishes a break for the audience and takes advantage of a minor flaw in our psychology... we forget things particularly quickly.</p>

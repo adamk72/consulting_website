@@ -10,6 +10,9 @@ category: [Speaking]
 <p>Did I take things <em>way</em> too seriously when I first started getting into management and leadership roles. <em>Way</em> too seriously.</p>
 <p>Humor goes a long way towards creating powerful relationships and rapport. Don't underestimate it. And seriously, don't take yourself too seriously.</p>
 
+<!-- truncate -->
+
+
 <p>The first meetings I had with external vendors was nerve-wracking. Whether it be in person or over the phone, I wanted to impress, to not slip up, and to look good.</p>
 <p>Humor was out of the question, right? For me, yes.</p>
 <p>When I eventually took on a technical training/sales engineer role, I had to go out and speak to anywhere from twenty to a hundred people at a time. Sweaty palms all day, every day. But the effort taught me something. Humor is okay. In fact, humor in business is awesome.</p>

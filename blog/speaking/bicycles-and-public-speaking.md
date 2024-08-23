@@ -9,6 +9,9 @@ category: [Speaking]
 <p>At whatever age you learn to ride a bike (if you have done so), it's safe to say it's no easy task, at least initially. When you're young, you're own body and pressure from parents and peers gets in the way just as much as learning how a bicycle work does; and when you're older, habits and attitude can be just as inhibiting.</p>
 <p>Yet, once a you pass some magic threshold, it's as if you've always known how to ride. Sure, you're not an expert; you're not going to be doing stunts and you'll stumble here and there, but the hard part is done and a "naturalness" replaces most of the struggles. Why is that? And how does it apply to public speaking?</p>
 
+<!-- truncate -->
+
+
 <p> "Motor Learning" is the key to a person's success in riding a bike. It's less habit and more... ingrained physicality. From the wikipedia article on the topic (<a href="https://en.wikipedia.org/wiki/Motor_learning">https://en.wikipedia.org/wiki/Motor_learning</a>):</p>
 <p><em>"It often involves improving the smoothness and accuracy of movements and is obviously necessary for complicated movements such as speaking, playing the piano, and climbing trees."</em></p>
 <p> </p>

@@ -10,6 +10,9 @@ category: [Speaking]
 <p>Thankfully, partly through the miracle of puberty and then practice through college, I had far less trouble making eye contact with folks; came to understand the cultural norms regarding it as well, just so I didn't overshoot any tender boundaries.</p>
 <p>What I've noticed over the years in networking and business meetings is almost an inverse problem that I had — people are <em>too</em> focused on eye contact. Not in a creepy way, but in an exclusitory way. </p>
 
+<!-- truncate -->
+
+
 <p>When your engaged in a circle of folks at a networking event or around a table in a meeting room, make sure that you engage with <em>everyone. </em>If you're speaking, look not only at the main target of your comments, but also glance around at the other folks, giving them at least a micro-second of empathic connection with your eyes. What I often observe is that the speaker of the moment cannot take their eyes off one person, almost forgetting other people are around them.</p>
 <p>This is what I mean by eye contact being used in a exclusionary way. Instead, by at least scanning the other observers you become inclusionary. The benefits are:</p>
 <ol>

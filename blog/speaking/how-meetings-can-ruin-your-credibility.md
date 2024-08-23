@@ -10,6 +10,9 @@ category: [Speaking]
 <p>Look, we've all been there — the meeting that never seems to end, all the speakers tend to ramble, where the next scheduled group is impatiently knocking on the little glass window in the door, and worst of all, you have no idea what was supposed to happen. When you exit such a meeting, what runs through your mind? I'll bet it's something like, "next time Bob sends me a meeting a request, I'm going to ignore it." </p>
 <p>Yeah, probably a good idea. </p>
 
+<!-- truncate -->
+
+
 
 <p>I've always been flabbergasted by seemingly pointless meetings, having been invited to a voluminous number of them. As far as I tell, historically speaking, most corporate meetings just stem form bad habits. Meetings are trope, a tradition, that has been handed down from when the industrial revolution was in full swing and people wanted to look important to their bosses.</p>
 <p>They wanted to demonstrate credibility.</p>

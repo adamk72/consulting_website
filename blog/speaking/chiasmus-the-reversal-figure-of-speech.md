@@ -13,6 +13,9 @@ category: [Speaking]
 </blockquote>
 <p>But there is a more famous one most US Americans are familiar with...</p>
 
+<!-- truncate -->
+
+
 <blockquote class="inlinequote">
 <p>Ask not what your country can do for you, ask what you can do for your country.</p>
 </blockquote>

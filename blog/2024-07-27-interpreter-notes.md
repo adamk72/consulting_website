@@ -14,6 +14,10 @@ A lexical grammar is _regular_ because, in part, it is a non-nested, determinist
 CFGs have an alphabet of strings and letters [weakly defined] that form valid lexemes that can be used to build expressions. The chart from [CI][1] helps:
 
 
+<!-- truncate -->
+
+
+
 | Terminology	                     |	Lexical grammar |	Syntactic grammar |
 |----------------------------------|------------------|-------------------|
 | The “alphabet” is . . .	→        | Characters       | Tokens            |

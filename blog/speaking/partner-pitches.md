@@ -10,6 +10,9 @@ category: [Speaking]
 <p>"Great! The other person can do all of the work," you think. Not so fast, Slick. You've gotta shoulder some of that responsibility. If you want your pitch, your presentation, your partner to be successful, you have to participate as well. </p>
 <p>While being alone on stage imparts focus and attention from the audience more so than multiple would, having a pair of people on stage can be highly effective in getting your point across. But it only works well if you back each other up. Having another person on stage doing essentially nothing is a distraction. Don't be the distraction!</p>
 
+<!-- truncate -->
+
+
 <p>One key to success in business is collaboration. This is especially true on the stage, when you and a partner are working together to present. Presenting as a pair is not much different than presenting alone; all of the same components apply:</p>
 <ul>
 <li>Write, Rehearse and Repeat. Together. Practicing together is essential.</li>

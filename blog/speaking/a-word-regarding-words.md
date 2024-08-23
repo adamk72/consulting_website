@@ -7,6 +7,9 @@ category: [Speaking]
 ---
 
 <p>Grammar and vocabulary are, unexpectedly, crucial to a successful speech. But you can get away with a very limited range of words and still deliver an oration with all the power, fire, and emotional grandeur of an MLK speech &mdash; or the simple, yet raucous, taboo questioning nature of comedian Sarah Silverman.</p>
+
+<!-- truncate -->
+
 <p>Words are the atoms of the molecules that are sentences. They are the sprinkles on the cake of rhetoric. And other aphorisms. </p>
 <p>When preparing your speech, a few things to consider with regards to words:</p>
 <ol>

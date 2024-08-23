@@ -9,6 +9,9 @@ category: [Business]
 <p>My mother, of all people, use to always say "Screw up, move up." I remember her saying that about politicians when I was a kid and she still says it today. Why is that?</p>
 <p>Part it is what is known as the Peter Principle.</p>
 
+<!-- truncate -->
+
+
 
 <p> Dr. Laurence Peter, for whom the principle is named put it this way:</p>
 <blockquote class="inlinequote">

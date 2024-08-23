@@ -10,6 +10,9 @@ category: [Speaking]
 
 - Think about it.
 - Think about it some more.
+
+<!-- truncate -->
+
 - Do some minor research and think some more.
 - Daydream. Have some conversations on the topic.
 - Write.

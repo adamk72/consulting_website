@@ -10,6 +10,9 @@ category: [Speaking]
 
 <blockquote>"Three of us were accountants, but the fourth was a geo-engineer. We all wore business casual, but he wore sneakers and a t-shirt and a backwards baseball cap that he <em>refused to take off </em>[emphasis from speaker]."</blockquote>
 
+<!-- truncate -->
+
+
 <p>Wow. It's not so much that they disagreed on the mode of dress; what makes this a bad situation is that the forth fellow refused to even accommodate for the situation. Granted, this was a college class (and it sounds like they passed), but what would have happened if the presentation was "for real?"</p>
 
 <p>It'd go badly, I think you can image. Again, not so much the style of dress is the problem, but rather the inconsistency between the entrepreneurs. If they can't manage to act like a team during a pitch, how much of a team will they be when the business ramps up to full speed?</p>

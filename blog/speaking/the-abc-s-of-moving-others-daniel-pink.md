@@ -8,6 +8,9 @@ category: [Speaking]
 
 <p>In Daniel Pink's book, <em>To Sell is Human </em>(Amazon: <a href="https://www.amazon.com/Sell-Human-Surprising-Moving-Others-ebook/dp/B0087GJ8KM">https://www.amazon.com/Sell-Human-Surprising-Moving-Others-ebook/dp/B0087GJ8KM</a>), he writes about the ABC's of moving people; that is, how to persuade and sell to other folks. His ABC's are:</p>
 
+<!-- truncate -->
+
+
 
 <ul>
 <li><strong>A</strong>: Attunement - Getting aligned with another's perspective.</li>

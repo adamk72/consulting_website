@@ -7,6 +7,10 @@ date: 2023-10-12
 
 This list had been long brewing in my mind (for years), but the spark to enumerate my thoughts came after a business dinner where we were discussing the ins-and-outs of good communication practices in business. People forget, I feel, that "business" is a world away from our personal lives, at least in terms of how we interact with one another, yet all too often I find people taking things too personally when at work.
 
+
+<!-- truncate -->
+
+
 This list is software oriented, but I think most of applies to business in general.
 
 1. If I come up with an idea/process that you don't like, show me where I'm wrong and grant me the same courtesy.
