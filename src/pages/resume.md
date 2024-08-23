@@ -28,9 +28,9 @@ Apr 2018 - Present @ _Austin, TX_
 - _Various_: Provided interviewing services for technical roles, especially in software development; offered leadership consulting and coaching; trained teams to improve agile and continuous delivery practices.
 - Get sense of how I work through my PDF, <a target="_blank" href="Truly Professional Instant Messaging (with Slack!).pdf">Truly Professional Instant Messaging (with Slack!)</a>&nbsp;🔗.
 
-### Phi Labs Global ~ Product Operations Manager
+### Product Operations Manager
 
-#### Web and Blockchain Development
+#### Phi Labs Global ~ Web and Blockchain Development
 
 Sep 2022 - Apr 2023 @ _Austin, TX_
 
@@ -38,9 +38,9 @@ Sep 2022 - Apr 2023 @ _Austin, TX_
 - In doing so, provided the company with its first real look at a viable and collaborative forecast for the release of its main product. 
 - Wrote the initial React code base for [Area-52.io](https://area-52.io/), a Rust training website, including its first course.
 
-### AktaryTech ~ Director of Service Delivery
+### Director of Service Delivery
 
-#### Web Development Consulting Services
+#### AktaryTech ~ Web Development Consulting Services
 
 Apr 2021 - Present @ _Austin, TX_
 
@@ -48,9 +48,9 @@ Apr 2021 - Present @ _Austin, TX_
 - Managed and mentored a team of 4-5 developers of various skill levels in development best practices, including creating CD pipelines to provide constant and live progress updates for our clients.
 - Developed time and cost estimates for potential clients based on their respective budgets and needs. Worked to discover if there was a good client-consultant fit to ensure project success.
 
-### CESCO Magnetics ~ ERP Solutions Consultant
+### ERP Solutions Consultant
 
-#### Food Safety Product Manufacturing
+#### CESCO Magnetics ~ Food Safety Product Manufacturing
 
 Nov 2020 – Aug 2021 @ _Georgetown, TX_
 
@@ -64,9 +64,9 @@ Nov 2020 – Aug 2021 @ _Georgetown, TX_
 Dec 2016 - Mar 2020 @ _Austin, TX_
 - Lead a number of public speaking training sessions for various non-profits.
 
-### Digital Turbine ~ Director of IT & Business Operations Manager
+### Director of IT & Business Operations Manager
 
-#### Mobile Application Marketing
+#### Digital Turbine ~ Mobile Application Marketing
 
 Oct 2014 – Mar 2015 @ _Austin, TX_
 
@@ -74,17 +74,17 @@ Oct 2014 – Mar 2015 @ _Austin, TX_
 - Successfully transitioned the company's primary product from IPv4 to support IPv6 on Amazon AWS EC2 & ELB instances.
 - Facilitated smooth product releases by collaborating with business account teams at major wireless service companies, including Verizon, Sprint, and US Cellular.
 
-### Intel Corporation ~ Operations Program Manager
+### Operations Program Manager
 
-#### Semiconductor Manufacturing
+#### Intel Corporation ~ Semiconductor Manufacturing
 
 Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 - Managed the implementation of the PMO office and Agile/DevOps systems for a newly formed IoT-focused division creating a unified workflow using Jira, Jenkins CI/CD, and other tools for over one hundred developers and a half dozen project managers located in the US, France, and Germany.
 
-### Viva! Vision, Inc. ~ Director of Software Development & IT Operations
+### Director of Software Development & IT Operations
 
-#### Mobile Entertainment Software
+#### Viva! Vision, Inc. ~ Mobile Entertainment Software
 
 Dec 2005 - Sep 2010 @ _San Diego, CA_
 
@@ -93,10 +93,9 @@ Dec 2005 - Sep 2010 @ _San Diego, CA_
 - As director, initiated a long-term project resulting in the reduction of new product release times from more than two weeks to under one week while doubling the client application performance. This happened through cross-department collaboration, database enhancements, comprehensive code refactoring and automation, and improving the user experience of the backend administrative services.
 - The last part alone saved several thousands of dollars per project by streamlining the product life cycle and allowing the paid intern content creation staff to be gradually reduced from ten down to three people.
 
+### Sr. Software Engineer Lead
 
-
-### Kyocera Wireless Corp. ~ Sr. Software Engineer Lead
-#### Mobile Phone Manufacturing
+#### Kyocera Wireless Corp. ~ Mobile Phone Manufacturing
 
 Feb 2003 - Dec 2005 @ _San Diego, CA_
 
@@ -104,9 +103,9 @@ Feb 2003 - Dec 2005 @ _San Diego, CA_
 - Meanwhile, reduced raw build times on our C/C++ code base from four hours to under half an hour through code refactoring and dependency corrections, saving tens of thousands of dollars every quarter and almost eliminating the [XKC  D 303](https://xkcd.com/303/) effect between developers.
 - Evolved personal practices for finding and hiring excellent talent while part of the committee to hire over one hundred new developers in only a few months.
 
-### Qualcomm, Inc. ~ Software Engineer & Project Manager
+### Software Engineer & Project Manager
 
-#### Wireless Telecommunications
+#### Qualcomm, Inc. ~ Wireless Telecommunications
 
 Feb 1997 - Feb 2003 @ _San Diego, CA_
 
@@ -114,8 +113,8 @@ Feb 1997 - Feb 2003 @ _San Diego, CA_
 - Also, was the lead C UI developer for the original smartphone lineup on PalmOS, working to create a pixel-consistent and user-friendly experience.
 - Learned way too much about email and support call centers while providing technical support for the Eudora email client and server applications.
 
-### CTS Network Services ~ Customer Support Supervisor
-#### Internet Service Provider
+### Customer Support Supervisor
+#### CTS Network Services ~ Internet Service Provider
 
 Mar 1996 - Feb 1997 @ _San Diego, CA_
 
@@ -158,15 +157,19 @@ Mar 1996 - Feb 1997 @ _San Diego, CA_
 
 ## Volunteer Work
 
-### Cook and Recycling Manager for Potluck in the Park 
+### Technical Consultant 
 
-Mar 2013 - Mar 2014 @ _Portland, OR_
-
-For this non-profit that provided weekly meals for the homeless, cooked and served meals as well as supported the recycling process for all of the discarded packaging.
-
-### Consultant for Outdoor Outreach
-
+#### Outdoor Outreach ~ Leadership training for at-risk youths
 Jul 2009 - Jul 2011 @ _San Diego, CA_
 
-For this non-profit that provided leadership training to at-risk youths, provided technical advice ranging from computer systems to best practices for operations. Also participated in several fund-raisers.
+Provided technical advice ranging from computer systems to best practices for operations. Also participated in several fund-raisers.
+
+### Cook and Recycling Manager
+
+#### Potluck in the Park ~ Providing weekly meals for the homeless
+Mar 2013 - Mar 2014 @ _Portland, OR_
+
+Cooked and served meals as well as managed the recycling process for all of the discarded packaging.
+
+
 
