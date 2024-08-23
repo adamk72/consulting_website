@@ -10,7 +10,8 @@ category: [Business]
 <p>Richard Branson is quoted:</p>
 <blockquote class="inlinequote">
 <p>Clients do not come first. Employees come first. If you take care of your employees, they will take care of the clients.</p>
-<cite>— Richard Branson</cite></blockquote>
+<cite>— Richard Branson</cite>
+</blockquote>
 <p> I like this people-centric point of view. You can argue which is more important, clients, customers, vendors, employees, shareholders, management, the sales team (which in some companies I've worked for, the sales team seemed like they were treated as most important!), but the overall gist of Branson's quote is that company leadership needs to take care of employees, and from there, a positive cascade effect will occur for the clients and company alike.</p>
 <p>I'd add, <em>you can best take care of employees if you take care of the systems they use.</em></p>
 

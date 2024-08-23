@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require("prism-react-renderer");
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,13 +40,13 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
-          blogSidebarTitle: 'Most recent posts',
+          blogSidebarTitle: "Most recent posts",
           blogSidebarCount: 20,
         },
         theme: {
           customCss: [
-            require.resolve('./src/css/decorators.scss'),
-            require.resolve('./src/css/custom.css'),
+            require.resolve("./src/css/decorators.scss"),
+            require.resolve("./src/css/custom.css"),
           ],
         },
       }),
@@ -70,15 +71,15 @@ const config = {
         style: "dark",
         links: [
           {
-            title: 'Light Reading',
+            title: "Light Reading",
             items: [
               // {
               //   label: 'Getting Started',
               //   to: 'docs/',
               // },
               {
-                label: 'Tech & PM Blog',
-                to: 'blog',
+                label: "Tech & PM Blog",
+                to: "blog",
               },
               // {
               //   label: 'Speaking Blog',
@@ -87,23 +88,23 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'LinkedIn',
-                href: 'https://linkedin.com/in/adamkecskes/',
+                label: "LinkedIn",
+                href: "https://linkedin.com/in/adamkecskes/",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/adamk72',
+                label: "GitHub",
+                href: "https://github.com/adamk72",
               },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/users/13907148/adam-kecskes',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/users/13907148/adam-kecskes",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/akecskes',
+                label: "Twitter",
+                href: "https://twitter.com/akecskes",
               },
             ],
           },
@@ -111,24 +112,25 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Adam Kecskes Consulting`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
     }),
-    plugins: [
-      'docusaurus-plugin-sass', require.resolve("@cmfcmf/docusaurus-search-local"),
-      async function myPlugin(context, options) {
-        return {
-          name: "docusaurus-tailwindcss",
-          configurePostCss(postcssOptions) {
-            // Appends TailwindCSS and AutoPrefixer.
-            postcssOptions.plugins.push(require("tailwindcss"));
-            postcssOptions.plugins.push(require("autoprefixer"));
-            return postcssOptions;
-          },
-        };
-      },
-    ]
+  plugins: [
+    "docusaurus-plugin-sass",
+    require.resolve("@cmfcmf/docusaurus-search-local"),
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 };
 
 module.exports = config;
