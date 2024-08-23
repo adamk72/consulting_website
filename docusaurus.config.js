@@ -60,7 +60,7 @@ const config = {
       navbar: {
         title: "Adam Kecskes Consulting",
         logo: {
-          alt: "Teamwork Site Logo",
+          alt: "logo",
           src: "img/flipped_imbr_icon.svg",
         },
         items: [
