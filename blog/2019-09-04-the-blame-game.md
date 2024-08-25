@@ -7,9 +7,9 @@ tags: [culture, experience, speech]
 I missed my very first payment of rent at my new apartment. Imagine my surprise when I found a notice to vacate on my door. I quickly fixed the problem with the property managers; apparently the auto-pay system didn’t go through, despite my double-checking all the numbers. They forgave the late fee [“just this once!”] and moved on.
 
 I didn’t move on, at least for twenty or so minutes. I felt mildly guilty and very embarrassed. What a way to start living in a new apartment complex! I was blaming myself for a mistake anyone could have made.
+<!--truncate-->
 
 For what, exactly, am I blaming myself for, I had to ask? A typo? A computer glitch? Forgetting to check my calendar? 
-<!--truncate-->
 
 A lot of my sense of guilt has come from the sorts of experiences like these I’ve had in my past. In my mind’s eye, I grew up in a culture that was oriented toward blaming others for problems &mdash; and as a result, I gained the habit of blaming myself for the tiniest of infractions. If I blame myself, I reasoned, I won’t be blamed so often by others.
 

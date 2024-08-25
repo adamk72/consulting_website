@@ -7,7 +7,7 @@ category: [Speaking]
 ---
 
 <p>Two answers (both of which you know):</p>
-<p>1) It depends and 2) as long as it needs to be, but no longer.</p>
+<p>1) It depends and<br/> 2) as long as it needs to be, but no longer.</p>
 <p>So how do you figure out how long is long enough?</p>
 
 <!-- truncate -->

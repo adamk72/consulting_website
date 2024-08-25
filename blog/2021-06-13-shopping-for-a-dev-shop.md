@@ -5,10 +5,10 @@ tags: [consulting, clients, hiring]
 ---
 
 Hiring software developers is notoriously hard to do, even for those of us who are technically savvy. Hiring developers is like buying a book; just because the editorial blurb on the back is great doesn't make the writing great.
+<!--truncate-->
 
 If you have a project that is more than just a single-page website, you'll need to hire a development shop (or go through the effort of hiring your own staff, which is a very different topic) to do the heavy lifting. Your project may be starting from scratch, or maybe your existing application is buggy or not very scalable and you need to refresh it. For whatever reason, you recognize that hiring a person off of Fiverr, Upwork, or Freelancer just isn't going to hack it. You're already on the right track.
 
-<!--truncate-->
 
 ## Cost
 

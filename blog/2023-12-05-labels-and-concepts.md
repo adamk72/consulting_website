@@ -9,6 +9,7 @@ Every time we put a label on a concept, and idea, or a system with the best of i
 Without fail.
 
 Every. 👏 Single. 👏 Time.
+<!--truncate-->
 
 Why? Because we're human with our own individual needs and drives, living in our own unique cultures and social structures, and all human languages are fallible and open to interpretation. No single label or categorization can withstand that degree of entropy.
 

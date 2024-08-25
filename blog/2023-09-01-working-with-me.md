@@ -5,7 +5,8 @@ tags: [project management, communication, work style]
 ---
 I wrote this originally a few years ago for teams whose members were new to each other; these suggestions acted as a guide to understanding my perspectives. I know that everyone has different points of view on how to run a project. By making myself the locus of attention, the idea was that the team could debate with me about the details and we could come to a consensus that worked for everyone. 
 
-&mdash; Adam Kecskes
+Preamble aside, let's read on!
+<!--truncate-->
 
 ## The TL;DR
 
@@ -18,7 +19,6 @@ I wrote this originally a few years ago for teams whose members were new to each
 - I'd rather know your concerns sooner rather than later.
 - Be secure, be safe, work smart, eat a banana 🍌 or an apple 🍏 on occasion.
 
-<!--truncate-->
 
 ## The Quick
 

@@ -9,6 +9,7 @@ tags: [project management, communication, collaboration]
 What people often get bogged down in is _what_ to communicate and _when_, for fear of inducing communication fatigue (assuming they have an honest intent to actually communicate). 
 
 The key word is *communicating*.
+<!-- truncate -->
 
 - 👉 If the message you send one day isn't much different from the day before, you're rambling, not communicating.
 - 👉 If your message isn't relevant and contextualized, you're talking to yourself, not communicating.

@@ -6,6 +6,7 @@ tags: [project management, planning, concerns]
 I’ve been away from my computer for quite a bit recently, hard at work in the Texas heat (don’t worry, I keep well hydrated and take lots of breaks) fixing a limestone patio. It’s a lot of moving dirt around, lifting and placing large stones, and planning.
 
 Planning. We can never evade it, can we? Whether building a new house, fixing an old patio, or creating the latest revolutionary digital product, planning is always there.
+<!-- truncate -->
 
 I’ve always been involved in various real estate projects; my favorite aspect has always been taking a hands-on approach to it. As I was planning out what it would take to rebuild the patio, I was excited to get my hands on a shovel and start digging. But I waited; I did my research. Made measurements. Figured out if I needed more dirt. Figured out if I had the necessary tools. Got my shovels lined up (because I needed more than one type to do this work). 
 
