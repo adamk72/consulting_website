@@ -1,5 +1,5 @@
 ---
-title: An Brief on Process Experience 
+title: A Brief on Process Experience 
 authors: akecskes
 date: 2022-10-07 7:49:13
 tags: [business]
