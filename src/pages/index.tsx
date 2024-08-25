@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -17,7 +16,7 @@ function HomepageHeader() {
             <h1 className="hero__title">{siteConfig.title}</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
           </div>
-          <img src="img/adam_headshot.jpg" width="300px" alt='Headshot of Adam' />
+          <img className="rounded-full" src="img/adam_headshot.jpg" width="300px" alt='Headshot of Adam' />
         </div>
       </div>
     </header>

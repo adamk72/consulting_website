@@ -17,13 +17,14 @@ export default function HomepageFeatures(): JSX.Element {
           <Feature key={idx} {...props} />
         ))}
       </Section>
+      <Section title="Notable Projects">
+        <Accordion list={projects}></Accordion>
+      </Section>
       <Section title="Long Form Papers" description="In any project, I take copious notes of my observations and lessons learned, especially from retrospectives. I'm in the process of sharing these lessons through various articles and of course, these papers. They are free to download, no email required. Free free to share!">
         {DocumentList.map((props, idx) => (
           <Document key={idx} {...props} />
         ))}</Section>
-      <Section title="Notable Projects">
-        <Accordion list={projects}></Accordion>
-      </Section>
+
     </div>
   );
 }

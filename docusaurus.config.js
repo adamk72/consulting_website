@@ -7,8 +7,9 @@ const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "High-Performance Engineering Management",
-  tagline: "Less Effort, Better Results",
+  title: "More than Just Engineering Management",
+  tagline:
+    "Purveyor of fine software processes for the discerning corporate palate.",
   url: "https://kecskes.net",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -69,7 +70,6 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
         links: [
           {
             title: "Light Reading",
