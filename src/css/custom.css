@@ -24,10 +24,11 @@
   --ifm-heading-font-family: 'Roboto Slab';
   --ifm-font-family-base: 'Montserrat';
   --hero-base-color: #1d1f23;
+  --hero-light-color: #cbd0d7
   }
   
 [data-theme='dark'] {
-    --hero-base-color: #cbd0d7;
+    --hero-base-color: var(--hero-light-color);
     --ifm-color-primary: #1751af;
 }
 
@@ -58,6 +59,10 @@ p.hero__subtitle {
 .footer__item a {
   color: var(--hero-base-color);
 
+}
+
+.footer__link-item:hover {
+  color: var(--hero-base-color);
 }
 h1.hero__title {
   font-size: 3.5rem;
