@@ -22,7 +22,7 @@ There are four key metrics in DORA:
 - ✅ **Change Failure Rate** — How often does deployment cause problems?
 - ✅ **Time to Restore Services** — How quickly your system recovers from failure.
 
-Let's take a look at each of these, but with a twist to make them more software friendly in general.
+Let's take a look at each of these.
 
 ### Lead Time
 
@@ -62,11 +62,11 @@ Instead, you need a set of metrics that create a solid foundation that, should c
 
 ### Not Playing the Blame Game
 
-Notice DORA isn't about individual contributions; it's about the system as a whole, the team. Does this mean that DORA can't determine an individual's contribution to a project? Well, yes and no
+Notice DORA isn't about individual contributions; it's about the system as a whole, the team. Does this mean that DORA can't determine an individual's contribution to a project? Well, yes and no:
 
-Yes (it can't), because it's hard to judge a developer's capacity relative to the team. It may be possible that someone doesn't submit a lot of code, but the code they do submit is rock-solid and also critical to the project. That person might be a specialist of sorts, for example.
+- Yes (it can't), because it's hard to judge a developer's capacity relative to the team. It may be possible that someone doesn't submit a lot of code, but the code they do submit is rock-solid and also critical to the project. That person might be a specialist of sorts, for example.
 
-But no (it can), because consider that example. Relying on one specialist who slows down the release process indicates that maybe the team needs a broader breadth of experience on the team. One person, no matter how good, can hold up an entire project on their own. Software, with rare exception, is a team exercise.
+- But no (it can), because consider that example. Relying on one specialist who slows down the release process indicates that maybe the team needs a broader breadth of experience on the team. One person, no matter how good, can hold up an entire project on their own. Software, with rare exception, is a team exercise.
 
 The "problem" with DORA is that it doesn't satisfy that management itch to have individual metrics that make it easier or more justified to let someone go. "Not enough lines of code, so off with their heads!" is hardly a good way to manage a team.
 
