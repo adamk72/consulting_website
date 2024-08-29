@@ -4,11 +4,11 @@ slug: /resume
 ---
 
 # Adam Kecskes &mdash; Engineering and Operations Management
-I see myself as a force multiplier, excelling in bringing the best in teams and hiring the best as needed. Over the past 25 years, I have developed a series of life-tested heuristics for leading technical projects of any complexity.
+I see myself as a force multiplier, excelling in bringing out the best in teams and hiring the best as needed. Over the past 25 years, I have developed a series of real-life tested heuristics for leading technical projects of any complexity. I’m focused on recognizing and dignifying the needs of clients and contributors alike while sparking a sense of curiosity through collaborative conversation and holistic and lateral thinking.
 
-My approach to development and management is about professionalizing the fun and challenging parts of software engineering while anticipating and avoiding or removing the dark patterns and obstacles that hinder the success of my teams, our customers, and the organization.
+My management approach is about eliminating unnecessary processes, automating the boring parts, and engaging the challenging parts of development head-on while anticipating, avoiding, and removing the dark patterns and obstacles that hinder the success of my teams, our customers, and the organization. Very much willing to travel as needed.
 
-I’m focused on recognizing and dignifying the needs of clients and contributors alike while sparking a sense of curiosity through holistic and lateral thinking. I favor well-proven patterns and practices and the creation of code and systems that are robust, adaptable, and configurable for both internal and client/customer needs.
+In development, I favor well-proven patterns and practices and the creation of code and systems that are robust, adaptable, and configurable for both internal and client/customer needs.
 
 I have three creeds that drive my vision of a successful team, project, or company:
 
@@ -34,9 +34,9 @@ Apr 2018 - Present @ _Austin, TX_
 
 Sep 2022 - Apr 2023 @ _Austin, TX_
 
-- This US-European company had been struggling with a “spreadsheets and emails” model of doing business; brought it up to become a more professionally run organization using Monday.com for business development and sales management and Jira for software development, streamlining processes to improve interdepartmental communication and task execution.
-- In doing so, provided the company with its first real look at a viable and collaborative forecast for the release of its main product. 
-- Wrote the initial React code base for [Area-52.io](https://area-52.io/), a Rust training website, including its first course.
+- Delivered a comprehensive and collaborative product release forecast to the leadership team, resolving over a year of planning challenges.
+- In under two months, transitioned from a “spreadsheets and emails” mentality over to using Monday.com for sales and business development and Jira for software development, ensuring on-time delivery.
+- Developed the initial React code base for [Area-52.io](https://area-52.io/), , an online Rust training platform, and created its inaugural course.
 
 ### Director of Service Delivery
 
@@ -44,9 +44,10 @@ Sep 2022 - Apr 2023 @ _Austin, TX_
 
 Apr 2021 - Present @ _Austin, TX_
 
-- As part of this small company, provided multi-hat services including frontend software development using TypeScript, React, and Tailwind CSS frameworks and writing the primary UI for several client projects.
-- Managed and mentored a team of 4-5 developers of various skill levels in development best practices, including creating CD pipelines to provide constant and live progress updates for our clients.
-- Developed time and cost estimates for potential clients based on their respective budgets and needs. Worked to discover if there was a good client-consultant fit to ensure project success.
+- Provided multi-hat services including business development, project management, and software coding.
+Collaborated with potential clients to determine a good client-consultant fit while developing time and cost estimates for their respective budgets and needs to ensure project success.
+- Managed and mentored a team of 4-5 developers of various skill levels in development best practices, including establishing continuous delivery pipelines for consistent and transparent client updates.
+- Authored the initial UI for several client projects using TypeScript, React, and Tailwind CSS frameworks.
 
 ### ERP Solutions Consultant
 
@@ -70,9 +71,9 @@ Dec 2016 - Mar 2020 @ _Austin, TX_
 
 Oct 2014 – Mar 2015 @ _Austin, TX_
 
-- Provided technical expertise to identify and address process weaknesses, minimizing risks in cloud and client services and improving product management processes in the US, Australia, and Israel.
-- Successfully transitioned the company's primary product from IPv4 to support IPv6 on Amazon AWS EC2 & ELB instances.
-- Facilitated smooth product releases by collaborating with business account teams at major wireless service companies, including Verizon, Sprint, and US Cellular.
+- Contributed technical expertise, identifying and addressing process weaknesses, minimizing risks in cloud and client services, and refining product management procedures across the US, Australia, and Israel.
+- Led the successful transition of the company's primary product from IPv4 to support IPv6 on Amazon AWS EC2 & ELB instances.
+- Collaborated with business account teams at leading wireless service providers like Verizon, Sprint, and US Cellular to ensure seamless product launches.
 
 ### Operations Program Manager
 
@@ -80,7 +81,9 @@ Oct 2014 – Mar 2015 @ _Austin, TX_
 
 Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
-- Managed the implementation of the PMO office and Agile/DevOps systems for a newly formed IoT-focused division creating a unified workflow using Jira, Jenkins CI/CD, and other tools for over one hundred developers and a half dozen project managers located in the US, France, and Germany.
+- Led the implementation of PMO and DevOps systems for a newly formed IoT device-focused division,  coordinating over 100 developers and various SME teams in science, R&D, design, and UX.
+- Directed the creation of a cohesive project workflow across teams using Jira, Jenkins CI/CD, and other tools for a diverse set of large teams and a half dozen project managers based in the US, France, and Germany.
+- Worked closely with science and R&D teams to ensure a secure system for recording discoveries.
 
 ### Director of Software Development & IT Operations
 
@@ -88,10 +91,9 @@ Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 Dec 2005 - Sep 2010 @ _San Diego, CA_
 
-- Initially hired on as senior software developer, acted as prototype-to-production developer, translating barely working C++ and Java code hacks into consistent and releasable products, incrementally improving the release process as needed, especially eliminating many manual steps.
-- As team lead, managed a team of 6-10 software developers, mentoring extant and hiring new talent.
-- As director, initiated a long-term project resulting in the reduction of new product release times from more than two weeks to under one week while doubling the client application performance. This happened through cross-department collaboration, database enhancements, comprehensive code refactoring and automation, and improving the user experience of the backend administrative services.
-- The last part alone saved several thousands of dollars per project by streamlining the product life cycle and allowing the paid intern content creation staff to be gradually reduced from ten down to three people.
+- Initially hired on as senior software developer, acted as prototype-to-production developer, translating inefficient C++ and Java code hacks into consistent and releasable products, incrementally improving the release process as needed, and streamlining manual processes
+- As team lead, managed a team of 6-10 software developers, mentoring extant and recruiting new talent.
+- As director, initiated a project to optimize the infrastructure and code base, boosting client and DB performance, accelerating the release cycle time, and reducing labor costs by enhancing user interfaces.
 
 ### Sr. Software Engineer Lead
 
@@ -99,9 +101,9 @@ Dec 2005 - Sep 2010 @ _San Diego, CA_
 
 Feb 2003 - Dec 2005 @ _San Diego, CA_
 
-- Tired of moving targets, established a coding and design standard in liaison with PM, UX, and UI design groups, allowing us to create brand-consistent and well-vetted UIs and reduce the time to market.
-- Meanwhile, reduced raw build times on our C/C++ code base from four hours to under half an hour through code refactoring and dependency corrections, saving tens of thousands of dollars every quarter and almost eliminating the [XKCD 303](https://xkcd.com/303/) effect between developers.
-- Evolved personal practices for finding and hiring excellent talent while part of the committee to hire over one hundred new developers in only a few months.
+- Established a coding and design standard in collaboration with PM, UX, and UI design groups, allowing us to create brand consistency, and well-vetted UIs, and reduce the time to market.
+- Optimized C/C++ code base build times from four hours to under 30 minutes through code refactoring and dependency corrections, resulting in significant cost savings and eliminating any [XKCD 303](https://xkcd.com/303/) effect.
+- Evolved personal and organizational strategies for recruiting excellent talent as part of the committee to hire over one hundred new developers in only a few months.
 
 ### Software Engineer & Project Manager
 
@@ -110,7 +112,7 @@ Feb 2003 - Dec 2005 @ _San Diego, CA_
 Feb 1997 - Feb 2003 @ _San Diego, CA_
 
 - Prompted by a single support call, started a cascade of project and program improvements encompassing sales, manufacturing, software, hardware, design, testing, repair, and user experience to revamp and improve the product lifecycle to the point where the company was attractive enough to be purchased by Kyocera Wireless.
-- Also, was the lead C UI developer for the original smartphone lineup on PalmOS, working to create a pixel-consistent and user-friendly experience.
+- Headed C UI development for the original smartphone lineup on PalmOS, working to create a pixel-consistent and user-friendly experience.
 - Learned way too much about email and support call centers while providing technical support for the Eudora email client and server applications.
 
 ### Customer Support Supervisor
