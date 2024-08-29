@@ -5,7 +5,7 @@ tags: [coding, languages, compilers, interpreters]
 draft: true
 ---
 
-A lot of this comes from either [_Crafting Interpreters_][3] (CI) or [_Writing An Interpreter in Go_][4] (WIG) (which includes the compiler book).
+A lot of this comes from either [_Crafting Interpreters_](https://craftinginterpreters.com/) (CI) or [_Writing An Interpreter in Go_](https://interpreterbook.com/) (WIG) (which includes the compiler book).
 
 # General Notes and Definitions
 

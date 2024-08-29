@@ -37,10 +37,11 @@ Okay, with that out of the way, let’s start with the easy thing, getting commu
 - Minimize your DMs to me or anyone else. If you have a question, regardless of how awkward you think it might be to ask, ask it to the development public channel. We’re here to help you, not chastise you (and believe me, I’ve made plenty of dumb mistakes in my time).
 - If you’re in front of the client or customer for any reason, always err on the side of caution. Don’t spout out something unless you’ve gotten previous approval from me or the lead (and that can occur if I or the lead are leading the conversation by example).
 ## Software Development
- This section will generate a lot of debate, even from the high performers. The essence of what I’m going to share boils down to two points:
+ This section will generate a lot of debate, even from the high performers. The essence of what I’m going to share boils down to three points:
 
-- Any code should be easy to read and easy to change for other developers on the team, not just yourself.
-- The client will change their mind. This is inevitable and can occur at any time. The code has to support this point by being fast to set up, reasonably flexible, easily configurable, nominally updatable, and ready to demonstrate at any time.
+1. Any code should be easy to read and easy to change for other developers on the team, not just yourself.
+2. Your code should be testable and tested.
+3. The client will change their mind. This is inevitable and can occur at any time. The code has to support this point by being fast to set up, reasonably flexible, easily configurable, nominally updatable, and ready to demonstrate at any time.
 
 ### Basics
 - Code should be DRY. This literally has been the biggest cause of most of my projects’ problems over the past few years.
