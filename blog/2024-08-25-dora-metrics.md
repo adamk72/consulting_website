@@ -1,7 +1,7 @@
 ---
 title: A Discussion of DORA Metrics
 authors: akecskes
-tags: [coding, project management, metrics]
+tags: [coding, project management, metrics, engineering]
 ---
 There’s no silver-bullet metric (or set of metrics) at the individual level that doesn’t either require extensive context or can’t be gamed by the developers, or worse, might be misused by the upper-echelon, looking for excuses to “clean house.”
 <!--truncate-->

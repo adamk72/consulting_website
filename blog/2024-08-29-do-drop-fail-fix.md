@@ -1,7 +1,7 @@
 ---
 title: Do, Drop, Fail, Fix Metrics
 authors: akecskes
-tags: [coding, project management, metrics]
+tags: [coding, project management, metrics, engineering]
 ---
 
 I was looking over the DORA metrics, trying to think of a mnemonic for the four options that would roll of the tongue a little more easily than "Lead Time," "Deployment Frequency," "Failure Rate," and "Time to Recover." I mean, "DORA" itself isn't even helpful, since it stands for _DevOps Research and Assessment_, which is the name of the project, not a acronym for the metrics. 

@@ -1,7 +1,7 @@
 ---
 title: Using Jira
 authors: akecskes
-tags: [pm-tools, project management]
+tags: [pm-tools, project management, engineering]
 ---
 
 Jira is a powerful and highly customizable software project management tool. Because of its popularity and long-time presence in the industry, there is a myriad of add-on and integrations to the platform, including Slack and GitHub.

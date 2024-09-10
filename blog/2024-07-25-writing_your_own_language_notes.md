@@ -1,7 +1,7 @@
 ---
 title: How I might write my own language 
 authors: akecskes
-tags: [coding, languages, compilers, interpreters]
+tags: [coding, languages, compilers, interpreters, engineering]
 draft: true 
 ---
 

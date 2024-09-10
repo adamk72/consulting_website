@@ -1,7 +1,7 @@
 ---
 title: Full Stack is not a Thing 
 authors: akecskes
-tags: [coding]
+tags: [coding, engineering]
 draft: true 
 ---
 

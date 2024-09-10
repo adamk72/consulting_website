@@ -1,7 +1,7 @@
 ---
 title: Sprinting With Ease
 authors: akecskes
-tags: [software, agile, sprints, scrum, documentation, culture]
+tags: [software, agile, sprints, scrum, documentation, culture, engineering]
 ---
 
 _(and yes, I know, this has very little to do with sprints directly)_

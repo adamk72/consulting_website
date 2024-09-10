@@ -1,7 +1,7 @@
 ---
 title: Lessons Learned on Automation
 authors: akecskes
-tags: [project management, lessons learned, automation]
+tags: [project management, lessons learned, automation, engineering]
 ---
 
 I’m wrapping up a not-quite two month software project right now and we’re in the midst of finalizing with stakeholders, doing retrospectives, and digesting all that has happened. During the project I kept copious notes and I can make a few definitive comments:

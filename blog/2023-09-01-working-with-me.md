@@ -1,7 +1,7 @@
 ---
 title: Working with Adam as a PM
 authors: akecskes
-tags: [project management, communication, work style]
+tags: [project management, communication, work style, engineering]
 ---
 I wrote this originally a few years ago for teams whose members were new to each other; these suggestions acted as a guide to understanding my perspectives. I know that everyone has different points of view on how to run a project. By making myself the locus of attention, the idea was that the team could debate with me about the details and we could come to a consensus that worked for everyone. 
 

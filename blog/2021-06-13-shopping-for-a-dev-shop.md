@@ -1,7 +1,7 @@
 ---
 title: Shopping for a Dev Shop
 authors: akecskes
-tags: [consulting, clients, hiring]
+tags: [consulting, clients, hiring, engineering]
 ---
 
 Hiring software developers is notoriously hard to do, even for those of us who are technically savvy. Hiring developers is like buying a book; just because the editorial blurb on the back is great doesn't make the writing great.

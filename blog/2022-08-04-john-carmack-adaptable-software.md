@@ -1,7 +1,7 @@
 ---
 title: Program Lifespan 
 authors: akecskes
-tags: [sdlc, best practices, clients]
+tags: [sdlc, best practices, clients, engineering]
 ---
 
 From: [Lex Fridman's John Carmack Interview](https://youtu.be/RfWGJS7rckk?t=163)
