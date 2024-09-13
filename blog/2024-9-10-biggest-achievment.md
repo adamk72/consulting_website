@@ -3,14 +3,11 @@ title: Biggest Achievement
 authors: akecskes
 tags: [hiring, project management, engineering, pm-tools]
 ---
-I just applied for the position of Support Engineering Manager at [GitLab](https://about.gitlab.com/), of which I have my fingers crossed for. 🤞
+I just applied for any engineering management position. They asked in the application submission process, _"Tell us about your biggest achievement or personal success in customer support"_. 
 
-Normally I wouldn't post about something like this because 1) it's private thing and 2) it might look weird if other companies happen to come by this article. 
+Personally, I think it's nice to have a space just for that sort of question, pre-interview, that doesn't take up space in the resume or in the cover letter, so I appreciate the question. This is what I said:
+
 <!-- truncate -->
-
-But, I post this nonetheless because GitLab is legitimately one company I'm interested in working for, in part because I think they have great potential to truly make a good project management system that could crush Atlassian (and if you know me, you know how much I love Atlassian too. I've been a Jira fan boy for a long time).
-
-So, in the application form, they ask _"Tell us about your biggest achievement or personal success in **customer support**"_ (emphasis mine). This is what I said:
 
 > I have a few impactful stories, but the biggest was at Qualcomm when I took a phone call from an old lady that caused a cascade effect of massive process improvement over 2+ years. It was early in my career, but I learned a lot and I played a major role in driving the company to be more aware of the customer experience. I became knowledgeable in many aspects of a large business, from sales to manufacturing. I engaged program management, UX and design, QA, IT, and legal,  and most importantly to my career path, made the transition from customer support to software development. I didn’t forget that what got me there were the interconnections and relations of hundreds of hard-working, often non-technical people, as well as a million or more customers who, ultimately, just wanted to have a good experience with our product.
 
