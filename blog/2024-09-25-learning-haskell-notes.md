@@ -194,10 +194,20 @@ firstForEvenSeconds ps = [x | (x, y) <- ps, isEven y]
 firstForEvenSeconds ps = [fst p | p <- ps, isEven (snd p)] -- the more verbose form
 ```
 
+You can have multiple generators, and order matters (you can think of them like nested loops):
+
+```haskell
+[(x,y) | y <- [4,5], x <- [1,2,3]] -- [(1,4), (2,4), (3,4), (1,5)...]
+-- generates different results from
+[(x,y) | x <- [1,2,3], y <- [4,5]] -- [(1,4), (1,5), (2,4), (2,5)...]
+```
+
+Generators can be dependent on a previous one.
+
+
 ### Regarding Pattern Matching with Tuples and Lists (the `(:)` operator)
 
 Tuples can be used to as a pattern matching mechanism when matching lists. Use the "cons" operator (`:`) instead of a comma to represent the contents of the list to be matched (because functions have the highest precedence). Convention is to use 'x' and 'xs' to show the first and "rest" (like in JS) elements:
-
 ```haskell
 head             :: [a] -> a
 head (x:_)       =  x
