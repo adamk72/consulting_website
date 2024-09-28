@@ -45,15 +45,13 @@ areaRect l w = l * w
 areaSquare s = areaRect s s
 ```
 
-Though you will need them if using a prefix operator like `-` in order to ensure the compiler doesn't think you're trying to subtract from the function (rather than passing a negative value).
-
-Use parentheses to turn an infix operator into a prefix. These are equivalent:
+Though you will need parentheses if using a prefix operator like `-` in order to ensure the compiler doesn't think you're trying to subtract from the function (rather than passing a negative value).
 
 ```haskell
-4 + 9 == 13
-(==) (4 + 9) 13
-{- and both evaluate to `true` -}
+add (-1)
+-- as apposed to `add -`
 ```
+
 
 While there is a `not` boolean negation operator, Haskell allows for alternate operator implementations. This appears to be very common:
 
@@ -117,6 +115,21 @@ squareOfF = square . f -- just drop the `x` from both sides!
 ```
 
 `if/then/else` is an expression.
+
+Partial function evaluations are a thing:
+
+```haskell
+map (* 2) [5,6] -- (* 2) is a partial function
+-- [10,12]
+
+{- alternatively, using a lambda -}
+map (\x -> 2 * x) [5,6]
+-- [10,12]
+
+-- Another type of partial
+makeList n = [0..n]
+-- makeList 3 => [0,1,2,3]
+```
 
 ### Where and Let
 
@@ -287,6 +300,15 @@ foo $ bar $ baz bin
 foo (bar (baz bin))
 ```
 
+You can look at the `$` as an open parenthesis with an implicit close at the end of the expression:
+
+
+```haskell
+last $ take 10 [1..]
+-- is the same as
+last (take 10 [1..])
+```
+
 The `&` does the reverse of `$`:
 
 ```haskell
@@ -312,6 +334,24 @@ ex1 = (f1 . f2 . f3 . f4) input -- with explicit parens
 
 even <$> (2,2)
 -- (2,True)
+```
+
+Use parentheses to turn an infix operator into a prefix. These are equivalent:
+
+```haskell
+4 + 9 == 13
+(==) (4 + 9) 13
+{- and both evaluate to `true` -}
+```
+
+Likewise, you can turn a function "prefix" into an infix using backticks:
+
+```haskell
+div 100 9
+-- can be replaced by
+100 `div` 9
+```
+
 ### Currying
 
 The `->` is a right associative, so `Int -> Int -> Int -> Int` is the same as `Int -> (Int -> (Int -> Int))`.
