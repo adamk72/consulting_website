@@ -9,7 +9,7 @@ const darkTheme = themes.dracula;
 const config = {
   title: "More than Just Engineering Management",
   tagline:
-    "Purveyor of fine software processes for the discerning corporate palate.",
+    "Purveyor of fine software development, leadership, and process improvement for the discerning corporate palate.",
   url: "https://kecskes.net",
   baseUrl: "/",
   onBrokenLinks: "throw",
