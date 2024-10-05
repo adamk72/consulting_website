@@ -638,7 +638,7 @@ I worked when I replaced `lts-13.7` with `lts-22.28`, which I'm not even sure is
 - Laziness, thunks, and co-recursions
 - Monoids and Semigroups (and their relation)
 - Monad transformers
-- Type holes
+- Type holes and undefined
 - `return` and `pure` &mdash; "lifts" a value into IO context
 - `>>` and `*>` &mdash; sequence two IO operations
 - GHC Extensions, e.g., [`RecordWildCards`](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/record_wildcards.html)
@@ -917,3 +917,35 @@ getLine :: IO String         -- takes in an IO action that can cough up a string
 Apps that have IO have a `main :: IO()` starter function. This means the main function has to evaluate to an IO() at some point, or it is invalid.
 
 `let` gives you access to IO action pulled via `a <- getLine` for example.
+
+## Haskell for Dilettantes
+
+_From [Part 2: Expressions, Types, and Functions](https://www.youtube.com/watch?v=qy0AO0tWFOU)
+
+```haskell
+data = DayOfWeek = Mon | Tues | Wed | Thur | Fri | Sat | Sun
+  deriving (Show, Eq)
+data = Activity = Work | Play deriving (Show, Eq)
+
+schedule :: DayOfWeek -> Activity -- type annotation
+
+-- Pattern version
+schedule = if (day == Mon) then Work else Play
+-- or 
+schedule _ = Play -- for any day
+-- or
+schedule Sun = Play
+schedule Sat = Play
+schedule _ = Work -- evaluates in order from top to bottom
+
+-- Guard version
+schedule day -- note: no `=` here
+  | (day == Sat || day == Sun) = Play -- can't do this in the above pattern
+  | otherwise = Work
+
+-- if/then/else version
+schedule day = if (day == Sat || day == Sun)
+               then Play
+               else Work
+```
+
