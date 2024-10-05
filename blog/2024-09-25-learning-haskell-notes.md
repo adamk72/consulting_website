@@ -2,16 +2,17 @@
 title: Trying to Learn Haskell
 authors: akecskes
 tags: [coding, haskell]
-unlisted: true
 ---
+
+import {default as L} from '@site/src/components/Lozenge'
 
 My exploration with trying to learn Haskell. While an older language, it's not exactly consistent in terms of support availability. Many of the most recent pages date back to 2017 or 2018; even with documents dated recently (as of late 2023 or early 2024), information is incomplete at best.
 
 So this is my attempt at organizing what I'm finding on Haskell... read on to see what I've found.
 
-Definitely a WIP; last updated Oct 3rd, 2024. I'll probably parse the detail out into their own articles a long time from now.
+_Definitely a WIP; last updated Oct 5th, 2024. I'll probably parse the detail out into their own articles a long time from now._
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Early Learning Notes
 
@@ -94,6 +95,8 @@ absolute x
 
 Guards can replace if/then/else statements.
 
+<L t="rule"/> But importantly, guards are not the same as pattern matches. Pattern matches can destructure data types; guards cannot. Pattern matches bind identifiers inside their scope; guards do not.
+
 Type signatures look like this:
 
 ```haskell
@@ -103,7 +106,7 @@ xor p q = (p || q) && not (p && q)
 
 They are sometimes necessary if there is a reason the complier cannot infer the signature itself and useful for documentation in general.
 
-For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
+<L t="note"/>  For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
 
 Elaborating on the fact that partial function evaluations are a thing:
 
@@ -754,7 +757,7 @@ Monads have two, optionally three, parts:
   `Maybe a = Nothing | Just a`, `Nothing`, _and_ `Just` are boh `Maybe a` types, and are constructors.
 - In most examples, `m a` and `m b` are monads of different contexts. That is, we're looking at two different monads applied to whatever types are appropriate: `m a` and `k b` (and then shorten those to just `m` and `k` for brevity's sake).
 
-#### The Monad Laws
+#### The Monad Laws <L t="law"/>
 
 1. **Right Identity**: `return a >>= f` === `f a`. Return creates a monad on value `a` and when bound to a function, that function will be applied to `a`.
 2. **Left Identity**: `m >>= return` === `m`. Given a monad context `m`, when bound to a return, will result in the same monad context.
