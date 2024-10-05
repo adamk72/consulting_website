@@ -10,7 +10,7 @@ My exploration with trying to learn Haskell. While an older language, it's not e
 
 So this is my attempt at organizing what I'm finding on Haskell... read on to see what I've found.
 
-_Definitely a WIP; last updated Oct 5th, 2024. I'll probably parse the detail out into their own articles a long time from now._
+_Definitely a WIP; last updated Oct 5th, 2024. I'll probably parse the details out into their own articles a long time from now._
 
 {/* truncate */}
 
@@ -52,7 +52,7 @@ Though you will need parentheses if using a prefix operator like `-` in order to
 
 ```haskell
 add (-1)
--- as apposed to `add -1`
+-- as opposed to `add -1` which the compiler will see as `add - 1`
 ```
 
 `if/then/else` is an expression.
@@ -282,6 +282,19 @@ pts p = case p of 1 -> 10
 
 Case matches can be used outside of function definitions.
 
+<L t="lemma" /> From a question I asked in [r/haskell](https://www.reddit.com/r/haskell/comments/1fwclxw/learning_haskell_trying_to_refactor_from_function/), it's worth noting that destructuring is the equivalent of a `case` statement:
+
+```haskell
+greet (AdventureOptions a) = putStrLn $ "You chose: '" ++ a ++ "'."
+-- is the same as:
+greet x = case x of
+            AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
+-- which leads to: 
+greet = \x -> case x of
+                AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
+```
+`greet (AdventureOptions a)` is sugar for the `case` expression.
+
 As-Patterns take the form of `var@pattern`:
 
 ```haskell
@@ -330,7 +343,7 @@ example =
   . map (*10)
 ```
 
-_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming)_
+_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming).
 
 The `$` operator is use for function application. It takes the right side of the operator and applies it to the left side which helps with nested functions:
 
@@ -439,11 +452,24 @@ last xs = head (reverse xs)
 last xs = xs !! (length xs - 1)
 ```
 
-Prefer `fmap` over `map`, apparently _[citation](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid)_.
+<L t="tip"/> _From [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes._
+
+- Prefer `fmap` over `map`.
+- Avoid `String`.
+- Use Foldable and Traversable instead of the Control.Monad, and Data.List versions of traversals.
+- Avoid partial functions like ``head`` and ``read`` or use their total variants.
+- Avoid exceptions, use ExceptT or Either instead.
+- Avoid boolean blind functions.
+
+Or, just pull the Prelude in explicitly and use what you need:
+
+```haskell
+import qualified Prelude as P
+```
 
 ### Pointfree Programming
 
-_Or, how to to understand function composition with examples from [haskell.org](https://wiki.haskell.org/Pointfree)._
+_Or, how to to understand function composition with examples from [haskell.org](https://wiki.haskell.org/Pointfree). More also in [More Learning -> Composition](#composition-)._
 
 ```haskell
 sum' xs = foldr (+) 0 xs -- normal
@@ -531,7 +557,7 @@ _From [UPenn](https://www.seas.upenn.edu/~cis1940/spring13/lectures/01-intro.htm
 
 > A quote from Ralf Hinze: “Functional languages excel at wholemeal programming, a term coined by Geraint Jones. Wholemeal programming means to think big: work with an entire list, rather than a sequence of elements; develop a solution space, rather than an individual solution; imagine a graph, rather than a single path. The wholemeal approach often offers new insights or provides new perspectives on a given problem. It is nicely complemented by the idea of projective programming: first solve a more general problem, then extract the interesting bits and pieces by transforming the general program into more specialised [sic] ones.”
 
-Also from _UPenn_:
+<L t="tip"/> Also from _UPenn_ :
 
 > Haskell also has triples, quadruples, … but you should never use them. As we’ll see, there are much better ways to package three or more pieces of information together.
 
@@ -555,7 +581,7 @@ Apparently this [rio](https://tech.fpcomplete.com/haskell/library/rio/) is a use
 
 People talk about this a lot: [Ekmett Lens](https://github.com/ekmett/lens) which "provides families of lenses, isomorphisms, folds, traversals, getters and setters."
 
-## Creating a Web App in Haskell
+## Creating an App in Haskell
 
 _or, just trying to get something, anything, to run that is more sophisticated than a simple `.hs` script._
 
@@ -604,7 +630,7 @@ I worked when I replaced `lts-13.7` with `lts-22.28`, which I'm not even sure is
 
 ## Things I want to follow up on later
 
-### _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#function-composition)_
+_From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#function-composition)_
 
 - [Debugger](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#debugger)
 - [Pragmas](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#pragmas)
@@ -614,7 +640,8 @@ I worked when I replaced `lts-13.7` with `lts-22.28`, which I'm not even sure is
 - Why are [Records](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#records) broken?
 - Review [Naming Conventions](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#name-conventions)
 - For _much_ later, [Metaprogramming](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#metaprogramming)
-- [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes. _Wiwinwlh_ suggests these are probably sufficient to start a major project:
+
+- _Wiwinwlh_ suggests these are probably sufficient to start a major project:
   - text
   - containers
   - unordered-containers
@@ -899,31 +926,7 @@ data BinaryTree a = EmptyNode | TreeNode a (BinaryTree a) (BinaryTree a)
 data TreeMap k v = TreeMapEmpty | TreeMapNode k v (TreeMap k v) (TreeMap k v)
 ```
 
-#### Type Classes
-
-Type classes are effectively any group of types that behave the same way; they have same operation and types associated.
-
-## I/O
-
-IO defines a context for input/output; code that interacts outside the core of the program will be wrapped in an IO type ("action") of some sort. There are various semantics for interaction with the IO type (`<-`, `do`, `>>`, `let`, `return`, `>>=`, and so on, though they are not _unique_ to IO, just very common. Monads use them as well [and IO is a of typeclass Monad]).
-
-These interactions ensure that the core purity is maintained in a predictable way. One must unwrap input and wrap output in order to engage the IO context.
-
-Some basis interactions:
-
-```haskell
--- IO actions
- putStrLn :: String -> IO () -- does not return a value, per se, but an action to be engaged.
-getLine :: IO String         -- takes in an IO action that can cough up a string.
-```
-
-Apps that have IO have a `main :: IO()` starter function. This means the main function has to evaluate to an IO() at some point, or it is invalid.
-
-`let` gives you access to IO action pulled via `a <- getLine` for example.
-
-## Haskell for Dilettantes
-
-_From [Part 2: Expressions, Types, and Functions](https://www.youtube.com/watch?v=qy0AO0tWFOU)
+More examples, this time from _[Haskell for Dilettantes](https://www.youtube.com/watch?v=qy0AO0tWFOU)_
 
 ```haskell
 data = DayOfWeek = Mon | Tues | Wed | Thur | Fri | Sat | Sun
@@ -950,5 +953,48 @@ schedule day -- note: no `=` here
 schedule day = if (day == Sat || day == Sun)
                then Play
                else Work
+```
+
+
+
+#### Type Classes
+
+Type classes are effectively any group of types that behave the same way; they have same operation and types associated.
+
+## I/O
+
+IO defines a context for input/output; code that interacts outside the core of the program will be wrapped in an IO type ("action") of some sort. There are various semantics for interaction with the IO type (`<-`, `do`, `>>`, `let`, `return`, `>>=`, and so on, though they are not _unique_ to IO, just very common. Monads use them as well [and IO is a of typeclass Monad]).
+
+These interactions ensure that the core purity is maintained in a predictable way. One must unwrap input and wrap output in order to engage the IO context.
+
+Some basis interactions:
+
+```haskell
+-- IO actions
+putStrLn :: String -> IO () -- does not return a value, per se, but an action to be engaged.
+getLine :: IO String         -- takes in an IO action that can cough up a string.
+```
+
+Apps that have IO have a `main :: IO()` starter function. This means the main function has to evaluate to an IO() at some point, or it is invalid.
+
+`let` gives you access to IO action pulled via `a <- getLine` for example.
+
+## More Learning
+
+### Composition (`.`)
+
+From a question I asked in [r/haskell](https://www.reddit.com/r/haskell/comments/1fwclxw/learning_haskell_trying_to_refactor_from_function/),
+
+```haskell
+data AdventureOptions = AdventureOptions {unOptions :: String}
+
+-- unOptions        :: AdventureOptions -> String
+-- pure             :: a -> IO a
+-- pure . unOptions :: AdventureOptions -> IO String
+
+main = parse >>= (pure . unOptions) >>= (\s -> putStrLn $ "You chose: '" ++ s ++ "'.")
+-- or
+main = parse >>= (\a -> putStrLn $ "You chose: '" ++ unOptions a ++ "'.")
+
 ```
 

@@ -115,6 +115,7 @@ const config = {
       prism: {
         theme: lightTheme,
         darkTheme: darkTheme,
+        additionalLanguages: ["haskell"],
       },
     }),
   plugins: [
