@@ -1,21 +1,35 @@
 ---
-title: Trying to Learn Haskell
+title: Learning Haskell From Scratch
 authors: akecskes
 tags: [coding, haskell]
 ---
 
 import {default as L} from '@site/src/components/Lozenge'
 
-My exploration with trying to learn Haskell. While an older language, it's not exactly consistent in terms of support availability. Many of the most recent pages date back to 2017 or 2018; even with documents dated recently (as of late 2023 or early 2024), information is incomplete at best.
+<head>
+  <meta name="description" content="Learning Haskell from Scratch, a Procedural Programmer's Perspective"/>
+  <meta charSet="utf-8" />
+</head>
 
-So this is my attempt at organizing what I'm finding on Haskell... read on to see what I've found.
+Join me as I try to figure out how Haskell works. Even though I've principally worked in procedural or OOP languages like C/C++, Java, and JavaScript/TypeScript, I've always tried to lean into what little I know of functional programming wherever I can. Haskell is a different beast, though. It is functional _all the way down_, not just an additional language feature  (like in JS).
 
-_Definitely a WIP; last updated Oct 5th, 2024. I'll probably parse the details out into their own articles a long time from now._
+This is my first attempt in a long time to learn a new language effectively from scratch &mdash; I recently learned Go for instance, but that was so familiar to me that it took almost know time. All of my mental models took very little effort to adjust.
 
-{/* truncate */}
+This is my attempt at organizing my thoughts and ideas on Haskell... read on to see what I've found.
+
+_Definitely a WIP; last updated Oct 5th, 2024._
+
+{/_ truncate _/}
+
+## Getting Started
+
+As a language that has been around for over 30 years, the documentation and developer experience thus far doesn't remotely compare to to the likes of modern languages like Go or Rust. Things aren't caveman level, but there is a lot of inconsistency in the content and no central core place (that isn't also excruciatingly slow, Hoogle).
+
+So if you're just getting started like me, be ready for things to be a bit difficult a first.
+
 ## Early Learning Notes
 
-_Details on Haskell in general, from the perspective of an imperative developer with background in mathematics and some basic familiarity with functional programming. Mainly following this: [Wikibooks Haskell](https://en.m.wikibooks.org/wiki/Haskell) and this: [Graham Hutton on YouTube](https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3)._
+_This section mainly follows these links: [Wikibooks Haskell](https://en.m.wikibooks.org/wiki/Haskell) and this: [Graham Hutton on YouTube](https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3)._
 
 Where I remember in code snippets, `--λ` implies the response to a command line call.
 
@@ -94,7 +108,7 @@ absolute x
 
 Guards can replace if/then/else statements.
 
-<L t="rule"/> But importantly, guards are not the same as pattern matches. Pattern matches can destructure data types; guards cannot. Pattern matches bind identifiers inside their scope; guards do not.
+<L t="rule"/> Importantly, guards are not the same as pattern matches. Pattern matches can destructure data types; guards cannot. Pattern matches bind identifiers inside their scope; guards do not.
 
 Type signatures look like this:
 
@@ -288,10 +302,11 @@ greet (AdventureOptions a) = putStrLn $ "You chose: '" ++ a ++ "'."
 -- is the same as:
 greet x = case x of
             AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
--- which leads to: 
+-- which leads to:
 greet = \x -> case x of
                 AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
 ```
+
 `greet (AdventureOptions a)` is sugar for the `case` expression.
 
 As-Patterns take the form of `var@pattern`:
@@ -638,136 +653,6 @@ main = putStrLn "Hello World"
 
 I worked when I replaced `lts-13.7` with `lts-22.28`, which I'm not even sure is the latest, since I got it from some other site as I was trying to figure things out. _[ed: latest is [22.35](https://www.stackage.org/lts-22.35) or `stack ls snapshots --lts remote`]_
 
-## Things I want to follow up on later
-
-_From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#function-composition)_
-
-- [Debugger](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#debugger)
-- [Pragmas](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#pragmas)
-- [Error Handling](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#error-handling)
-- [Testing](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#testing)
-- [Generalized Algebraic Date Types](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#gadts), a.k.a.: GADTs.
-- Why are [Records](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#records) broken?
-- Review [Naming Conventions](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#name-conventions)
-- For _much_ later, [Metaprogramming](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#metaprogramming)
-
-- _Wiwinwlh_ suggests these are probably sufficient to start a major project:
-  - text
-  - containers
-  - unordered-containers
-  - mtl
-  - transformers
-  - vector
-  - filepath
-  - directory
-  - process
-  - bytestring
-  - optparse-applicative
-  - unix
-  - aeson
-- Use `text` or `bytestring` instead of [String](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#string).
-- [Applicatives](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#applicatives)
-  - Also at [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia#Laws_2)
-  - What I gather is Functor : Computation :: Application : Functions. Functors map computations and applicators map function ("lifting" them).
-- [Monads](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#monads), of course.
-
-### Elaborate on later
-
-#### Topics
-
-- Laziness, thunks, and co-recursions
-- Monoids and Semigroups (and their relation)
-- Monad transformers
-- Type [holes](#hole-driven-development) and undefined
-- `return` and `pure` &mdash; "lifts" a value into IO context
-- `>>` and `*>` &mdash; sequence two IO operations
-- GHC Extensions, e.g., [`RecordWildCards`](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/record_wildcards.html)
-- Language Pragmas
-- [Applicatives](https://hackage.haskell.org/package/base-4.20.0.1/docs/Control-Applicative.html)
-- `=<<` &mdash; the join (or "reverse bind") operator.
-
-#### Concepts I keep seeing
-
-- Monad/Monoid
-- Functor
-- Applicative/Lifting
-- Traversal
-
-#### Functions
-
-- `cycle`
-- `intercalate`
-- `null`
-- `mempty`
-
-### Encountered Language Extensions
-
-- LambdaCase &mdash; replace `\a -> case a of` with just `\case`.
-- ScopedTypeVariables
-- Type Applications
-- DerivingStrategies
-- OverloadedStrings
-- RecordWildCards
-- DefaultSignatures
-- KindSignatures
-- InstanceSigs
-
-Also, `Minimal` compared to `Language` extensions.
-
-### What is/are?
-
-- `η-reduction` or eta reduction and pointfree or tacit programming _[ed: getting a hang of this now]_
-- fixity &mdash; some work started [here](#fixity-and-precedence)
-- referential transparency
-
-## Encountered Errors
-
-_Put here only if there wasn't an immediate and evident solution after a quick search._
-
-### _Could not load module ‘Data.ByteString.Lazy’_
-
-**Problem(s)**
-
-From trying the [Chris Allen 2014 Tutorial](https://howistart.org/posts/haskell/1/), with regards to the imports.
-
-First, I had to update the `.cabal` file; this was in the tutorial, but didn't solve the red wiggles in VS Code. A variety of other settings changes didn't do anything. It wasn't until I deleted the `.stack-work` folder re-ran `stack build` that the wiggly lines finally resolved.
-
-Had a similar problem with [Stackbuilders](https://www.stackbuilders.com/blog/getting-started-with-haskell-projects-using-scotty/) Scotty project with `import Text.Blaze.Html.Renderer.Text`, but harder to resolve. I thought adding:
-
-```haskell
-{-# LANGUAGE OverloadedStrings #-}
-```
-
-would do the trick (I missed it originally) since that seems to deal with the `Text` package, but that didn't do anything.
-
-**Solution**
-
-What finally fixed it was restarting the extension host.
-
-### Hidden packages
-
-If there is a warning about a hidden package, add that package to the build-depends section of the respective .cabal file.
-
-### _Could not find module ‘Data.Csv’_
-
-From trying the [Chris Allen 2014 Tutorial](https://howistart.org/posts/haskell/1/), with regards to the trying things in `stack ghci`
-
-Just `:quit` and relaunch with `stack ghci`. It looks like it hotloads, but apparently not well enough, or I'm using the wrong commands.
-
-### _Not in scope: data constructor ‘Optional’_
-
-Probably means you're calling on the type constructor, not the data constructor:
-
-```haskell
-data Optional a = Full a | Empty
-mapOptional :: (a -> b) -> Optional a -> Optional b
-mapOptional _ Empty = Empty
--- generates error
-mapOptional f (Optional a) = Optional(f a)
--- s/b
-mapOptional f (Full a) = Full(f a)
-```
-
 ## Deeper Learning
 
 _a.k.a., thinking out loud till I get what this all means_
@@ -813,6 +698,7 @@ class Functor f => Applicative f where
 class Applicative f => Monad f where
   (>>=) :: f a -> (a -> f b) -> f b
 ```
+
 ### Monads
 
 > Monads are prisons for side-effects ~~[WhatTheFunctional](https://whatthefunctional.wordpress.com/2018/03/04/modeling-generalized-behaviors-and-imprisoning-side-effects/)
@@ -1084,11 +970,10 @@ The useful ones so far (for development):
 
 - :type, :t &mdash; show the type of `<expr>`; ":t +d" shows a simplified version (`a` to `Int` for example).
 - :info, :i &mdash; display information about the given names
-- :browse   &mdash; display the names defined by module
+- :browse &mdash; display the names defined by module
 - :kind, :k &mdash; show the kind of `<type>`
 
 also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
-
 
 ## Coding Patterns, Memes, and Maxims
 
@@ -1101,3 +986,133 @@ also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guid
 ### Triggers
 
 - In HDD, `(a -> b) -> b` should indicate a lambda. Don't forget that the input can be a function, and if it is, you can take that input and have it act on another variable, i.e., `(\f -> f a)`.
+
+## Things I want to follow up on later
+
+_From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#function-composition)_
+
+- [Debugger](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#debugger)
+- [Pragmas](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#pragmas)
+- [Error Handling](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#error-handling)
+- [Testing](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#testing)
+- [Generalized Algebraic Date Types](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#gadts), a.k.a.: GADTs.
+- Why are [Records](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#records) broken?
+- Review [Naming Conventions](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#name-conventions)
+- For _much_ later, [Metaprogramming](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#metaprogramming)
+
+- _Wiwinwlh_ suggests these are probably sufficient to start a major project:
+  - text
+  - containers
+  - unordered-containers
+  - mtl
+  - transformers
+  - vector
+  - filepath
+  - directory
+  - process
+  - bytestring
+  - optparse-applicative
+  - unix
+  - aeson
+- Use `text` or `bytestring` instead of [String](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#string).
+- [Applicatives](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#applicatives)
+  - Also at [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia#Laws_2)
+  - What I gather is Functor : Computation :: Application : Functions. Functors map computations and applicators map function ("lifting" them).
+- [Monads](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#monads), of course.
+
+### Elaborate on later
+
+#### Topics
+
+- Laziness, thunks, and co-recursions
+- Monoids and Semigroups (and their relation)
+- Monad transformers
+- Type [holes](#hole-driven-development) and undefined
+- `return` and `pure` &mdash; "lifts" a value into IO context
+- `>>` and `*>` &mdash; sequence two IO operations
+- GHC Extensions, e.g., [`RecordWildCards`](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/record_wildcards.html)
+- Language Pragmas
+- [Applicatives](https://hackage.haskell.org/package/base-4.20.0.1/docs/Control-Applicative.html)
+- `=<<` &mdash; the join (or "reverse bind") operator.
+
+#### Concepts I keep seeing
+
+- Monad/Monoid
+- Functor
+- Applicative/Lifting
+- Traversal
+
+#### Functions
+
+- `cycle`
+- `intercalate`
+- `null`
+- `mempty`
+
+### Encountered Language Extensions
+
+- LambdaCase &mdash; replace `\a -> case a of` with just `\case`.
+- ScopedTypeVariables
+- Type Applications
+- DerivingStrategies
+- OverloadedStrings
+- RecordWildCards
+- DefaultSignatures
+- KindSignatures
+- InstanceSigs
+
+Also, `Minimal` compared to `Language` extensions.
+
+### What is/are?
+
+- `η-reduction` or eta reduction and pointfree or tacit programming _[ed: getting a hang of this now]_
+- fixity &mdash; some work started [here](#fixity-and-precedence)
+- referential transparency
+
+## Encountered Errors
+
+_Put here only if there wasn't an immediate and evident solution after a quick search._
+
+### _Could not load module ‘Data.ByteString.Lazy’_
+
+**Problem(s)**
+
+From trying the [Chris Allen 2014 Tutorial](https://howistart.org/posts/haskell/1/), with regards to the imports.
+
+First, I had to update the `.cabal` file; this was in the tutorial, but didn't solve the red wiggles in VS Code. A variety of other settings changes didn't do anything. It wasn't until I deleted the `.stack-work` folder re-ran `stack build` that the wiggly lines finally resolved.
+
+Had a similar problem with [Stackbuilders](https://www.stackbuilders.com/blog/getting-started-with-haskell-projects-using-scotty/) Scotty project with `import Text.Blaze.Html.Renderer.Text`, but harder to resolve. I thought adding:
+
+```haskell
+{-# LANGUAGE OverloadedStrings #-}
+```
+
+would do the trick (I missed it originally) since that seems to deal with the `Text` package, but that didn't do anything.
+
+**Solution**
+
+What finally fixed it was restarting the extension host.
+
+### Hidden packages
+
+If there is a warning about a hidden package, add that package to the build-depends section of the respective .cabal file.
+
+### _Could not find module ‘Data.Csv’_
+
+From trying the [Chris Allen 2014 Tutorial](https://howistart.org/posts/haskell/1/), with regards to the trying things in `stack ghci`
+
+Just `:quit` and relaunch with `stack ghci`. It looks like it hotloads, but apparently not well enough, or I'm using the wrong commands.
+
+### _Not in scope: data constructor ‘Optional’_
+
+Probably means you're calling on the type constructor, not the data constructor:
+
+```haskell
+data Optional a = Full a | Empty
+mapOptional :: (a -> b) -> Optional a -> Optional b
+mapOptional _ Empty = Empty
+-- generates error
+mapOptional f (Optional a) = Optional(f a)
+-- s/b
+mapOptional f (Full a) = Full(f a)
+```
