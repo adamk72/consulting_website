@@ -13,7 +13,6 @@ So this is my attempt at organizing what I'm finding on Haskell... read on to se
 _Definitely a WIP; last updated Oct 5th, 2024. I'll probably parse the details out into their own articles a long time from now._
 
 {/* truncate */}
-
 ## Early Learning Notes
 
 _Details on Haskell in general, from the perspective of an imperative developer with background in mathematics and some basic familiarity with functional programming. Mainly following this: [Wikibooks Haskell](https://en.m.wikibooks.org/wiki/Haskell) and this: [Graham Hutton on YouTube](https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3)._
@@ -106,7 +105,7 @@ xor p q = (p || q) && not (p && q)
 
 They are sometimes necessary if there is a reason the complier cannot infer the signature itself and useful for documentation in general.
 
-<L t="note"/>  For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
+<L t="note"/> For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
 
 Elaborating on the fact that partial function evaluations are a thing:
 
@@ -343,7 +342,7 @@ example =
   . map (*10)
 ```
 
-_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming).
+\_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming).
 
 The `$` operator is use for function application. It takes the right side of the operator and applies it to the left side which helps with nested functions:
 
@@ -429,6 +428,8 @@ Infix operators have a "fixity" which determines how they favor precedence. `<>`
 
 The `->` is a right associative, so `Int -> Int -> Int -> Int` is the same as `Int -> (Int -> (Int -> Int))`.
 
+<L t="rule"/> This gives us the "lambda distribution rule":
+
 ```haskell
 add :: Int -> Int -> Int
 add x y = x + y
@@ -437,7 +438,14 @@ add :: Int -> (Int -> Int)
 add = \x -> (\y -> x + y) -- where `\` is the keyboard symbol for the lambda symbol.
 ```
 
-A function that has all of its expected arguments is _saturated_ and can evaluate to a non-function value. Otherwise it's considered _partially applied_.
+A function that has all of its expected arguments is _saturated_ and can evaluate to a non-function value. Otherwise it's considered _partially applied_. <L t="lemma"/>
+
+`error` acts as placeholder:
+
+```haskell
+fooBar :: Int -> Int
+fooBar x = error "fooBar: not implemented!"
+```
 
 ## Idiomatic Haskell
 
@@ -457,7 +465,7 @@ last xs = xs !! (length xs - 1)
 - Prefer `fmap` over `map`.
 - Avoid `String`.
 - Use Foldable and Traversable instead of the Control.Monad, and Data.List versions of traversals.
-- Avoid partial functions like ``head`` and ``read`` or use their total variants.
+- Avoid [_using or creating_] partial functions like `head` and `read` or use their total variants.
 - Avoid exceptions, use ExceptT or Either instead.
 - Avoid boolean blind functions.
 
@@ -476,6 +484,8 @@ sum' xs = foldr (+) 0 xs -- normal
 -- vs
 sum = foldr (+) 0        -- pointfree; more compact, more idiomatic
 ```
+
+<L t="warn"/> The dropping of variables like this can throw you off! In the second example, it almost looks like `foldr` is missing its final argument.
 
 Let's elaborate, because this burns my brain once the (`.`) gets involved for functional programming.
 
@@ -668,7 +678,7 @@ _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#func
 - Laziness, thunks, and co-recursions
 - Monoids and Semigroups (and their relation)
 - Monad transformers
-- Type holes and undefined
+- Type [holes](#hole-driven-development) and undefined
 - `return` and `pure` &mdash; "lifts" a value into IO context
 - `>>` and `*>` &mdash; sequence two IO operations
 - GHC Extensions, e.g., [`RecordWildCards`](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/record_wildcards.html)
@@ -700,6 +710,7 @@ _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#func
 - RecordWildCards
 - DefaultSignatures
 - KindSignatures
+- InstanceSigs
 
 Also, `Minimal` compared to `Language` extensions.
 
@@ -743,6 +754,20 @@ From trying the [Chris Allen 2014 Tutorial](https://howistart.org/posts/haskell/
 
 Just `:quit` and relaunch with `stack ghci`. It looks like it hotloads, but apparently not well enough, or I'm using the wrong commands.
 
+### _Not in scope: data constructor ‘Optional’_
+
+Probably means you're calling on the type constructor, not the data constructor:
+
+```haskell
+data Optional a = Full a | Empty
+mapOptional :: (a -> b) -> Optional a -> Optional b
+mapOptional _ Empty = Empty
+-- generates error
+mapOptional f (Optional a) = Optional(f a)
+-- s/b
+mapOptional f (Full a) = Full(f a)
+```
+
 ## Deeper Learning
 
 _a.k.a., thinking out loud till I get what this all means_
@@ -766,6 +791,28 @@ class Semigroup a => Monoid a where
   mconcat :: [a] -> a     -- derived: `foldr mappend mempty`
 ```
 
+### Monads, Applicative, and Functor Relationship
+
+The quick way to look at the relation between these three objects is:
+
+`Functor -> Applicative -> Monad` The lower ones build to make the higher ones.
+
+Functors change _values_, Applicatives change the _functionality_, and Monads change _context_ (which I need to elaborate on).
+
+```haskell
+-- Functor
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+
+-- Applicative
+class Functor f => Applicative f where
+  pure :: a -> f a
+  (<*>) :: f (a -> b) -> f a -> f b
+
+-- Monad
+class Applicative f => Monad f where
+  (>>=) :: f a -> (a -> f b) -> f b
+```
 ### Monads
 
 > Monads are prisons for side-effects ~~[WhatTheFunctional](https://whatthefunctional.wordpress.com/2018/03/04/modeling-generalized-behaviors-and-imprisoning-side-effects/)
@@ -937,7 +984,7 @@ schedule :: DayOfWeek -> Activity -- type annotation
 
 -- Pattern version
 schedule = if (day == Mon) then Work else Play
--- or 
+-- or
 schedule _ = Play -- for any day
 -- or
 schedule Sun = Play
@@ -954,8 +1001,6 @@ schedule day = if (day == Sat || day == Sun)
                then Play
                else Work
 ```
-
-
 
 #### Type Classes
 
@@ -995,6 +1040,64 @@ data AdventureOptions = AdventureOptions {unOptions :: String}
 main = parse >>= (pure . unOptions) >>= (\s -> putStrLn $ "You chose: '" ++ s ++ "'.")
 -- or
 main = parse >>= (\a -> putStrLn $ "You chose: '" ++ unOptions a ++ "'.")
-
 ```
 
+Another look:
+
+```haskell
+(f . g) x = f (g x)
+(f . g) = \x -> f (g x) -- the `x` gets "pulled" into the lambda
+-- and you can η-reduce even further.
+```
+
+### Hole-Driven Development (HDD )
+
+One thing you can do in code is replace unknowns with a "hole" which is either a lone underscore, `_`, or a name starting with the underscore, e.g., `_cons`, `_nils`, `_1`, `_2`.
+
+This is useful because you can infer a lot of type information, possibly even direct solutions simply be loading the file in `ghci` (assuming you have all the proper types in scope and packages loaded needed for your file).
+
+Doing this will generate a response that starts with something like, "Found hole: \_ :: Optional (List a);" the message will elaborate further, including relevant bindings.
+
+Very useful stuff.
+
+### Higher Order Functions
+
+#### Partially Applied Functions
+
+Well-stated from [LYAH](https://learnyouahaskell.com/higher-order-functions#curried-functions), _emphasis_ mine:
+
+> Simply speaking, if we call a function with too few parameters, we get back a _partially applied function_, meaning a function that _takes as many parameters as we left out_.
+
+#### Sections
+
+<L t="note"/> Sections are the partial application of an operator.
+
+```haskell
+-- From https://wiki.haskell.org/Section_of_an_infix_operator
+(2^) -- (left section) is equivalent to (^) 2, or more verbosely \x -> 2 ^ x
+(^2) -- (right section) is equivalent to flip (^) 2, or more verbosely \x -> x ^ 2
+```
+
+### GHCI Commands
+
+The useful ones so far (for development):
+
+- :type, :t &mdash; show the type of `<expr>`; ":t +d" shows a simplified version (`a` to `Int` for example).
+- :info, :i &mdash; display information about the given names
+- :browse   &mdash; display the names defined by module
+- :kind, :k &mdash; show the kind of `<type>`
+
+also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guide/ghci.html)
+
+
+## Coding Patterns, Memes, and Maxims
+
+### General
+
+- `foldr` is the constructor replacement function. <L t="essential"/>
+- `foldl` is the for loop. Can be implemented in terms of `foldr`.
+- `(\_ -> a)` is `const a`
+
+### Triggers
+
+- In HDD, `(a -> b) -> b` should indicate a lambda. Don't forget that the input can be a function, and if it is, you can take that input and have it act on another variable, i.e., `(\f -> f a)`.

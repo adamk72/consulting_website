@@ -1,6 +1,14 @@
 import React from "react";
 
-type LozengeProps = "rule" | "lemma" | "note" | "law" | "tip";
+type LozengeProps =
+  | "rule"
+  | "lemma"
+  | "note"
+  | "law"
+  | "tip"
+  | "warn"
+  | "maxim"
+  | "essential";
 
 type LozengeDetails = {
   text: string;
@@ -11,21 +19,24 @@ type LozengeDetails = {
 // color choices from https://tailwindcss.com/docs/customizing-colors
 const LozengeChoices: Record<LozengeProps, LozengeDetails> = {
   rule: { bgColor: "#ef4444", text: "Rule", color: "#fafafa" }, // bg-red-500
-  lemma: { bgColor: "#34d399", text: "Lemma" }, // bg-emerald-400
+  lemma: { bgColor: "#059669", text: "Lemma", color: "#fafafa" }, // bg-emerald-600
   note: { bgColor: "#7dd3fc", text: "Note" }, // bg-sky-300
   law: { bgColor: "#6b21a8", text: "Law", color: "#fafafa" }, // bg-purple-800
-  tip: { bgColor: "#fbbf24", text: "Tips", }, // bg-amber-400
-  
+  tip: { bgColor: "#2dd4bf", text: "Tips" }, // bg-teal-400
+  warn: { bgColor: "#fbbf24", text: "Caution!" }, // bg-amber-400
+  maxim: { bgColor: "#bef264", text: "Maxim" }, // bg-lime-300
+  essential: { bgColor: "#3730a3", text: "Essential", color: "#fafafa" }, // bg-indigo-800
 };
 
 const Lozenge = ({ t }: { t: LozengeProps }) => {
   const details = LozengeChoices[t];
   return (
     <span
-      className="rounded-s-full rounded-e-full py-[2.5px] px-[5px] text-xs"
+      className="font-bold rounded-s-full rounded-e-full py-[4px] px-[8px] text-xs relative -top-[3px] "
       style={{
         backgroundColor: details.bgColor,
         color: details.color ? details.color : "inherit",
+        fontFamily: "Montserrat"
       }}
     >
       {details.text}
