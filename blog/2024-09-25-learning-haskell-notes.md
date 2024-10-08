@@ -11,15 +11,15 @@ import {default as L} from '@site/src/components/Lozenge'
   <meta charSet="utf-8" />
 </head>
 
-Join me as I try to figure out how Haskell works. Even though I've principally worked in procedural or OOP languages like C/C++, Java, and JavaScript/TypeScript, I've always tried to lean into what little I know of functional programming wherever I can. Haskell is a different beast, though. It is functional _all the way down_, not just an additional language feature  (like in JS).
+Join me as I try to figure out how Haskell works. Even though I have principally worked in procedural or OOP languages like C/C++, Java, and JavaScript/TypeScript, I've always tried to lean into what little I know of functional programming wherever I can. Haskell is a different beast, though. It is functional _all the way down_, not just an additional language feature  (like in JS).
 
 This is my first attempt in a long time to learn a new language effectively from scratch &mdash; I recently learned Go for instance, but that was so familiar to me that it took almost know time. All of my mental models took very little effort to adjust.
 
 This is my attempt at organizing my thoughts and ideas on Haskell... read on to see what I've found.
 
-_Definitely a WIP; last updated Oct 5th, 2024._
+_Definitely a WIP; last updated Oct 7th, 2024._
 
-{/_ truncate _/}
+{/* truncate */}
 
 ## Getting Started
 
@@ -80,6 +80,8 @@ Anonymous functions, lambdas, take the form of:
 _Note the skinny RH arrow `->`._
 
 You can think of general functions of the form `buildRobot arms legs torso = (arms, legs, torso)` as a series of lambda functions (see [Currying](#currying)).
+
+<L t="tip"/> This is useful to recall when building functions that take functions as a parameter.
 
 ```haskell
 buildRobotLambda = (\arms ->
@@ -283,7 +285,7 @@ pts x
     | otherwise = 0
 ```
 
-Alternative to the "normal" pattern matching, you can use case matching:
+Alternative to the "normal" pattern matching, you can use `case` matching:
 
 ```haskell
 pts :: Int -> Int
@@ -293,7 +295,16 @@ pts p = case p of 1 -> 10
                   _ -> 0
 ```
 
-Case matches can be used outside of function definitions.
+`case` often acts as an intermediary step for local pattern matching. It is not the same as a case condition in a typical `switch` statement. They can also match on expressions:
+
+```haskell
+-- ... type and other patterns...
+filter p (x:xs) = 
+  case p x of                 -- note the indentations
+    False -> filter p xs      -- don't include the current x
+    True -> x : filter p xs   -- keep the current x
+```
+<L t="note"/> For boolean type evaluations, you can replace the `case` with an `if/then/else` expression as well, or use guards/otherwise. Also, `case` matches can be used outside of function definitions.
 
 <L t="lemma" /> From a question I asked in [r/haskell](https://www.reddit.com/r/haskell/comments/1fwclxw/learning_haskell_trying_to_refactor_from_function/), it's worth noting that destructuring is the equivalent of a `case` statement:
 
@@ -433,6 +444,16 @@ div 100 9
 "/directory" </> "file.ext" == "/directory/file.ext"
 ```
 
+#### Common Variable Names
+
+- x, y    &mdash; heads
+- xs, ys  &mdash; tails
+- f       &mdash; functions
+- p       &mdash; predicates (functions that lead to Bool)
+- t       &mdash; traversables (and something else?)
+
+
+
 ### Fixity and Precedence
 
 Passing an argument to a function has higher precedence than passing to an operator.
@@ -488,6 +509,8 @@ Or, just pull the Prelude in explicitly and use what you need:
 
 ```haskell
 import qualified Prelude as P
+-- or, for example, to hide what might conflict.
+import Prelude hiding (length)
 ```
 
 ### Pointfree Programming
@@ -944,6 +967,8 @@ This is useful because you can infer a lot of type information, possibly even di
 
 Doing this will generate a response that starts with something like, "Found hole: \_ :: Optional (List a);" the message will elaborate further, including relevant bindings.
 
+Another tip is to use "undefined" as a placeholder.
+
 Very useful stuff.
 
 ### Higher Order Functions
@@ -959,10 +984,18 @@ Well-stated from [LYAH](https://learnyouahaskell.com/higher-order-functions#curr
 <L t="note"/> Sections are the partial application of an operator.
 
 ```haskell
+map (+1) [1..5]
+--    |
+--    +--- adding one of the two parameters to the operator leaves it open.
+--         This is the same as (\x -> x + 1)
+--λ [2,3,4,5,6]
+
 -- From https://wiki.haskell.org/Section_of_an_infix_operator
 (2^) -- (left section) is equivalent to (^) 2, or more verbosely \x -> 2 ^ x
 (^2) -- (right section) is equivalent to flip (^) 2, or more verbosely \x -> x ^ 2
 ```
+<L t="warn"/> Keep in mind the commutativity of the operator!
+
 
 ### GHCI Commands
 
@@ -1026,6 +1059,7 @@ _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#func
 
 - Laziness, thunks, and co-recursions
 - Monoids and Semigroups (and their relation)
+- Equational Reasoning
 - Monad transformers
 - Type [holes](#hole-driven-development) and undefined
 - `return` and `pure` &mdash; "lifts" a value into IO context
