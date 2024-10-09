@@ -8,7 +8,8 @@ type LozengeProps =
   | "tip"
   | "warn"
   | "maxim"
-  | "essential";
+  | "essential"
+  | "tbd";
 
 type LozengeDetails = {
   text: string;
@@ -18,14 +19,15 @@ type LozengeDetails = {
 
 // color choices from https://tailwindcss.com/docs/customizing-colors
 const LozengeChoices: Record<LozengeProps, LozengeDetails> = {
-  rule: { bgColor: "#ef4444", text: "Rule", color: "#fafafa" }, // bg-red-500
-  lemma: { bgColor: "#059669", text: "Lemma", color: "#fafafa" }, // bg-emerald-600
-  note: { bgColor: "#7dd3fc", text: "Note" }, // bg-sky-300
+  essential: { bgColor: "#3730a3", text: "Essential", color: "#fafafa" }, // bg-indigo-800
   law: { bgColor: "#6b21a8", text: "Law", color: "#fafafa" }, // bg-purple-800
+  lemma: { bgColor: "#059669", text: "Lemma", color: "#fafafa" }, // bg-emerald-600
+  maxim: { bgColor: "#bef264", text: "Maxim" }, // bg-lime-300
+  note: { bgColor: "#7dd3fc", text: "Note" }, // bg-sky-300
+  rule: { bgColor: "#ef4444", text: "Rule", color: "#fafafa" }, // bg-red-500
+  tbd: { bgColor: "#f9a8d4", text: "TBD" }, // bg-pink-300
   tip: { bgColor: "#2dd4bf", text: "Tips" }, // bg-teal-400
   warn: { bgColor: "#fbbf24", text: "Caution!" }, // bg-amber-400
-  maxim: { bgColor: "#bef264", text: "Maxim" }, // bg-lime-300
-  essential: { bgColor: "#3730a3", text: "Essential", color: "#fafafa" }, // bg-indigo-800
 };
 
 const Lozenge = ({ t }: { t: LozengeProps }) => {
@@ -36,7 +38,7 @@ const Lozenge = ({ t }: { t: LozengeProps }) => {
       style={{
         backgroundColor: details.bgColor,
         color: details.color ? details.color : "inherit",
-        fontFamily: "Montserrat"
+        fontFamily: "Montserrat",
       }}
     >
       {details.text}

@@ -316,6 +316,9 @@ greet x = case x of
 -- which leads to:
 greet = \x -> case x of
                 AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
+-- and then the IDE suggests this:
+greet = (\(AdventureOptions a) -> putStrLn $ "You chose: '" ++ a ++ "'.") 
+                
 ```
 
 `greet (AdventureOptions a)` is sugar for the `case` expression.
@@ -722,6 +725,14 @@ class Applicative f => Monad f where
   (>>=) :: f a -> (a -> f b) -> f b
 ```
 
+#### A Discussion of Maybe
+
+Maybe is all three of the major above types:
+
+- It's a Functor because you can map over it; if you have function `(a -> b)`, you can map over it to go from `Maybe a` to `Maybe b`
+- It's an Applicative because <L t="tbd"/>
+- It's an Monad because <L t="tbd"/>
+
 ### Monads
 
 > Monads are prisons for side-effects ~~[WhatTheFunctional](https://whatthefunctional.wordpress.com/2018/03/04/modeling-generalized-behaviors-and-imprisoning-side-effects/)
@@ -1015,6 +1026,7 @@ also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guid
 - `foldr` is the constructor replacement function. <L t="essential"/>
 - `foldl` is the for loop. Can be implemented in terms of `foldr`.
 - `(\_ -> a)` is `const a`
+- With `withFile`, this `(\h -> hGetContents h >>= putStr)` can go to this: `(hGetContents Control.Monad.>=> putStr)`
 
 ### Triggers
 
