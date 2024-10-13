@@ -27,6 +27,10 @@ As a language that has been around for over 30 years, the documentation and deve
 
 So if you're just getting started like me, be ready for things to be a bit difficult a first.
 
+Update: So far, these two sources have been my favorite go tos when trying to recall something:
+- [Haskell MOOC](https://haskell.mooc.fi/) &mdash; Short online course from the University of Helsinki
+- [Well-Typed Intro to Haskell](https://www.youtube.com/watch?v=3blAsQDT0u8&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10) &mdash; YouTube video series by Andres Löh
+
 ## Early Learning Notes
 
 _This section mainly follows these links: [Wikibooks Haskell](https://en.m.wikibooks.org/wiki/Haskell) and this: [Graham Hutton on YouTube](https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3)._
@@ -122,6 +126,8 @@ xor p q = (p || q) && not (p && q)
 They are sometimes necessary if there is a reason the complier cannot infer the signature itself and useful for documentation in general.
 
 <L t="note"/> For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
+
+<L t="warn"/> Haskell _does not_ retain type info at run time!
 
 Elaborating on the fact that partial function evaluations are a thing:
 
@@ -602,18 +608,6 @@ Working from right to left:
 6. Focusing on `map snd . f` we get `map (\l -> snd f(l))`. `f(l)` is our resulting list, and `snd` is what `map` will apply to that list, so it's simply normal mapping exercise where the second element (years of experience) will be pulled off.
 7. The finally result of the years list will then be applied to the `foldr` which simply sums everything up.
 
-### Wholemeal Programming
-
-_From [UPenn](https://www.seas.upenn.edu/~cis1940/spring13/lectures/01-intro.html)_
-
-> A quote from Ralf Hinze: “Functional languages excel at wholemeal programming, a term coined by Geraint Jones. Wholemeal programming means to think big: work with an entire list, rather than a sequence of elements; develop a solution space, rather than an individual solution; imagine a graph, rather than a single path. The wholemeal approach often offers new insights or provides new perspectives on a given problem. It is nicely complemented by the idea of projective programming: first solve a more general problem, then extract the interesting bits and pieces by transforming the general program into more specialised [sic] ones.”
-
-<L t="tip"/> Also from _UPenn_ :
-
-> Haskell also has triples, quadruples, … but you should never use them. As we’ll see, there are much better ways to package three or more pieces of information together.
-
-Is this idiomatic?
-
 ## Libraries
 
 ### General Haskell Libraries
@@ -623,6 +617,9 @@ _Awareness of how Haskell breaks itself into pieces and packages as well as modu
 - Prelude: core; only one that loads automatically
 - Data.List: list manipulation
 - [Cassava](https://hackage.haskell.org/package/cassava): csv manipulation.
+- aeson
+- containers
+- transformers
 
 ### Rio
 
@@ -849,8 +846,8 @@ is just an alias, so all `Title`s can be replaced by `String` and can't be expli
 Then there are new data types:
 
 ```haskell
-data Sex = Male | Female
--- where Sex can be either an instance of a Male or Female.
+data Choice = Rock | Paper | Scissor | Spock | Lizard 
+-- where Choice can be be one of the following instances.
 data Address = NoAddress | WithAddress String String String Int -- perhaps for  Address, City, State, Zip
 -- better for `String String String Int` to replaced by other, properly named types; see below.
 ```
@@ -860,7 +857,9 @@ You can combine as well:
 ```haskell
 data Name = Name FirstName LastName
 --    |      |
---    |      +--- data constructor; does not have to be the same as the type
+--    |      +--- data constructor; does not have to be the same as the type, but it does return the type
+--    |           thus, :type => Name :: FirstName -> LastName -> Name
+--    |                          ^^^ constructor                  ^^^ data type returned
 --    +---------- type constructor; can accept a parameterized argument,
 --                e.g., `data Box a = Box a`
 ```
@@ -1007,7 +1006,6 @@ map (+1) [1..5]
 ```
 <L t="warn"/> Keep in mind the commutativity of the operator!
 
-
 ### GHCI Commands
 
 The useful ones so far (for development):
@@ -1023,8 +1021,8 @@ also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guid
 
 ### General
 
-- `foldr` is the constructor replacement function. <L t="essential"/>
-- `foldl` is the for loop. Can be implemented in terms of `foldr`.
+- `foldr` is the constructor replacement function. Uses the [incremental pattern](https://www.youtube.com/watch?v=J_4BKCDeukA&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10&index=23) f<L t="essential"/>
+- `foldl` is the for loop. Can be implemented in terms of `foldr`. Uses the [accumulator pattern](https://www.youtube.com/watch?v=wJgRsvtarmE&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10&index=24)
 - `(\_ -> a)` is `const a`
 - With `withFile`, this `(\h -> hGetContents h >>= putStr)` can go to this: `(hGetContents Control.Monad.>=> putStr)`
 
@@ -1106,6 +1104,7 @@ _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#func
 - DefaultSignatures
 - KindSignatures
 - InstanceSigs
+- BangPatterns
 
 Also, `Minimal` compared to `Language` extensions.
 
@@ -1134,6 +1133,8 @@ Had a similar problem with [Stackbuilders](https://www.stackbuilders.com/blog/ge
 ```
 
 would do the trick (I missed it originally) since that seems to deal with the `Text` package, but that didn't do anything.
+
+Update: sometimes the Haskell Language Server gets confused and so the squiggly lines don't automatically clear up. An `hie.yaml` file will help: [https://haskell-language-server.readthedocs.io/en/stable/configuration.html](https://haskell-language-server.readthedocs.io/en/stable/configuration.html)
 
 **Solution**
 
