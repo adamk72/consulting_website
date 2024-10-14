@@ -2,6 +2,15 @@
 sidebar_position: 1
 title: "Learning Haskell from Scratch"
 ---
+:::tip
+If you're here to learn quickly or because you have ADHD as bad as mine, **feel free to skip** most of the fluff writing, like below. The **juicy parts** are in the `code blocks`, callouts like this one, and sometimes in the quotation blocks. The rest is just written as way to get my head clear and probably can be ignored.
+:::
+
+:::warning
+I'll hit on most topics in Haskell eventually (as I learn them and as makes sense to me), but not in the order of most typical programming courses/lessons.
+
+I will also assume you know the basics of programming and are familiar with tools like REPLs and high-level concepts like "types" and "classes."
+:::
 
 ## Welcome
 Hello! This is my attempt to organize my thoughts on Haskell as I learn it. The world of Haskell is... _disparate_ to say the least. For a language that has been around for as long as it has, documentation is often (in my mind) inconsistent, incomplete, or downright opaque.
@@ -12,7 +21,11 @@ Contrary to belief, as far as my research goes, Haskell is far from a dead langu
 
 All that said, there's a lot to dive into.
 
-The "logic" of the following sections is what works for me. Feel free to reach out to me with corrections or clarifications, and keep in mind that at the time you're reading this, it's probably still very much a work in progress.
+## A Procedural Perspective
+
+My background was originally in C/C++, Java, and Objective-C. I later turned to JavaScript/TypeScript and HTMl/CSS, and have dabbled quite a bit in Rust and Go. That is to say, I'm steeped in the procedural &mdash; but... I almost always have tried to leverage functional coding when it was available, like in JS and Rust.
+
+
 
 ## Alternative Resources
 So far, these two sources have been my favorite for learning Haskell and I return to them on a regular basis:
