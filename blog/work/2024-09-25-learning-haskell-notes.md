@@ -17,19 +17,21 @@ This is my first attempt in a long time to learn a new language effectively from
 
 This is my attempt at organizing my thoughts and ideas on Haskell... read on to see what I've found.
 
-_Definitely a WIP; last updated Oct 7th, 2024._
-
 {/* truncate */}
+
+
+:::warning
+This is quite the mess, since I created it free form. I'm in the process of pulling it apart and organizing it in a new dedicated section of the website: [Learning Haskell from Scratch](http://localhost:3000/docs/).
+
+This article will start to shrink as I move things around, while the main document grows. It's the circle of life. 🦁
+:::
+
 
 ## Getting Started
 
 As a language that has been around for over 30 years, the documentation and developer experience thus far doesn't remotely compare to to the likes of modern languages like Go or Rust. Things aren't caveman level, but there is a lot of inconsistency in the content and no central core place (that isn't also excruciatingly slow, Hoogle).
 
 So if you're just getting started like me, be ready for things to be a bit difficult a first.
-
-Update: So far, these two sources have been my favorite go tos when trying to recall something:
-- [Haskell MOOC](https://haskell.mooc.fi/) &mdash; Short online course from the University of Helsinki
-- [Well-Typed Intro to Haskell](https://www.youtube.com/watch?v=3blAsQDT0u8&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10) &mdash; YouTube video series by Andres Löh
 
 ## Early Learning Notes
 
@@ -38,8 +40,6 @@ _This section mainly follows these links: [Wikibooks Haskell](https://en.m.wikib
 Where I remember in code snippets, `--λ` implies the response to a command line call.
 
 ### General Concepts
-
-
 
 Variable order does not matter, since assignment is immutable. Thus:
 
@@ -74,28 +74,7 @@ add (-1)
 
 `if/then/else` is an expression.
 
-Anonymous functions, lambdas, take the form of:
 
-```haskell
-(\x -> x + 1)
-(\x y -> x + y)
-```
-
-_Note the skinny RH arrow `->`._
-
-You can think of general functions of the form `buildRobot arms legs torso = (arms, legs, torso)` as a series of lambda functions (see [Currying](#currying)).
-
-<L t="tip"/> This is useful to recall when building functions that take functions as a parameter.
-
-```haskell
-buildRobotLambda = (\arms ->
-                      \legs ->
-                        \torso -> (arms, legs, torso))
--- which implies:
-(((buildRobot "strong arms") "skinny legs") "long torso")
--- and
-buildRobotLambda "strong arms" "skinny legs" "long torso"
-```
 
 While there is a `not` boolean negation operator, Haskell allows for alternate operator implementations. This appears to be very common:
 
