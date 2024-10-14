@@ -20,6 +20,10 @@ fmap :: Functor f => (a -> b) -> f a -> f b
 
 This should look familiar. `fmap` just applies a change to container (like a list) that holds something of one type and then outputs another container of the same form, but with different contents (that may or may not be of the same type as the original container).
 
+:::info
+Haskell is _parametrically polymorphic_. All of these `a`s and `b`s and `f`s and the host of other letters you'll see going forward simply mean that functions labeled as such will work with _any_ types. It sounds daunting until you realize how limiting it makes function design, which is a good thing.
+:::
+
 The first thing to take away is that Haskell isn't playing around with being functional, compared to functional-adjacent languages like JavaScript. If a function doesn't receive all the arguments (`(a->b)` and `f a` in this example), you end up with a partial function. This is where currying comes into play, and I'll address that specifically at a later time.
 
 Essentially, you don't pass in parameters per se; it's more like you build up functions until it gives you a non-functional response, like an `Int` or `[Char]` or a more complex structure.
