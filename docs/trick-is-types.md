@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: The Trick is in the Types
 ---
 
-## Signatures are important 🔑
+## Type signatures are important 🔑
 
 Learning to read and understand type signatures is key. You have to be able to wrap your head around things like this:
 
@@ -20,23 +20,17 @@ fmap :: Functor f => (a -> b) -> f a -> f b
 
 This should look familiar. `fmap` just applies a change to container (like a list) that holds something of one type and then outputs another container of the same form, but with different contents (that may or may not be of the same type as the original container).
 
+The function `fmap` is highly generalized. It will work on most any type: so `a` could be `Int`, but `b` could be `Char`, or even more complex types; either could even be a function. The only restriction for `fmap` is that `f` be an instance of Functor.
+
 :::info
 Haskell is _parametrically polymorphic_. All of these `a`s and `b`s and `f`s and the host of other letters you'll see going forward simply mean that functions labeled as such will work with _any_ types. It sounds daunting until you realize how limiting it makes function design, which is a good thing.
 :::
 
-The first thing to take away is that Haskell isn't playing around with being functional, compared to functional-adjacent languages like JavaScript. If a function doesn't receive all the arguments (`(a->b)` and `f a` in this example), you end up with a partial function. This is where currying comes into play, and I'll address that specifically at a later time.
 
-Essentially, you don't pass in parameters per se; it's more like you build up functions until it gives you a non-functional response, like an `Int` or `[Char]` or a more complex structure.
 
 ### Trailing Types
 
-As long as the thing you're feeding into a function matches what it wants, you're pretty much good to go (with some constraints).
-
-I found this tibit from [LYAH](https://learnyouahaskell.com/higher-order-functions#curried-functions) helpful to keep in mind, _emphasis_ mine:
-
-> Simply speaking, if we call a function with too few parameters, we get back a _partially applied function_, meaning a function that _takes as many parameters as we left out_.
-
-You'll see what I mean when we get to dissecting the custom `revMap` function in a moment.
+As long as the thing you're feeding into a function matches what it wants, you're pretty much good to go (with some constraints). You'll see what I mean as we create the `revMap` function in a moment.
 
 Let's follow this chain:
 
@@ -70,7 +64,7 @@ revMap :: Functor f => f [a] -> f [a] -- Now `reverse` is part of `revMap`, so
                                       -- means we'll get an output of `f [a]` as well.
 ```
 
-### Breaking down `fmap` first
+### Breaking down `fmap`
 
 There's a lot of back and forth with the letters. Are `f a` or `f [a]` or `f b` all the same? In this context, yes, they are the same for all intents and purposes.
 
@@ -101,8 +95,8 @@ You could write:
 `fmap :: Functor f => ([x] -> [x]) -> f [x] -> f [x]` 🍻
 :::
 
-### Looking at `revMap`
-The new `revMap` is just `fmap`, but with one argument already applied. While it looks like `revMap`'s input is `f [a]` and not the more general `f a` from `fmap`, re-read the note above: `f a` is the same `f [a]` as far as this situation is concerned. And `revMap`'s output, which also happens to be `f [a]` match neatly with `fmap`'s output, labeled as `f b`. A closer look:
+### The "shape" of `revMap`
+The new `revMap` is just `fmap`, but with one argument already applied (recall shades of `xor` from previously). While it looks like `revMap`'s input is `f [a]` and not the same as the more general `f a` from `fmap`, they actually _are_ the same as far as this situation is concerned. And `revMap`'s output, which also happens to be `f [a]` match neatly with `fmap`'s output, labeled as `f b`. A closer look:
 
 ```haskell
 fmap :: Functor f => (a -> b) -> f a -> f b -- Acts on a functor, returns a functor.
@@ -111,7 +105,7 @@ fmap :: Functor f => (a -> b) -> f a -> f b -- Acts on a functor, returns a func
 --                       │        ┌──────┘
 --                     ┌─┴─┐    ┌─┴─┐
 revMap :: Functor f => f [a] -> f [a]       -- Acts on a list, returns a list.
-                                            -- Recall, lists are functors.
+                                            -- (Recall, lists are functors).
 ```
 It doesn't matter that the output of one isn't _exactly_ the same as the other. What's important is the _shape_ of the types. `f [a]` is the same shape `f b` &mdash; both are types of a functor applied to something.
 
@@ -119,5 +113,5 @@ It doesn't matter that the output of one isn't _exactly_ the same as the other. 
 
 The general concept is relatively easy to grasp: just like with procedural languages, a Haskell function expects that its input parameters will be of a specific type or format, as it were.
 
-The hard part is juggling all of the different letters, meanings, and abstractions. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup.
+The hard part is juggling all of the different letters, meanings, and abstractions. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup. 🔡
 
