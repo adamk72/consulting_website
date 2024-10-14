@@ -67,6 +67,7 @@ const config = {
         items: [
           { to: "/resume", label: "Resume", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/docs", label: "Haskell", position: "left" },
         ],
       },
       footer: {
@@ -74,18 +75,14 @@ const config = {
           {
             title: "Light Reading",
             items: [
-              // {
-              //   label: 'Getting Started',
-              //   to: 'docs/',
-              // },
               {
                 label: "Tech & PM Blog",
                 to: "blog",
               },
-              // {
-              //   label: 'Speaking Blog',
-              //   to: 'speaking-blog',
-              // },
+              {
+                label: "Learning Haskell",
+                to: "docs/",
+              },
             ],
           },
           {
