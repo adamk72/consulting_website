@@ -4,6 +4,8 @@
     "Zaelot"
     "nonterminals",
     "strconv",
-    "unaries"
+    "unaries",
+    "Kowainik",
+    "Mult"
   ]
 }

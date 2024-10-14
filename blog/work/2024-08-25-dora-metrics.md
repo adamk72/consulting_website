@@ -5,11 +5,11 @@ tags: [coding, project management, metrics, engineering]
 ---
 There’s no silver-bullet metric (or set of metrics) at the individual level that doesn’t either require extensive context or can’t be gamed by the developers, or worse, might be misused by the upper-echelon, looking for excuses to “clean house.”
 <!--truncate-->
-When it comes to individual software developer metrics, I have yet to see anything that actually works for all parties involved: the individual, the team, or the organization. 
+When it comes to individual software developer metrics, I have yet to see anything that actually works for all parties involved: the individual, the team, or the organization.
 
 Teams, as a whole, can be measured in a fairly straightforward way. Did they get the product out on time and under budget and is the customer happy with the results?
 
-Of course, no one wants to wait till the end of the project to figure that out. So what is a team to do? 
+Of course, no one wants to wait till the end of the project to figure that out. So what is a team to do?
 
 Use the results from Google’s DevOps Research and Assessment (DORA) program, which has been ongoing for over six years now: [https://dora.dev/](https://dora.dev/).
 

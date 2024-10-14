@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Idiomatic Haskell
 
 What I'm picking up is that idiomatic Haskell is exemplified through the use of its built-in functions. Consider looking for an existing function and combining it as needed with other functions rather than trying to use operators (which you'll need to do, yes, but focus on functions first; it is a functional language after all).

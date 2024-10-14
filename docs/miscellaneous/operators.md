@@ -65,7 +65,7 @@ example =
   . map (*10)
 ```
 
-\_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming).
+\_The `.` operator gets explored more under [Pointfree Programming](/docs/advanced-concepts/pointfree-programming).
 
 The `$` operator is use for function application. It takes the right side of the operator and applies it to the left side which helps with nested functions:
 

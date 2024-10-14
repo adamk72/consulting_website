@@ -26,6 +26,10 @@
 		"prefix": "todo",
 		"body" : ["<Lozenge t=\"todo\"/>"]
 	},
+	"note": {
+		"prefix": "note",
+		"body" : ["<Lozenge t=\"note\"/>"]
+	},
 	"gchi prompt": {
 		"prefix": "lprompt",
 		"body" : ["λ> $1"]

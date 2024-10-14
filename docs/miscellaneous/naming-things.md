@@ -14,7 +14,7 @@ Some basics. If you want full details on naming conventions, check out [Kowainik
 | Symbol    | Use |
 | -------- | ------- |
 | a, b, c... | normal placeholders for arbitrary types    |
-| [a] | a list containing objects of type `a`, but note that `a` by itself could also be a list of type `a` depending on context |
+| [a] | a list containing objects of type `a`; note: `b` = `[a]` implies `b` is also list that contains objects of type `a` |
 | e | error types |
 | f | for Functors or Applicatives     |
 | f, g, h... | for function variables; which `f` is depends on context |
@@ -22,7 +22,9 @@ Some basics. If you want full details on naming conventions, check out [Kowainik
 | k | for Kinds |
 | l | list variables |
 | m    | for Monads, Semigroups, Monoids   |
-| p | predicate, something that returns a Bool |
+| p, q | predicate, something that returns a or is of type Bool |
 | t | for Foldables or Traversables |
 | (x:xs), (y:ys) | for list patterns, where `x` is the head of the list and `xs` is the tail |
+
+Note on list patterns, often the head/tail variables will match the type of the list. That is, if the list is of type `[b]`, then you'll see that the pattern match is `(b:bs)`. 
 

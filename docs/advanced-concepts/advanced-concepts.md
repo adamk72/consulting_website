@@ -1,5 +1,8 @@
+---
+sidebar_position: 7
+---
 # Extra Considerations
-_or, things I find helpful when I remember them._
+_Or, things I find helpful when I remember them._
 
 ## Foldr and Foldl
 

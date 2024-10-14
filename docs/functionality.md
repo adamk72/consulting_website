@@ -12,14 +12,27 @@ You can see this notion of passing functionality in the ever present expression 
 Type signatures look like this:
 
 ```haskell
--- `xor` is a function that takes in two Bools and returns another Bool.
-xor :: Bool -> Bool -> Bool
-xor p q = (p || q) && not (p && q)
+-- `xor` is a function with two boolean arguments that evaluates to a boolean result. 
+xor :: Bool -> Bool -> Bool           -- Definition (Type Signature)
+xor p q = (p || q) && not (p && q)    -- Function declaration
+--  │ │   └──────────────────────┴────── Result evaluates to type `Bool`
+--  │ └─ Second parameter of type `Bool`
+--  └─── First parameter of type `Bool`
 ```
+<Lozenge t="note"/> Pay attention to the `=` operator. It's not assigning the result from the RHS to the LHS like in a procedural call &mdash; how would it assign a single boolean to the two variables, `p` and `q` anyway? Keep in mind this a function call, not an expression, and is saying that `p` and `q` are to be used for their respective values in the function.
 
-From a procedural point of view, one might read `xor` as a function that takes two booleans and returns a third. That works, but it's not the completely story.
+From a procedural point of view, one might read `xor` as a function that takes two booleans and returns a third. That works, but it's not the complete story.
 
 Essentially, you don't pass in parameters per se like in a C-type language; it's more like you build up functions until the final result is not another function, but rather a concrete type, like a `Bool` or an `Int` or a `[Char]` (a.k.a., a `String`) or an even more complex structure.
+
+```haskell
+λ> xor p q = (p || q) && not (p && q)
+λ> xor' = xor True  -- `xor'` is a partial function, where `p` == `True`.
+λ> xor' False       -- You can give it the second parameter `q` at anytime.
+True
+λ> xor' True
+False
+```
 
 :::tip
 The `->` operator is right-associative. You can re-write the signature to represent `xor` more precisely by:

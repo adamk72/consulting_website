@@ -8,7 +8,7 @@ Anonymous functions, lambdas, take the form of:
 ```
 _Note the skinny RH arrow `->`._
 
-You can think of general functions of the form `buildRobot arms legs torso = (arms, legs, torso)` as a series of lambda functions (see [Currying](#currying)).
+You can think of general functions of the form `buildRobot arms legs torso = (arms, legs, torso)` as a series of lambda functions.
 
 <Lozenge t="tip"/> This is useful to recall when building functions that take functions as a parameter.
 

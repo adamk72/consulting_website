@@ -221,7 +221,7 @@ _From [Wiwinwlh](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#func
 - Monoids and Semigroups (and their relation)
 - Equational Reasoning
 - Monad transformers
-- Type [holes](#hole-driven-development) and undefined
+- Type holes and undefined
 - `return` and `pure` &mdash; "lifts" a value into IO context
 - `>>` and `*>` &mdash; sequence two IO operations
 - GHC Extensions, e.g., [`RecordWildCards`](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/record_wildcards.html)

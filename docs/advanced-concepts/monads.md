@@ -1,13 +1,16 @@
+---
+sidebar_position: 2
+---
 # Monads, Applicatives, and Functors
 
 ## The Relationships
 
 The quick way to look at the relation between these three objects is:
 
-`Functor -> Applicative -> Monad` &mdash; The lower ones build to make the higher ones.
+`Functor -> Applicative -> Monad` &mdash; The lower ones build to make the higher ones, acting on complex data types, where we want to perform some action or evaluation on the internal values of a the complex data type.
 
 :::tip
-Functors change _values_, Applicatives change the _functionality_, and Monads change _context_.
+Applied to the contents of "wrapped" types, Functors change _values_, Applicatives change the _functionality_, and Monads change _context_.
 :::
 
 ```haskell
@@ -40,11 +43,11 @@ class Applicative f => Monad f where
 -- Functor example => Operator applied to a single wrapped type
 λ> (*2) <$> Just 3              -- Apply *2 to content of Just 3
 Just 6                          -- Retain result in Maybe type
---λ  (*) <$> Just 3             -- Fails; missing an second value to multiply
+--λ (*) <$> Just 3             -- Fails; missing an second value to multiply
                                 -- "??? * 3" doesn't make sense
 
 -- Applicative example => Operator applied between two wrapped types
-λ> (*) <$> Just 4 <*> Just 3    -- Multiply the contents of Just 2 to contents of Just 3
+λ> (*) <$> Just 4 <*> Just 3    -- Map (*) over 4 and apply to 3
 Just 12                         -- Retain result in Maybe type
 --λ (*2) <$> Just 2 <*> Just 3  -- Fails; extra operand unnecessary
                                 -- "4 *2 3" doesn't make sense.
@@ -67,6 +70,31 @@ Nothing     --  ^^^ Just 4            ^^^ Just 5            ^^^ 5 < 6, Nothing
 -- this is done by inference since the following >>= expects a Maybe.
 ```
 
+It's worth talking about the "strange" (to a procedural programmer) syntax of the first applicative example. It's more obvious if we convert from `Maybe` context to a `List` context:
+```haskell
+-- instead of:
+(*) <$> Just 4 <*> Just 3
+--λ Just 12
+
+-- consider:
+(*) <$> [4] <*> [3]
+--λ [12]
+```
+
+Both `[]` and `Just` contain values that we want to get it, then apply some function to. Expressing by breaking the first example down:
+
+```haskell
+λ> (*) <$> Just 4 <*> Just 3
+Just 12
+
+λ> applyMultBy4 = (*) <$> Just 4
+λ> :t applyMultBy4
+applyMultBy4 :: Num a => Maybe (a -> a) -- This is a wrapped `(*) :: a -> a -> a`
+
+λ> applyMultBy4 <*> Just 3
+Just 12
+```
+`Maybe` and `Either` and other similar wrapper types are like `List`s in this regard. You can map over them, and in this particular example, what you're mapping is one or more partial functions (via `<$>`) that can then be applied to a new wrapped type (via `<*>`).
 
 
 ## More on Monads
