@@ -39,7 +39,7 @@ Where I remember in code snippets, `--λ` implies the response to a command line
 
 ### General Concepts
 
-Remember, lists are _not_ arrays like in JavaScript or the like. See [WTF: Working with Lists](https://whatthefunctional.wordpress.com/2018/04/17/working-with-lists/) for some common list functions.
+
 
 Variable order does not matter, since assignment is immutable. Thus:
 
