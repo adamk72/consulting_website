@@ -27,12 +27,12 @@ const LozengeChoices: Record<LozengeProps, LozengeDetails> = {
   note: { bgColor: "#7dd3fc", text: "Note" }, // bg-sky-300
   rule: { bgColor: "#ef4444", text: "Rule", color: "#fafafa" }, // bg-red-500
   tbd: { bgColor: "#f9a8d4", text: "TBD" }, // bg-pink-300
-  tip: { bgColor: "#2dd4bf", text: "Tips" }, // bg-teal-400
+  tip: { bgColor: "#2dd4bf", text: "Tip" }, // bg-teal-400
   warn: { bgColor: "#fbbf24", text: "Caution!" }, // bg-amber-400
   todo: { bgColor: "#ecfeff", text: "Todo" }, // bg-cyan-50
 };
 
-const Lozenge = ({ t }: { t: LozengeProps }) => {
+const Lozenge = ({ t, p }: { t: LozengeProps, p?: Boolean }) => {
   const details = LozengeChoices[t];
   return (
     <span
@@ -43,7 +43,7 @@ const Lozenge = ({ t }: { t: LozengeProps }) => {
         fontFamily: "Montserrat",
       }}
     >
-      {details.text}
+      {details.text}{p ? 's' : null}
     </span>
   );
 };

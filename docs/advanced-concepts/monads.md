@@ -89,7 +89,7 @@ Monads have two, optionally three, parts:
   `Maybe a = Nothing | Just a`, `Nothing`, _and_ `Just` are boh `Maybe a` types, and are constructors.
 - In most examples, `m a` and `m b` are monads of different contexts. That is, we're looking at two different monads applied to whatever types are appropriate: `m a` and `k b` (and then shorten those to just `m` and `k` for brevity's sake).
 
-### The Monad Laws <Lozenge t="law"/>
+### The Monad Laws <Lozenge t="law" p/>
 
 1. **Right Identity**: `return a >>= f` === `f a`. Return creates a monad on value `a` and when bound to a function, that function will be applied to `a`.
 2. **Left Identity**: `m >>= return` === `m`. Given a monad context `m`, when bound to a return, will result in the same monad context.
