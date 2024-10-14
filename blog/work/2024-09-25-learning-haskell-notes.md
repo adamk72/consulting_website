@@ -323,8 +323,7 @@ greet x = case x of
 greet = \x -> case x of
                 AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
 -- and then the IDE suggests this:
-greet = (\(AdventureOptions a) -> putStrLn $ "You chose: '" ++ a ++ "'.") 
-                
+greet = (\(AdventureOptions a) -> putStrLn $ "You chose: '" ++ a ++ "'.")
 ```
 
 `greet (AdventureOptions a)` is sugar for the `case` expression.
