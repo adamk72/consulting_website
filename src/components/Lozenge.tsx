@@ -9,7 +9,8 @@ type LozengeProps =
   | "warn"
   | "maxim"
   | "essential"
-  | "tbd";
+  | "tbd"
+  | "todo";
 
 type LozengeDetails = {
   text: string;
@@ -28,6 +29,7 @@ const LozengeChoices: Record<LozengeProps, LozengeDetails> = {
   tbd: { bgColor: "#f9a8d4", text: "TBD" }, // bg-pink-300
   tip: { bgColor: "#2dd4bf", text: "Tips" }, // bg-teal-400
   warn: { bgColor: "#fbbf24", text: "Caution!" }, // bg-amber-400
+  todo: { bgColor: "#ecfeff", text: "Todo" }, // bg-cyan-50
 };
 
 const Lozenge = ({ t }: { t: LozengeProps }) => {

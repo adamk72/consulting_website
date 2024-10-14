@@ -26,7 +26,7 @@ The function `fmap` is highly generalized. It will work on most any type: so `a`
 Haskell is _parametrically polymorphic_. All of these `a`s and `b`s and `f`s and the host of other letters you'll see going forward simply mean that functions labeled as such will work with _any_ types. It sounds daunting until you realize how limiting it makes function design, which is a good thing.
 :::
 
-
+Signature are sometimes necessary if there is a reason the complier cannot infer the signature itself. They are also useful for documentation in general.
 
 ### Trailing Types
 
@@ -114,4 +114,9 @@ It doesn't matter that the output of one isn't _exactly_ the same as the other. 
 The general concept is relatively easy to grasp: just like with procedural languages, a Haskell function expects that its input parameters will be of a specific type or format, as it were.
 
 The hard part is juggling all of the different letters, meanings, and abstractions. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup. 🔡
+
+
+<Lozenge t="warn"/> Haskell _does not_ retain type info at run time! <Lozenge t="todo"/> 
+
+
 

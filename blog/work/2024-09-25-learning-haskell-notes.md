@@ -4,8 +4,6 @@ authors: akecskes
 tags: [coding, haskell]
 ---
 
-import {default as L} from '@site/src/components/Lozenge'
-
 <head>
   <meta name="description" content="Learning Haskell from Scratch, a Procedural Programmer's Perspective"/>
   <meta charSet="utf-8" />
@@ -74,8 +72,6 @@ add (-1)
 
 `if/then/else` is an expression.
 
-
-
 While there is a `not` boolean negation operator, Haskell allows for alternate operator implementations. This appears to be very common:
 
 ```haskell
@@ -83,81 +79,10 @@ not (5 * 2 == 10)
 x /= y = not (x == y) -- `/=` is now the same as the `not` operator
 ```
 
-Guards use the `|` operator (and 4 leading spaces):
 
-```haskell
-absolute x
-    | x < 0     = -x
-    | otherwise = x -- `otherwise` is its own catch-all case: `otherwise = True`
-```
-
-Guards can replace if/then/else statements.
-
-<L t="rule"/> Importantly, guards are not the same as pattern matches. Pattern matches can destructure data types; guards cannot. Pattern matches bind identifiers inside their scope; guards do not.
-
-Type signatures look like this:
-
-```haskell
-xor :: Bool -> Bool -> Bool
-xor p q = (p || q) && not (p && q)
-```
-
-They are sometimes necessary if there is a reason the complier cannot infer the signature itself and useful for documentation in general.
-
-<L t="note"/> For the procedural thinker, it's important to realize a type signature like `xor :: Bool -> Bool -> Bool` isn't "xor takes two booleans and returns a third boolean." It's more like "xor takes a boolean and returns a partial function which takes a boolean and that function finally returns a boolean." That is, `xor :: Bool -> (Bool -> Bool)` is a more precise representation. See [Fixity](#fixity-and-precedence).
-
-<L t="warn"/> Haskell _does not_ retain type info at run time!
-
-Elaborating on the fact that partial function evaluations are a thing:
-
-```haskell
-map (* 2) [5,6] -- (* 2) is a partial function
---λ [10,12]
-
-{- alternatively, using a lambda -}
-map (\x -> 2 * x) [5,6]
---λ [10,12]
-
--- Another type of partial
-makeList n = [0..n]
-makeList 3
---λ [0,1,2,3]
-```
-
-A `typeclass` is a group of types. In this case, `Num` is a `typeclass` representing both integers and floating point values:
-
-```haskell
-(+) :: (Num a) => a -> a -> a
-```
 
 The fat arrow (`=>`) is an implication or constraint about the value of `a`. It has to be of typeclass Num.
 
-Interesting. While some number types are polymorphic, meaning the complier will infer if it needs to convert from an Integer to a Double, `Int` specifically is not polymorphic:
-
-> In Haskell, if you define a function with an `Int` argument, it will never be converted to an `Integer` or `Double`, unless you explicitly use a function like `fromIntegral`.
-
-The `.` function for composition:
-
-```haskell
-f x = x + 3
-square x = x ^ 2
-
-{- could be done this way -}
-squareOfF x = square (f x)
-fOfSquare x = f (square x)
-
--- or this way
-squareOfF x = (square . f) x
-fOfSquare x = (f . square) x
-```
-
-Futhermore, as functions, you can do this:
-
-```haskell
-squareOfF x = (square . f) x
--- is
-squareOfF = square . f -- just drop the `x` from both sides!
-```
 
 ### ghci
 
@@ -170,276 +95,6 @@ Probably the most important thing is to get used to using `:t` like crazy inside
 
 In the couple of dozen of hours I've poured into Haskell, the "get to know your types" trope has held up remarkably well.
 
-### Where and Let
-
-Where clauses allow you to define sub-function (of sorts);
-
-```haskell
-heron a b c = sqrt (s * (s - a) * (s - b) * (s - c))
-    where -- important to note that there are 4 spaces here (and below)
-    s = (a + b + c) / 2
-```
-
-_though this [Wikibooks page](https://en.wikibooks.org/wiki/Haskell/Indentation) gives a way better explanation._
-
-The `let` binding allows for local declarations:
-
-```haskell
-roots a b c =
-    let sdisc = sqrt (b * b - 4 * a * c)
-    in  ((-b + sdisc) / (2 * a),
-         (-b - sdisc) / (2 * a))
-```
-
-_`let/in` has a lot more to it than this, as one might expect._
-
-Comparing `where` and `let`:
-
-```haskell
-f = x+y where x=1; y=1 -- where is _not_ an expression and stays at the top level.
-
-f = let x = 1; y = 2 in (x+y) -- let is an expression
-```
-
-### List Comprehensions
-
-List comprehensions are syntactic sugar for many things, such as for the `filter :: (a -> Bool) -> [a] -> [a]` function:
-
-```haskell
-{- Helper function -}
-isEven :: Int -> Bool
-isEven n = (mod n 2) == 0
-
-{- Normal form -}
-retainEven = filter isEven
-
-{- LC form -}
-retainEven es = [n | n <- es, isEven n]
-```
-
-LCs can go even further, acting as both filter and map, among other things:
-
-```haskell
-{- Do multiple checks -}
-retainLargeEvens :: [Int] -> [Int]
-retainLargeEvens es = [n | n <- es, isEven n, n > 100]
-
-{- Subtract one from the filter result -}
-evensMinusOne es = [n - 1 | n <- es, isEven n]
-
-{- Using the range operator -}
-[x*2 | x <- [1..10]] -- [2,4,6,8,10,12,14,16,18,20]
-
-{- Pattern match; see Pattern Matching for more -}
-firstForEvenSeconds :: [(Int, Int)] -> [Int]j
-firstForEvenSeconds ps = [x | (x, y) <- ps, isEven y]
-firstForEvenSeconds ps = [fst p | p <- ps, isEven (snd p)] -- the more verbose form
-```
-
-You can have multiple generators, and order matters (you can think of them like nested loops):
-
-```haskell
-[(x,y) | y <- [4,5], x <- [1,2,3]] -- [(1,4), (2,4), (3,4), (1,5)...]
--- generates different results from
-[(x,y) | x <- [1,2,3], y <- [4,5]] -- [(1,4), (1,5), (2,4), (2,5)...]
-```
-
-Generators can be dependent on a previous one.
-
-### Pattern Matching
-
-Then there is the concept of piece-wise definitions, where you define results by directly restating the function name. This is pattern matching:
-
-```haskell
-{- assign points based on placement in a contest, for example ◊-}
-pts :: Int -> Int -- the type signature
-pts 1 = 10
-pts 2 = 6
-pts 3 = 4
-pts _ = 0 -- `_` is the wildcard or "whatever" pattern
-```
-
-and you can mix and match with other concepts like guards:
-
-```haskell
-pts :: Int -> Int
-pts 1 = 10
-pts 2 = 6
-pts x
-    | x <= 6    = 7 - x
-    | otherwise = 0
-```
-
-Alternative to the "normal" pattern matching, you can use `case` matching:
-
-```haskell
-pts :: Int -> Int
-pts p = case p of 1 -> 10
-                  2 -> 6
-                  3 -> 4
-                  _ -> 0
-```
-
-`case` often acts as an intermediary step for local pattern matching. It is not the same as a case condition in a typical `switch` statement. They can also match on expressions:
-
-```haskell
--- ... type and other patterns...
-filter p (x:xs) = 
-  case p x of                 -- note the indentations
-    False -> filter p xs      -- don't include the current x
-    True -> x : filter p xs   -- keep the current x
-```
-<L t="note"/> For boolean type evaluations, you can replace the `case` with an `if/then/else` expression as well, or use guards/otherwise. Also, `case` matches can be used outside of function definitions.
-
-<L t="lemma" /> From a question I asked in [r/haskell](https://www.reddit.com/r/haskell/comments/1fwclxw/learning_haskell_trying_to_refactor_from_function/), it's worth noting that destructuring is the equivalent of a `case` statement:
-
-```haskell
-greet (AdventureOptions a) = putStrLn $ "You chose: '" ++ a ++ "'."
--- is the same as:
-greet x = case x of
-            AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
--- which leads to:
-greet = \x -> case x of
-                AdventureOptions a -> putStrLn $ "You chose: '" ++ a ++ "'."
--- and then the IDE suggests this:
-greet = (\(AdventureOptions a) -> putStrLn $ "You chose: '" ++ a ++ "'.")
-```
-
-`greet (AdventureOptions a)` is sugar for the `case` expression.
-
-As-Patterns take the form of `var@pattern`:
-
-```haskell
-contrivedMap :: ([a] -> a -> b) -> [a] -> [b]
-contrivedMap f [] = []
-
--- as-pattern
-contrivedMap f list@(x:xs) = f list x : contrivedMap f xs -- "list" is now the name of "(x:xs)"
-
--- normal
-contrivedMap f (x:xs) = f (x:xs) x : contrivedMap f xs
-```
-
-#### Regarding Pattern Matching with Tuples and Lists (the `(:)` operator)
-
-The tuple-like form (`()`) also can be used as a pattern matching mechanism when matching lists and in other places. For lists, use the "cons" operator (`:`) instead of a comma to represent the contents of the list to be matched (because functions have the highest precedence). Convention is to use 'x' and 'xs' to show the first and "rest" (like in JS) elements:
-
-```haskell
-head             :: [a] -> a
-head (x:_)       =  x
-head []          =  error "Prelude.head: empty list"
-
-tail             :: [a] -> [a]
-tail (_:xs)      =  xs
-tail []          =  error "Prelude.tail: empty list"
-```
-
-Note that we're not using the `[]` syntax (e.g., we don't use '[x:xs]'), but rather `(x:xs)` to match the elements of the list.
-
-Patterns can be nested:
-
-```haskell
-sumEveryTwo :: [Integer] -> [Integer]
-sumEveryTwo (x:y:zs) = (x + y) : sumEveryTwo zs -- (x:(y:zs)) would work too.
-```
-
-### Dots '&' Dollars
-
-The "dot" operator is actually function composition, used for chaining functions:
-
-```haskell
-example :: [Integer] -> [Integer]
-example =
-    sort
-  . filter (<100) -- note the spaces (both leading and following)
-  . map (*10)
-```
-
-\_The `.` operator gets explored more under [Pointfree Programming](#pointfree-programming).
-
-The `$` operator is use for function application. It takes the right side of the operator and applies it to the left side which helps with nested functions:
-
-```haskell
-foo $ bar $ baz bin
--- is the same as
-foo (bar (baz bin))
-```
-
-`$` has the lowest possible precedence for any infix operator:
-
-```haskell
-:info ($)
---λ ($) :: (a -> b) -> a -> b 	-- Defined in ‘GHC.Base’
---λ infixr 0 $                  -- which tells us it has 0 precedence
-```
-
-You can look at the `$` as an open parenthesis with an implicit close at the end of the expression:
-
-```haskell
-last $ take 10 [1..]
--- is the same as
-last (take 10 [1..])
-```
-
-The `&` does the reverse of `$`:
-
-```haskell
-bin & baz & bar & foo
--- is the same as
-foo $ bar $ baz bin
-```
-
-Comparisons between all three (from _Wiwinwhlh_):
-
-```haskell
-ex1 = f1 . f2 . f3 . f4 $ input -- with ($)
-ex1 = input & f1 . f2 . f3 . f4 -- with (&)
-ex1 = (f1 . f2 . f3 . f4) input -- with explicit parens
-```
-
-### Odd Bits
-
-`<$>` is a synonym for `fmap`:
-
-```haskell
-(*2) <$> [1,2,3]
--- [2,4,6]
-
-even <$> (2,2)
--- (2,True)
-```
-
-Use parentheses to turn an infix operator into a prefix. These are equivalent:
-
-```haskell
-4 + 9 == 13
-(==) (4 + 9) 13
---λ True
-```
-
-Likewise, you can turn a function "prefix" into an infix using backticks:
-
-```haskell
-div 100 9
--- can be replaced by
-100 `div` 9
-```
-
-`</>` is the file separator operator:
-
-```haskell
-"/directory" </> "file.ext" == "/directory/file.ext"
-```
-
-#### Common Variable Names
-
-- x, y    &mdash; heads
-- xs, ys  &mdash; tails
-- f       &mdash; functions
-- p       &mdash; predicates (functions that lead to Bool)
-- t       &mdash; traversables (and something else?)
-
-
 
 ### Fixity and Precedence
 
@@ -447,21 +102,7 @@ Passing an argument to a function has higher precedence than passing to an opera
 
 Infix operators have a "fixity" which determines how they favor precedence. `<>` has right fixity so something like `"My name is" <> name <> "."` is seen by the compiler as `"My name is" <> (name <> ".")`.
 
-### Currying
-
-The `->` is a right associative, so `Int -> Int -> Int -> Int` is the same as `Int -> (Int -> (Int -> Int))`.
-
-<L t="rule"/> This gives us the "lambda distribution rule":
-
-```haskell
-add :: Int -> Int -> Int
-add x y = x + y
-{- means -}
-add :: Int -> (Int -> Int)
-add = \x -> (\y -> x + y) -- where `\` is the keyboard symbol for the lambda symbol.
-```
-
-A function that has all of its expected arguments is _saturated_ and can evaluate to a non-function value. Otherwise it's considered _partially applied_. <L t="lemma"/>
+##
 
 `error` acts as placeholder:
 
@@ -483,7 +124,7 @@ last xs = head (reverse xs)
 last xs = xs !! (length xs - 1)
 ```
 
-<L t="tip"/> _From [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes._
+<Lozenge t="tip"/> _From [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes._
 
 - Prefer `fmap` over `map`.
 - Avoid `String`.
@@ -510,7 +151,7 @@ sum' xs = foldr (+) 0 xs -- normal
 sum = foldr (+) 0        -- pointfree; more compact, more idiomatic
 ```
 
-<L t="warn"/> The dropping of variables like this can throw you off! In the second example, it almost looks like `foldr` is missing its final argument.
+<Lozenge t="warn"/> The dropping of variables like this can throw you off! In the second example, it almost looks like `foldr` is missing its final argument.
 
 Let's elaborate, because this burns my brain once the (`.`) gets involved for functional programming.
 
@@ -705,8 +346,8 @@ class Applicative f => Monad f where
 Maybe is all three of the major above types:
 
 - It's a Functor because you can map over it; if you have function `(a -> b)`, you can map over it to go from `Maybe a` to `Maybe b`
-- It's an Applicative because <L t="tbd"/>
-- It's an Monad because <L t="tbd"/>
+- It's an Applicative because <Lozenge t="tbd"/>
+- It's an Monad because <Lozenge t="tbd"/>
 
 ### Monads
 
@@ -726,7 +367,7 @@ Monads have two, optionally three, parts:
   `Maybe a = Nothing | Just a`, `Nothing`, _and_ `Just` are boh `Maybe a` types, and are constructors.
 - In most examples, `m a` and `m b` are monads of different contexts. That is, we're looking at two different monads applied to whatever types are appropriate: `m a` and `k b` (and then shorten those to just `m` and `k` for brevity's sake).
 
-#### The Monad Laws <L t="law"/>
+#### The Monad Laws <Lozenge t="law"/>
 
 1. **Right Identity**: `return a >>= f` === `f a`. Return creates a monad on value `a` and when bound to a function, that function will be applied to `a`.
 2. **Left Identity**: `m >>= return` === `m`. Given a monad context `m`, when bound to a return, will result in the same monad context.
@@ -969,7 +610,7 @@ Well-stated from [LYAH](https://learnyouahaskell.com/higher-order-functions#curr
 
 #### Sections
 
-<L t="note"/> Sections are the partial application of an operator.
+<Lozenge t="note"/> Sections are the partial application of an operator.
 
 ```haskell
 map (+1) [1..5]
@@ -982,7 +623,7 @@ map (+1) [1..5]
 (2^) -- (left section) is equivalent to (^) 2, or more verbosely \x -> 2 ^ x
 (^2) -- (right section) is equivalent to flip (^) 2, or more verbosely \x -> x ^ 2
 ```
-<L t="warn"/> Keep in mind the commutativity of the operator!
+<Lozenge t="warn"/> Keep in mind the commutativity of the operator!
 
 ### GHCI Commands
 
@@ -999,7 +640,7 @@ also, [GHCI User Guide](https://downloads.haskell.org/ghc/latest/docs/users_guid
 
 ### General
 
-- `foldr` is the constructor replacement function. Uses the [incremental pattern](https://www.youtube.com/watch?v=J_4BKCDeukA&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10&index=23) f<L t="essential"/>
+- `foldr` is the constructor replacement function. Uses the [incremental pattern](https://www.youtube.com/watch?v=J_4BKCDeukA&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10&index=23) f<Lozenge t="essential"/>
 - `foldl` is the for loop. Can be implemented in terms of `foldr`. Uses the [accumulator pattern](https://www.youtube.com/watch?v=wJgRsvtarmE&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10&index=24)
 - `(\_ -> a)` is `const a`
 - With `withFile`, this `(\h -> hGetContents h >>= putStr)` can go to this: `(hGetContents Control.Monad.>=> putStr)`
