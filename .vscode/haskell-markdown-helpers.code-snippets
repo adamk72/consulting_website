@@ -21,5 +21,17 @@
 		"body" : [
 			"```haskell\n$1\n```"
 		]
-	}
+	},
+	"todo": {
+		"prefix": "todo",
+		"body" : ["<Lozenge t=\"todo\"/>"]
+	},
+	"gchi prompt": {
+		"prefix": "lprompt",
+		"body" : ["λ> $1"]
+	},
+	"gchi result": {
+		"prefix": "lresult",
+		"body" : ["--λ $1"]
+	},
 }

@@ -1,5 +1,7 @@
 # Currying
 
+<Lozenge t="todo"/>
+
 The `->` is a right associative, so `Int -> Int -> Int -> Int` is the same as `Int -> (Int -> (Int -> Int))`.
 
 <Lozenge t="rule"/> This gives us the "lambda distribution rule":

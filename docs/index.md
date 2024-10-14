@@ -7,9 +7,20 @@ If you're here to learn quickly or because you have ADHD as bad as mine, **feel 
 :::
 
 :::warning
-I'll hit on most topics in Haskell eventually (as I learn them and as makes sense to me), but not in the order of most typical programming courses/lessons.
+Remember, I'm new to Haskell, so not everything will be addressed adequately, if at all. I don't know squat at the moment.
+:::
+
+I'll hit on most topics in Haskell eventually (as I learn them and as they make sense to me), but not in the order of most typical programming courses/lessons.
 
 I will also assume you know the basics of programming and are familiar with tools like REPLs and high-level concepts like "types" and "classes."
+
+:::info
+Some place in code blocks, I'll use `λ` to represent the REPL.
+
+- `>λ`&nbsp;&nbsp;&nbsp;&nbsp;&mdash; the REPL prompt itself. Text that follows on the next is the explicit reply.
+- `--λ`&nbsp;&nbsp;&mdash; a response from the REPL.
+
+Which gets used depends on context and what is in focus for the lesson.
 :::
 
 ## Welcome
@@ -25,9 +36,8 @@ All that said, there's a lot to dive into.
 
 My background was originally in C/C++, Java, and Objective-C. I later turned to JavaScript/TypeScript and HTMl/CSS, and have dabbled quite a bit in Rust and Go. That is to say, I'm steeped in the procedural &mdash; but I almost always have tried to leverage functional coding when it was available, like in JS and Rust.
 
-
-
 ## Alternative Resources
-So far, these two sources have been my favorite for learning Haskell and I return to them on a regular basis:
-- [Haskell MOOC](https://haskell.mooc.fi/) &mdash; Short online course from the University of Helsinki
-- [Well-Typed Intro to Haskell](https://www.youtube.com/watch?v=3blAsQDT0u8&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10) &mdash; YouTube video series by Andres Löh
+So far, these three sources have been my favorite for learning Haskell and I return to them on a regular basis:
+- [Learn You a Haskell](https://learnyouahaskell.com/) (LYAH) &mdash; Beginner course; sometimes a little too silly and verbose, but probably the most grounded in terms of providing solid explanations for some of the more complex ideas in Haskell.
+- [Haskell MOOC](https://haskell.mooc.fi/) &mdash; Short online course from the University of Helsinki. Well-ordered, succinct, linear, and importantly, clear. The examples are non-trivial and interesting.
+- [Well-Typed Intro to Haskell](https://www.youtube.com/watch?v=3blAsQDT0u8&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10) &mdash; YouTube video series by Andres Löh. A solid, step-by-step progression from the basics to higher-level concepts, with some good tips thrown in. 

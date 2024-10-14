@@ -44,7 +44,7 @@ reverse :: [a] -> [a] -- Matches `fmap`'s first argument, `(a -> b)`.
                       -- (type a == type b in this case).
 
 λ> :i []              -- Notice the `:i` for `:info`, instead of `:t` for `:type`.
-type List :: * -> *
+type List :: * -> *   -- This is the `kind`; a topic for later.
 data List a = [] | a : [a]
 -- skip lots of stuff --
 instance Functor []   -- This is enough to say that a list will fit in with `f a`.
@@ -113,10 +113,10 @@ It doesn't matter that the output of one isn't _exactly_ the same as the other. 
 
 The general concept is relatively easy to grasp: just like with procedural languages, a Haskell function expects that its input parameters will be of a specific type or format, as it were.
 
-The hard part is juggling all of the different letters, meanings, and abstractions. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup. 🔡
+The hard part is juggling the various contexts where all of the different letters, meanings, and abstractions live. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup. 🔡
 
 
-<Lozenge t="warn"/> Haskell _does not_ retain type info at run time! <Lozenge t="todo"/> 
+<Lozenge t="warn"/> Haskell _does not_ retain type info at run time! <Lozenge t="tbd"/> 
 
 
 

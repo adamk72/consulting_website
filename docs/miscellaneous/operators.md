@@ -2,6 +2,7 @@
 
 <Lozenge t="todo"/>
 
+## Composition (`.`)
 The `.` function for composition:
 
 ```haskell
@@ -24,6 +25,32 @@ squareOfF x = (square . f) x
 -- is
 squareOfF = square . f -- just drop the `x` from both sides!
 ```
+
+### More on (`.`)
+
+From a question I asked in [r/haskell](https://www.reddit.com/r/haskell/comments/1fwclxw/learning_haskell_trying_to_refactor_from_function/),
+
+```haskell
+data AdventureOptions = AdventureOptions {unOptions :: String}
+
+-- unOptions        :: AdventureOptions -> String
+-- pure             :: a -> IO a
+-- pure . unOptions :: AdventureOptions -> IO String
+
+main = parse >>= (pure . unOptions) >>= (\s -> putStrLn $ "You chose: '" ++ s ++ "'.")
+-- or
+main = parse >>= (\a -> putStrLn $ "You chose: '" ++ unOptions a ++ "'.")
+```
+
+Another look:
+
+```haskell
+(f . g) x = f (g x)
+(f . g) = \x -> f (g x) -- the `x` gets "pulled" into the lambda
+-- and you can η-reduce even further.
+```
+
+
 
 
 ## Dots '&' Dollars
