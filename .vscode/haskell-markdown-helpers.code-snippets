@@ -26,9 +26,21 @@
 		"prefix": "todo",
 		"body" : ["<Lozenge t=\"todo\"/>"]
 	},
+	"maxim": {
+		"prefix": "maxim",
+		"body" : ["<Lozenge t=\"maxim\"/>"]
+	},
 	"note": {
 		"prefix": "note",
 		"body" : ["<Lozenge t=\"note\"/>"]
+	},
+	"rule": {
+		"prefix": "rule",
+		"body" : ["<Lozenge t=\"rule\"/>"]
+	},
+	"tbd": {
+		"prefix": "tbd",
+		"body" : ["<Lozenge t=\"tbd\"/>"]
 	},
 	"gchi prompt": {
 		"prefix": "lprompt",
@@ -37,5 +49,9 @@
 	"gchi result": {
 		"prefix": "lresult",
 		"body" : ["--λ $1"]
+	},
+	"mdash": {
+		"prefix": "mdash",
+		"body" : ["&mdash; "]
 	},
 }

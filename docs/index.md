@@ -2,42 +2,54 @@
 sidebar_position: 1
 title: "Learning Haskell from Scratch"
 ---
-:::tip
-If you're here to learn quickly or because you have ADHD as bad as mine, **feel free to skip** most of the fluff writing, like below. The **juicy parts** are in the `code blocks`, callouts like this one, and sometimes in the quotation blocks. The rest is just written as way to get my head clear and probably can be ignored.
-:::
 
-:::warning
-Remember, I'm new to Haskell, so not everything will be addressed adequately, if at all. I don't know squat at the moment.
+## A Brief Intro
+
+This is my attempt to organize my thoughts on Haskell as I learn it. But as someone who suffers from TL;DR syndrome, these docs are written with my own considerations in mind. A LOT can be skipped; most of the normal block text is just my own rationalization of how something works.
+
+## How to Use
+
+:::tip
+If you're here to learn quickly or because you have ADHD as bad as mine, **feel free to skip** most of the fluff writing. The **juicy parts** are in callouts like this one, in the larger `code blocks`, lozenge tags that look like this: <Lozenge t="rule"/> and sometimes in the quotation blocks.
 :::
 
 I'll hit on most topics in Haskell eventually (as I learn them and as they make sense to me), but not in the order of most typical programming courses/lessons.
 
 I will also assume you know the basics of programming and are familiar with tools like REPLs and high-level concepts like "types" and "classes."
 
-:::info
+:::warning
+Remember, I'm new to Haskell, so not everything will be addressed adequately, if at all. I don't know squat at the moment.
+:::
+
+## Legend of Symbols
+
+### Lozenge Tags
+
+The lozenges highlight specific moments in the text that I like to keep in mind.
+
+#### Primary Tags
+- <Lozenge t="rule"/> &mdash; A definition of how something works in Haskell.
+- <Lozenge t="law"/> &mdash; Same as a rule, but declared more forcefully, usually by multiple sources.
+- <Lozenge t="maxim"/> &mdash; A pithy reminder of a key point.
+- <Lozenge t="note"/> &mdash; A short elaboration or highlight of recent text.
+
+#### Admin Tags
+_For my own use; if they show up on the site it's because I_ still _haven't gotten to making the adjustment yet._ 
+- <Lozenge t="tbd"/> &mdash; Something that is incomplete or needs confirmation is correct.
+- <Lozenge t="todo"/> &mdash; Something I will follow up on later, i
+
+### Command Line
 Some place in code blocks, I'll use `λ` to represent the REPL.
 
 - `>λ`&nbsp;&nbsp;&nbsp;&nbsp;&mdash; the REPL prompt itself. Text that follows on the next is the explicit reply.
 - `--λ`&nbsp;&nbsp;&mdash; a response from the REPL.
 
-Which gets used depends on context and what is in focus for the lesson.
-:::
+Which gets used depends on context and what is in focus for the lesson:
 
-## Welcome
-Hello! This is my attempt to organize my thoughts on Haskell as I learn it. The world of Haskell is... _disparate_ to say the least. For a language that has been around for as long as it has, documentation is often (in my mind) inconsistent, incomplete, or downright opaque.
+```haskell
+λ> 1 + 1
+2
 
-Part of that is, I'm sure, that while I'm no stranger to functional programming, Haskell is abyssal to the degree at which it approaches the topic. It is deeply rooted in academia and was named after [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry), a renowned mathematician and logician who died eight years before the language came out in 1990. The last major release of Haskell was July of 2010, fourteen years ago.
-
-Contrary to belief, as far as my research goes, Haskell is far from a dead language though. The likes of Facebook and Google have dabbled in it and I'm aware of several modern, well-funded companies who use the language as their principal backend development choice. For me, it's an exercise in getting away from procedural programming; I'm trading the chaotic world of way-too-many JavaScript platforms for the almost alchemical space of Haskell.
-
-All that said, there's a lot to dive into.
-
-## A Procedural Perspective
-
-My background was originally in C/C++, Java, and Objective-C. I later turned to JavaScript/TypeScript and HTMl/CSS, and have dabbled quite a bit in Rust and Go. That is to say, I'm steeped in the procedural &mdash; but I almost always have tried to leverage functional coding when it was available, like in JS and Rust.
-
-## Alternative Resources
-So far, these three sources have been my favorite for learning Haskell and I return to them on a regular basis:
-- [Learn You a Haskell](https://learnyouahaskell.com/) (LYAH) &mdash; Beginner course; sometimes a little too silly and verbose, but probably the most grounded in terms of providing solid explanations for some of the more complex ideas in Haskell.
-- [Haskell MOOC](https://haskell.mooc.fi/) &mdash; Short online course from the University of Helsinki. Well-ordered, succinct, linear, and importantly, clear. The examples are non-trivial and interesting.
-- [Well-Typed Intro to Haskell](https://www.youtube.com/watch?v=3blAsQDT0u8&list=PLD8gywOEY4HauPWPfH0pJPIYUWqi0Gg10) &mdash; YouTube video series by Andres Löh. A solid, step-by-step progression from the basics to higher-level concepts, with some good tips thrown in. 
+2 + 2
+--λ  4
+```
