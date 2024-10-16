@@ -1,4 +1,9 @@
-# Coding Patterns, Memes, and Maxims
+# Patterns, Memes, and Maxims
+
+<head>
+  <meta name="description" content="Tips and tricks around Haskell, including things like holes and hole-driven development and the difference between putStrLn, show, and print."/>
+  <meta charSet="utf-8" />
+</head>
 
 ## Triggers
 
@@ -34,4 +39,48 @@ And the same with `undefined` if you're not ready to fill in a space:
 ```haskell
 barFoo :: Char -> String
 barFoo x = undefined 
+```
+
+## Show, PutStrLn, Print 
+
+- `show` is of class `Show` and usually is implemented to display a quoted string representation of arbitrary data (not always human-readable). 
+- `putStrLn` is the direct display of a type `String` to `IO`.
+- `print` is the `IO` implementation of `show`.
+- `print = putStrLn . show`
+
+```haskell
+λ> :t print
+print :: Show a => a -> IO ()   -- converts Show implementations to IO
+
+λ> :t putStrLn
+putStrLn :: String -> IO ()     -- converts type String to IO
+
+λ> :t show
+show :: Show a => a -> String   -- converts type `a` to String
+```
+
+Demonstration:
+
+```haskell
+-- `show` is the underlying expression of data, as a quoted string.
+λ> show [1,2]         -- List implements the Show class
+"[1,2]"               -- notice the quotes
+
+λ> show "string"
+"\"string\""
+
+-- `putStrLn` only works on `String` types and displays
+-- the information without quotes.
+λ> putStrLn [1,2]
+--λ Errors out!       -- because [1,2] isn't a String type
+
+λ> putStrLn "string"
+string
+
+-- `print` is more literal and human-readable.
+λ> print [1,2]
+[1,2]                 -- no quotes
+
+λ> print "string"
+"string"
 ```
