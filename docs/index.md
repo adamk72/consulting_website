@@ -32,11 +32,12 @@ The lozenges highlight specific moments in the text that I like to keep in mind.
 - <Lozenge t="law"/> &mdash; Same as a rule, but declared more forcefully, usually by multiple sources.
 - <Lozenge t="maxim"/> &mdash; A pithy reminder of a key point.
 - <Lozenge t="note"/> &mdash; A short elaboration or highlight of recent text.
+- <Lozenge t="adv"/> &mdash; An advanced topic that is interesting, but won't be expanded upon, a.k.a, "an exercise left to the reader to figure out." 
 
 #### Admin Tags
 _For my own use; if they show up on the site it's because I_ still _haven't gotten to making the adjustment yet._ 
-- <Lozenge t="tbd"/> &mdash; Something that is incomplete or needs confirmation is correct.
-- <Lozenge t="todo"/> &mdash; Something I will follow up on later, i
+- <Lozenge t="wip"/> &mdash; Something that is incomplete or needs confirmation regarding correctness.
+- <Lozenge t="todo"/> &mdash; Something I will follow up on later, in greater depth.
 
 ### Command Line
 Some place in code blocks, I'll use `λ` to represent the REPL.

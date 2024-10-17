@@ -8,7 +8,27 @@ Remember, lists are _not_ arrays like in JavaScript or the like. They are homoge
 See [WTF: Working with Lists](https://whatthefunctional.wordpress.com/2018/04/17/working-with-lists/) for some common list functions.
 :::
 
+## Haskell Lists are Linked Lists
+
+The real form of a `[1, 2, 3, 4]` is `1 : 2 : 3 : 4 : []` where `:` is the symbol for the `cons` (of "constructor") function.
+
+:::tip
+It's important to remember that a list ends in `[]`! It becomes a natural assumption for pattern matching.
+:::
+
+## Lists as Contexts
+
+Lists are not just containers for a specific type (though they often are). They are also _contexts_, meaning they can be mapped over just like one can map over `Maybe`. In case of lists, however, because of the multiple item nature of their construction, you can apply functions in single stroke, using Monad operators.
+
+Contrast with with procedural approaches to lists (or arrays or other iterable object), where you have to apply a `for` loop or use a specific `map` (not to be confused with `fmap` in Haskell) in order to extract the values and evaluate the context.
+
+In Haskell, effectively you can treat a "list" as a single object of whatever the list is of (the key is understanding how the Monad operation `return` works with context, in conjunction with `>>=`). This is an example of Haskell's ability to handle nondeterministic types. <Lozenge t="todo"/>
+
 ## List Comprehensions
+
+:::note
+List comprehensions are a specialized application of monads! <Lozenge t="adv"/>
+:::
 
 List comprehensions are syntactic sugar for many things, such as for the `filter :: (a -> Bool) -> [a] -> [a]` function:
 

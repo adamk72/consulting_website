@@ -116,7 +116,7 @@ The general concept is relatively easy to grasp: just like with procedural langu
 The hard part is juggling the various contexts where all of the different letters, meanings, and abstractions live. A lot of code will replace function arguments with more explicit naming conventions, but when you're looking at the high level concepts, which is where all the power is, it can seem like alphabet soup. 🔡
 
 
-<Lozenge t="warn"/> Haskell _does not_ retain type info at run time! <Lozenge t="tbd"/> 
+<Lozenge t="warn"/> Haskell _does not_ retain type info at run time! <Lozenge t="wip"/> 
 
 
 

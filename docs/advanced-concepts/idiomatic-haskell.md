@@ -14,7 +14,7 @@ last xs = head (reverse xs)
 last xs = xs !! (length xs - 1)
 ```
 
-<Lozenge t="tip"/> _From [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes._
+<Lozenge t="tip"/> _Some is from [What to avoid](https://github.com/sdiehl/wiwinwlh/blob/master/tutorial.md#what-to-avoid) in the Prelude, due to historical changes._
 
 - Prefer `fmap` over `map`.
 - Avoid `String`.
@@ -22,6 +22,7 @@ last xs = xs !! (length xs - 1)
 - Avoid [_using or creating_] partial functions like `head` and `read` or use their total variants.
 - Avoid exceptions, use ExceptT or Either instead.
 - Avoid boolean blind functions.
+- Prefer `unwords` to `++` since it works on `Text` as well as `String`, whereas `++` only works on lists.
 
 Or, just pull the Prelude in explicitly and use what you need:
 

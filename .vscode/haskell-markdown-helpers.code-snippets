@@ -38,9 +38,13 @@
 		"prefix": "rule",
 		"body" : ["<Lozenge t=\"rule\"/>"]
 	},
-	"tbd": {
-		"prefix": "tbd",
-		"body" : ["<Lozenge t=\"tbd\"/>"]
+	"adv": {
+		"prefix": "adv",
+		"body" : ["<Lozenge t=\"adv\"/>"]
+	},
+	"wip": {
+		"prefix": "wip",
+		"body" : ["<Lozenge t=\"wip\"/>"]
 	},
 	"gchi prompt": {
 		"prefix": "lprompt",
@@ -49,6 +53,10 @@
 	"gchi result": {
 		"prefix": "lresult",
 		"body" : ["--λ $1"]
+	},
+	"draft": {
+		"prefix": "fmdraft",
+		"body" : ["---\ntitle: TBD\nsidebar_position: 99\ndraft: true\n---\n\n$1"]
 	},
 	"mdash": {
 		"prefix": "mdash",
