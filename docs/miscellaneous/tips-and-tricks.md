@@ -13,6 +13,16 @@ These are patterns that I seen in code that should, I hope, remind me to take pa
 - `(\_ -> a)` is `const a`
 - With `withFile`, this `(\h -> hGetContents h >>= putStr)` can go to this: `(hGetContents Control.Monad.>=> putStr)`
 
+### `hlint` suggestions
+
+```haskell
+-- hlint(refact:Use let)
+-- In `do` context `return` can be reduced to let.
+jsonFiles <- return $ filter (\f -> takeExtension f == ".json") files
+-- can be:
+let jsonFiles = filter (\f -> takeExtension f == ".json") files
+```
+
 ### Hole-Driven Development (HDD )
 
 One thing you can do in code is replace unknowns with a "hole" which is either a lone underscore, `_`, or a name starting with the underscore, e.g., `_cons`, `_nils`, `_1`, `_2`.
@@ -84,3 +94,30 @@ string
 λ> print "string"
 "string"
 ```
+
+## Annotations
+
+Sometimes, to clarify context, you can annotate the code to force type inference. This happens in cases outside of declaring a type signature and function.
+
+```haskell
+λ> (3 :: Float) / 9
+0.33333334
+
+-- compared to:
+λ> 3/9              -- which assumes a Double, not a Float
+0.3333333333333333
+
+-- or:
+λ> (3 :: Rational) / 9
+1 % 3
+```
+
+## Stack
+
+Add `default-extensions: OverloadedStrings` _package.yaml_ to add globally applicable extensions.
+
+Stack is weird beast (or it's the Haskell ecosystem, I'm not sure). Some tips:
+
+If you need to downgrade, you may have to kill either the _.stack-work_ folder or the _stack.yaml.lock_ file and then rerun `stack init`. That command will re-write _stack.yaml_ if (hopefully) if finds a older snapshot of GHC to use.
+
+I _think_ that the Haskell build system relies on these old instances/snapshots of compatible versions. So if you're making use of an old library (and there are a _lot_ out there), it may require to essentially downgrade a lot of potential dependencies.

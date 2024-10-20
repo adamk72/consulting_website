@@ -105,7 +105,7 @@ fmap :: Functor f => (a -> b) -> f a -> f b -- Acts on a functor, returns a func
 --                       │        ┌──────┘
 --                     ┌─┴─┐    ┌─┴─┐
 revMap :: Functor f => f [a] -> f [a]       -- Acts on a list, returns a list.
-                                            -- (Recall, lists are functors).
+                                            -- Also, lists are functors.
 ```
 It doesn't matter that the output of one isn't _exactly_ the same as the other. What's important is the _shape_ of the types. `f [a]` is the same shape `f b` &mdash; both are types of a functor applied to something.
 

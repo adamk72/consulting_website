@@ -15,7 +15,7 @@ If you're here to learn quickly or because you have ADHD as bad as mine, **feel 
 
 I'll hit on most topics in Haskell eventually (as I learn them and as they make sense to me), but not in the order of most typical programming courses/lessons.
 
-I will also assume you know the basics of programming and are familiar with tools like REPLs and high-level concepts like "types" and "classes."
+I will also assume you know the basics of programming and are familiar with tools like REPLs and high-level concepts like "types" and "classes" (the latter of which, to be clear, isn't the same as a class in Java or JavaScript, but more like trait/impl in Rust or interfaces in Go and TypeScript)
 
 :::warning
 Remember, I'm new to Haskell, so not everything will be addressed adequately, if at all. I don't know squat at the moment.

@@ -31,3 +31,13 @@ import qualified Prelude as P
 -- or, for example, to hide what might conflict.
 import Prelude hiding (length)
 ```
+
+## More Complex Idioms
+
+```haskell
+-- this:
+(+) <$> [2,3,4] <*> pure 4.
+
+-- is more idiomatic than this:
+pure (+) <*> [2,3,4] <*> pure 4
+```
