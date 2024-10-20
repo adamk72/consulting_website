@@ -13,7 +13,9 @@ pack :: String -> Text
 unpack :: Text -> String
 
 splitOn :: Text -> Text -> [Text]
-intercalate :: Text -> [Text] -> Text
+intercalate :: Text -> [Text] -> Text -- intersperses the first parameter through
+                                      -- each list element except the last.
+                                      -- There are a lot of other non-Text variations of this.
 
 -- Both
 Prelude.lines :: String -> [String]
@@ -27,7 +29,7 @@ Data.Text.unlines :: [Text] -> Text
 
 ```haskell
 zip :: [a] -> [b] -> [(a, b)]
-cycle :: [a] -> [a]           -- repeats the list
+cycle :: [a] -> [a]             -- repeats the list
 ```
 ## For Applicatives
 <Lozenge t="adv"/>
@@ -70,4 +72,5 @@ sequence :: Monad m => [m a] -> m [a]                       -- <explain later>
 foldr :: (a -> b -> b) -> b -> t a -> b
 foldl :: (b -> a -> b) -> b -> t a -> b
 foldMap :: Monoid m => (a -> m) -> t a -> m
+null :: Foldable t => t a -> Bool           -- generically, checks if a list is empty
 ```
