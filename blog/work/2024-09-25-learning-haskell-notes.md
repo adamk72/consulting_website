@@ -2,6 +2,7 @@
 title: Learning Haskell From Scratch
 authors: akecskes
 tags: [coding, haskell]
+draft: true
 ---
 
 <head>

@@ -72,3 +72,29 @@ You can have multiple generators, and order matters (you can think of them like 
 ```
 
 Generators can be dependent on a previous one.
+
+## Pattern Matching on Lists
+
+```haskell
+case someList of
+    []       -> "Empty list"           -- Matches: []
+    [x]      -> "One element"          -- Matches: [1] or [2] etc
+    [x,y]    -> "Two elements"         -- Matches: [1,2] or [3,4] etc
+    _        -> "Everything else"      -- Matches any other case
+
+-- assume a list of `Persons` with an `age` field:
+case filter (\p -> age p > 32) people of
+    []      -> "No one over 32"
+    [p]     -> "One person over 32: " ++ name p
+    ps      -> "Multiple people over 32: " ++ show (length ps)
+```
+
+### Using `find` instead of `filter`
+
+Using `find` on a list returns a Maybe, so applying a case statement looks like this:
+
+```haskell
+case find (\p -> age p > 32) people of
+    Nothing -> "No one over 32"
+    Just p  -> "Found person over 32: " ++ name p
+```

@@ -1,6 +1,38 @@
-# Encountered Errors
+## Encountered Errors
 
 _Put here only if there wasn't an immediate and evident solution after a quick search._
+
+### Couldn't match expected type ‘Text’ with actual type ‘[Text]’
+
+**Problem**
+
+The basic problem was that the variable `known` wasn't matching with the list `validLocs` for some reason. This caused a cascade of problems as I tried a few different variations; indentation would sometimes cause me to go down the wrong path.
+
+```haskell
+{-# LANGUAGE OverloadedStrings #-}
+import Data.Text
+import Prelude hiding (elem)
+
+validLocs :: [Text]
+validLocs = ["cave", "meadow"]
+
+-- ignore leading code
+case location of
+  known | known `elem` validLocs  -> -- The error arose on this line
+-- ignore following code
+```
+
+**Solution**
+
+The fix was fairly simple: I needed the Prelude version of `elem`, not the Data.Text version, so changed the import lines:
+
+```haskell
+import Data.Text (Text)         -- explicit import of Text
+-- import Prelude hiding (elem) -- removed
+```
+
+Other solutions would work, too, such as using 'qualified' on Data.Text.
+
 
 ### _Could not load module ‘Data.ByteString.Lazy’_
 
