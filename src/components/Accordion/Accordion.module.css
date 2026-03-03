@@ -1,0 +1,10 @@
+.accordionGroup {
+  border: 3px solid #1a1a1a;
+  box-shadow: 5px 5px 0 #1a1a1a;
+  width: 100%;
+}
+
+[data-theme='dark'] .accordionGroup {
+  border-color: #e0ddd8;
+  box-shadow: 5px 5px 0 #e0ddd8;
+}

@@ -2,25 +2,207 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0 3rem;
   width: 100%;
-  gap: 4rem;
+  gap: 1rem;
 }
 
-.documents {
+/* =====================
+   FEATURE CARDS
+===================== */
+.featureCol {
+  /* Extra bottom padding so hard shadow isn't clipped */
+  padding-bottom: 1.25rem !important;
+}
+
+.card {
+  background: #ffffff;
+  border: 3px solid #1a1a1a;
+  box-shadow: 5px 5px 0 #1a1a1a;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem 0;
-  width: 100%;
-  gap: 4rem; 
 }
 
-hr { 
-  width: 85%;
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #1a1a1a;
+}
+
+[data-theme='dark'] .card {
+  background: #242424;
+  border-color: #e0ddd8;
+  box-shadow: 5px 5px 0 #e0ddd8;
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 8px 8px 0 #e0ddd8;
+}
+
+.cardImageWrap {
+  background-color: #e8f0fe;
+  border-bottom: 3px solid #1a1a1a;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-theme='dark'] .cardImageWrap {
+  background-color: #0d1a3a;
+  border-color: #e0ddd8;
 }
 
 .featureImg {
-  height: 200px;
-  width: 200px;
+  height: 110px;
+  width: 110px;
+}
+
+.cardBody {
+  padding: 1.25rem 1.5rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+  color: #1a1a1a;
+}
+
+[data-theme='dark'] .cardTitle {
+  color: #e0ddd8;
+}
+
+.cardDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.65;
+  margin: 0;
+}
+
+[data-theme='dark'] .cardDesc {
+  color: #aaa;
+}
+
+/* =====================
+   DOCUMENT CARDS
+===================== */
+.docCol {
+  padding-bottom: 1.25rem !important;
+}
+
+.docCard {
+  background: #ffffff;
+  border: 3px solid #1a1a1a;
+  box-shadow: 5px 5px 0 #1a1a1a;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.docCard:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #1a1a1a;
+}
+
+[data-theme='dark'] .docCard {
+  background: #242424;
+  border-color: #e0ddd8;
+  box-shadow: 5px 5px 0 #e0ddd8;
+}
+
+[data-theme='dark'] .docCard:hover {
+  box-shadow: 8px 8px 0 #e0ddd8;
+}
+
+.docCardImageWrap {
+  background-color: #e8f0fe;
+  border-bottom: 3px solid #1a1a1a;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-theme='dark'] .docCardImageWrap {
+  background-color: #0d1a3a;
+  border-color: #e0ddd8;
+}
+
+.docImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.docCardBody {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.docTitle {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.6rem;
+}
+
+[data-theme='dark'] .docTitle {
+  color: #e0ddd8;
+}
+
+.docSubtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+  cursor: help;
+  text-decoration: underline dotted #999;
+}
+
+[data-theme='dark'] .docSubtitle {
+  color: #aaa;
+}
+
+.docCardFooter {
+  border-top: 3px solid #1a1a1a;
+  padding: 1rem 1.5rem;
+}
+
+[data-theme='dark'] .docCardFooter {
+  border-color: #e0ddd8;
+}
+
+.docDownloadBtn {
+  display: block;
+  text-align: center;
+  background-color: #4286f4;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.65rem 1rem;
+  border: 3px solid #1a1a1a;
+  box-shadow: 4px 4px 0 #1a1a1a;
+  text-decoration: none !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.docDownloadBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+.docDownloadBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #1a1a1a;
 }

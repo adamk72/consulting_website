@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -9,14 +8,21 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
       <div className="container">
-        <div className='flex flex-row gap-x-16 justify-center items-center'>
-          <div>
-            <h1 className="hero__title">{siteConfig.title}</h1>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.heroInner}>
+          <div className={styles.heroText}>
+            <p className={styles.heroEyebrow}>Engineering Leadership &amp; Consulting</p>
+            <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+            <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
+            <div className={styles.heroButtons}>
+              <a href="/resume" className={styles.btnPrimary}>View Resume</a>
+              <a href="/blog" className={styles.btnSecondary}>Read the Blog</a>
+            </div>
           </div>
-          <img className="rounded-full" src="img/adam_headshot.jpg" width="300px" alt='Headshot of Adam' />
+          <div className={styles.heroImageWrapper}>
+            <img src="img/adam_headshot.jpg" alt="Adam Kecskes" />
+          </div>
         </div>
       </div>
     </header>
@@ -28,7 +34,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Improve you company's effectiveness with less effort and better results.">
+      description="Improve your company's effectiveness with less effort and better results.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

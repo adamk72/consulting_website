@@ -1,11 +1,20 @@
 import React, { ReactNode } from 'react'
+import clsx from 'clsx'
+import styles from './Section.module.css'
 
-export default function Section({ title, description, children}: {title: string, description?: string, children: ReactNode}) {
+type SectionProps = {
+  title: string
+  description?: string
+  tone?: 'alt'
+  children: ReactNode
+}
+
+export default function Section({ title, description, tone, children }: SectionProps) {
   return (
-    <section style={{width: "100%"}}>
+    <section className={clsx(styles.section, tone === 'alt' && styles.sectionAlt)}>
       <div className="container">
-        <h1>{title}</h1>
-        {description && <p>{description}</p>}
+        <h2 className={styles.sectionTitle}>{title}</h2>
+        {description && <p className={styles.sectionDesc}>{description}</p>}
         <div className="row">
           {children}
         </div>

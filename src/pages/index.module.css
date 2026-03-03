@@ -1,23 +1,165 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* =====================
+   HERO BANNER
+===================== */
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  padding: 5rem 0 4.5rem;
+  background-color: #e8f0fe;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.07) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  border-bottom: 4px solid #1a1a1a;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+[data-theme='dark'] .heroBanner {
+  background-color: #0d1a3a;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.5px);
 }
 
-.buttons {
+.heroInner {
   display: flex;
+  flex-direction: row;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
+}
+
+.heroText {
+  max-width: 560px;
+}
+
+.heroEyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #2148c0;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme='dark'] .heroEyebrow {
+  color: #6f8fdc;
+}
+
+.heroTitle {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #e0ddd8;
+}
+
+.heroSubtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+  font-style: italic;
+  max-width: 500px;
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: #aaa;
+}
+
+/* =====================
+   HERO BUTTONS
+===================== */
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.75rem;
+  border: 3px solid #1a1a1a;
+  text-decoration: none !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.btnPrimary {
+  background-color: #4286f4;
+  color: #ffffff !important;
+  box-shadow: 5px 5px 0 #1a1a1a;
+}
+
+.btnSecondary {
+  background-color: #faf8f4;
+  color: #1a1a1a !important;
+  box-shadow: 5px 5px 0 #1a1a1a;
+}
+
+.btnPrimary:hover,
+.btnSecondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #1a1a1a;
+}
+
+.btnPrimary:active,
+.btnSecondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #1a1a1a;
+}
+
+/* =====================
+   HERO IMAGE
+===================== */
+.heroImageWrapper {
+  flex-shrink: 0;
+}
+
+.heroImageWrapper img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #1a1a1a;
+  box-shadow: 8px 8px 0 #1a1a1a;
+  display: block;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem 3.5rem;
+  }
+
+  .heroInner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.1rem;
+  }
+
+  .heroSubtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroImageWrapper img {
+    width: 200px;
+    height: 200px;
+  }
 }

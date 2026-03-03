@@ -1,0 +1,90 @@
+.item {
+  border-bottom: 3px solid #1a1a1a;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  list-style: none;
+  user-select: none;
+  background-color: #faf8f4;
+  transition: background-color 0.1s ease;
+}
+
+/* Remove native disclosure triangle */
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary::marker {
+  content: none;
+}
+
+.summary:hover {
+  background-color: #e8f0fe;
+}
+
+.item[open] > .summary {
+  background-color: #4286f4;
+  border-bottom: 3px solid #1a1a1a;
+  color: #ffffff;
+}
+
+.indicator {
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.15s ease;
+}
+
+.item[open] .indicator {
+  transform: rotate(45deg);
+}
+
+.content {
+  padding: 1.25rem 1.5rem;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+/* Dark mode */
+[data-theme='dark'] .item {
+  border-color: #e0ddd8;
+}
+
+[data-theme='dark'] .summary {
+  background-color: #242424;
+  color: #e0ddd8;
+}
+
+[data-theme='dark'] .summary:hover {
+  background-color: #0d1a3a;
+}
+
+[data-theme='dark'] .item[open] > .summary {
+  background-color: #4286f4;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+[data-theme='dark'] .content {
+  background-color: #1e1e1e;
+  color: #c8c4bc;
+}
