@@ -33,7 +33,9 @@
 .sectionDesc {
   font-family: 'Montserrat', sans-serif;
   color: #555;
-  max-width: 70ch;
+  max-width: 90ch;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2rem;
   line-height: 1.75;
   font-size: 0.95rem;
